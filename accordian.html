@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JDK-18 API Changes</title>
+  <!-- Optionally include a CSS framework like Bootstrap for styling and accordion behavior -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Some custom styles for our file and class blocks */
+    .file-entry { margin-bottom: 20px; }
+    .class-header { font-weight: bold; cursor: pointer; }
+    .methods { margin-left: 20px; }
+    .nested-class { margin-left: 40px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JDK-18 API Changes</h1>
+
+    <!-- Example file entry -->
+    <div class="file-entry">
+      <h2>
+        <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/FileInputStream.java" target="_blank">
+          FileInputStream.java
+        </a>
+      </h2>
+      <ul class="methods">
+        <li>public long transferTo(OutputStream out) throws IOException;</li>
+      </ul>
+    </div>
+
+    <!-- Example file with a class and nested class -->
+    <div class="file-entry">
+      <h2>
+        <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectStreamClass.java" target="_blank">
+          ObjectStreamClass.java
+        </a>
+      </h2>
+      <!-- Start of a class block -->
+      <div class="class-block">
+        <!-- This is the start of a class -->
+        <div class="class-header" data-toggle="collapse" data-target="#class1">
+          public final class ObjectStreamClass implements Serializable {
+        </div>
+        <div id="class1" class="collapse show">
+          <ul class="methods">
+            <li>abstract static class Key {</li>
+          </ul>
+          <!-- Nested class block -->
+          <div class="nested-class">
+            <div class="class-header" data-toggle="collapse" data-target="#nestedClass1">
+              public UnresolvedJavaMethod(String name, Signature signature, JavaType holder) {
+            </div>
+            <div id="nestedClass1" class="collapse show">
+              <ul class="methods">
+                <!-- Methods for the nested class -->
+                <!-- (Empty in your sample) -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Another example file with no classes, only methods -->
+    <div class="file-entry">
+      <h2>
+        <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectInputStream.java" target="_blank">
+          ObjectInputStream.java
+        </a>
+      </h2>
+      <ul class="methods">
+        <li>public abstract Object get(String name, @Nullable Object val) throws IOException, ClassNotFoundException;</li>
+        <li>public Object get(String name, Object val) throws ClassNotFoundException;</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Optionally include Bootstrap JS and jQuery for accordion functionality -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

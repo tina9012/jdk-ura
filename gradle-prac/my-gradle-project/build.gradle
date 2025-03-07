@@ -1,0 +1,12 @@
+task hello {
+    doLast {
+        println 'Hello Gradle'
+    }
+}
+
+task writeToFile{
+    doLast{
+        def file = file('output.txt')
+        file.text = "This is a test file I wrote in gradle." 
+    }
+}

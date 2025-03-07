@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JDK jdk-21 API Changes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+<style>
+  body {
+    background-color: #f8f9fa;
+    padding: 2rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+    border: none;
+  }
+  .card-header {
+    background-color: #3230a1;
+    color: white;
+    font-weight: bold;
+  }
+  .card-header a {
+    color: white;
+  }
+</style>
+
+</head>
+<body>
+<div class="container">
+  <h1>JDK jdk-21 API Changes</h1>
+  <a href="../index.html" class="back-link">← Back to Table of Contents</a>
+  <hr>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/com/sun/crypto/provider/PBKDF2KeyImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/com/sun/crypto/provider/PBKDF2KeyImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void clear();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/io/SerialCallbackContext.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/io/SerialCallbackContext.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Object getObj() throws NotActiveException;</li>
+      <li class="list-group-item">ObjectStreamClass getDesc();</li>
+      <li class="list-group-item">void check() throws NotActiveException;</li>
+      <li class="list-group-item">void checkAndSetUsed() throws NotActiveException;</li>
+      <li class="list-group-item">void setUsed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/AbstractStringBuilder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/AbstractStringBuilder.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">long mix(long lengthCoder);</li>
+      <li class="list-group-item">long prepend(long lengthCoder, byte[] buffer);</li>
+      <li class="list-group-item">public AbstractStringBuilder repeat(int codePoint, int count);</li>
+      <li class="list-group-item">public AbstractStringBuilder repeat(CharSequence cs, int count);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/Character.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/Character.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static boolean isEmoji(int codePoint);</li>
+      <li class="list-group-item">public static boolean isEmojiPresentation(int codePoint);</li>
+      <li class="list-group-item">public static boolean isEmojiModifier(int codePoint);</li>
+      <li class="list-group-item">public static boolean isEmojiModifierBase(int codePoint);</li>
+      <li class="list-group-item">public static boolean isEmojiComponent(int codePoint);</li>
+      <li class="list-group-item">public static boolean isExtendedPictographic(int codePoint);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/CharacterData.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/CharacterData.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">abstract boolean isEmoji(int ch);</li>
+      <li class="list-group-item">abstract boolean isEmojiPresentation(int ch);</li>
+      <li class="list-group-item">abstract boolean isEmojiModifier(int ch);</li>
+      <li class="list-group-item">abstract boolean isEmojiModifierBase(int ch);</li>
+      <li class="list-group-item">abstract boolean isEmojiComponent(int ch);</li>
+      <li class="list-group-item">abstract boolean isExtendedPictographic(int ch);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/Class.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/Class.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public boolean isUnnamedClass();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/ClassLoader.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/ClassLoader.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">String nameAndId();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/Math.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/Math.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static int clamp(long value, int min, int max);</li>
+      <li class="list-group-item">public static long clamp(long value, long min, long max);</li>
+      <li class="list-group-item">public static double clamp(double value, double min, double max);</li>
+      <li class="list-group-item">public static float clamp(float value, float min, float max);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/StrictMath.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/StrictMath.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static double sin(double a);</li>
+      <li class="list-group-item">public static double cos(double a);</li>
+      <li class="list-group-item">public static double tan(double a);</li>
+      <li class="list-group-item">public static double asin(double a);</li>
+      <li class="list-group-item">public static double acos(double a);</li>
+      <li class="list-group-item">public static double atan(double a);</li>
+      <li class="list-group-item">public static double log(double a);</li>
+      <li class="list-group-item">public static double log10(double a);</li>
+      <li class="list-group-item">public static double sqrt(double a);</li>
+      <li class="list-group-item">public static double IEEEremainder(double f1, double f2);</li>
+      <li class="list-group-item">public static double atan2(double y, double x);</li>
+      <li class="list-group-item">public static int clamp(long value, int min, int max);</li>
+      <li class="list-group-item">public static long clamp(long value, long min, long max);</li>
+      <li class="list-group-item">public static double clamp(double value, double min, double max);</li>
+      <li class="list-group-item">public static float clamp(float value, float min, float max);</li>
+      <li class="list-group-item">public static double sinh(double x);</li>
+      <li class="list-group-item">public static double cosh(double x);</li>
+      <li class="list-group-item">public static double tanh(double x);</li>
+      <li class="list-group-item">public static double expm1(double x);</li>
+      <li class="list-group-item">public static double log1p(double x);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/String.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/String.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static String newStringUTF8NoRepl(byte[] bytes, int offset, int length, boolean noShare);</li>
+      <li class="list-group-item">public int indexOf(int ch, int beginIndex, int endIndex);</li>
+      <li class="list-group-item">public int indexOf(String str, int beginIndex, int endIndex);</li>
+      <li class="list-group-item">public String @MinLen(1) [] splitWithDelimiters(@Regex String regex, int limit);</li>
+      <li class="list-group-item">static void repeatCopyRest(byte[] buffer, int offset, int limit, int copied);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/StringBuffer.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/StringBuffer.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public synchronized StringBuffer repeat(int codePoint, int count);</li>
+      <li class="list-group-item">public synchronized StringBuffer repeat(CharSequence cs, int count);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/StringBuilder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/StringBuilder.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public StringBuilder repeat(int codePoint, int count);</li>
+      <li class="list-group-item">public StringBuilder repeat(CharSequence cs, int count);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/ThreadLocal.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/ThreadLocal.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static void dumpStackIfVirtualThread();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/invoke/LambdaForm.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/invoke/LambdaForm.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static LambdaForm create(int arity, Name[] names, int result);</li>
+      <li class="list-group-item">static LambdaForm create(int arity, Name[] names, int result, Kind kind);</li>
+      <li class="list-group-item">static LambdaForm create(int arity, Name[] names);</li>
+      <li class="list-group-item">static LambdaForm create(int arity, Name[] names, Kind kind);</li>
+      <li class="list-group-item">static LambdaForm create(int arity, Name[] names, boolean forceInline, Kind kind);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/invoke/MethodHandles.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/lang/invoke/MethodHandles.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">ClassDefiner makeClassDefiner(String name, byte[] bytes, ClassFileDumper dumper);</li>
+      <li class="list-group-item">ClassDefiner makeHiddenClassDefiner(byte[] bytes, ClassFileDumper dumper);</li>
+      <li class="list-group-item">ClassDefiner makeHiddenClassDefiner(String name, byte[] bytes, Set<ClassOption> options, ClassFileDumper dumper);</li>
+      <li class="list-group-item">String internalName();</li>
+      <li class="list-group-item">public <T> Class<T> ensureInitialized(Class<T> targetClass) throws IllegalAccessException;</li>
+      <li class="list-group-item">public <T> Class<T> accessClass(Class<T> targetClass) throws IllegalAccessException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/net/InetAddress.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/net/InetAddress.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public int compareTo(CachedLookup other);</li>
+      <li class="list-group-item">public boolean tryRemoveExpiredAddress(long now);</li>
+      <li class="list-group-item">public InetAddress[] get();</li>
+      <li class="list-group-item">public boolean tryRemoveExpiredAddress(long now);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/net/Socket.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/net/Socket.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">SocketImpl impl();</li>
+      <li class="list-group-item">void setConnectedImpl(SocketImpl si) throws SocketException;</li>
+      <li class="list-group-item">void setConnected();</li>
+      <li class="list-group-item">public void setSoTimeout(int timeout) throws SocketException;</li>
+      <li class="list-group-item">public int getSoTimeout() throws SocketException;</li>
+      <li class="list-group-item">public void setSendBufferSize(int size) throws SocketException;</li>
+      <li class="list-group-item">public int getSendBufferSize() throws SocketException;</li>
+      <li class="list-group-item">public void setReceiveBufferSize(int size) throws SocketException;</li>
+      <li class="list-group-item">public int getReceiveBufferSize() throws SocketException;</li>
+      <li class="list-group-item">public void close() throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/nio/channels/FileChannel.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/nio/channels/FileChannel.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public MemorySegment map(MapMode mode, long offset, long size, Arena arena) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/security/cert/CertStore.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/security/cert/CertStore.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static final String getDefaultType();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/time/chrono/JapaneseDate.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/time/chrono/JapaneseDate.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public JapaneseDate minus(long amountToSubtract, TemporalUnit unit);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/time/chrono/MinguoDate.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/time/chrono/MinguoDate.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public MinguoDate minus(long amountToSubtract, TemporalUnit unit);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/time/chrono/ThaiBuddhistDate.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/time/chrono/ThaiBuddhistDate.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public ThaiBuddhistDate minus(long amountToSubtract, TemporalUnit unit);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/AbstractMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/AbstractMap.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">UnsupportedOperationException uoe();</li>
+      <li class="list-group-item">abstract Collection<E> view();</li>
+      <li class="list-group-item">public boolean add(E t);</li>
+      <li class="list-group-item">public boolean addAll(Collection<? extends E> c);</li>
+      <li class="list-group-item">public void clear();</li>
+      <li class="list-group-item">public boolean contains(Object o);</li>
+      <li class="list-group-item">public boolean containsAll(Collection<?> c);</li>
+      <li class="list-group-item">public void forEach(Consumer<? super E> c);</li>
+      <li class="list-group-item">public boolean isEmpty();</li>
+      <li class="list-group-item">public Iterator<E> iterator();</li>
+      <li class="list-group-item">public Stream<E> parallelStream();</li>
+      <li class="list-group-item">public boolean remove(Object o);</li>
+      <li class="list-group-item">public boolean removeAll(Collection<?> c);</li>
+      <li class="list-group-item">public boolean removeIf(Predicate<? super E> filter);</li>
+      <li class="list-group-item">public boolean retainAll(Collection<?> c);</li>
+      <li class="list-group-item">public int size();</li>
+      <li class="list-group-item">public Spliterator<E> spliterator();</li>
+      <li class="list-group-item">public Stream<E> stream();</li>
+      <li class="list-group-item">public Object[] toArray();</li>
+      <li class="list-group-item">public <T> T[] toArray(IntFunction<T[]> generator);</li>
+      <li class="list-group-item">public <T> T[] toArray(T[] a);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/ArrayList.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/ArrayList.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public E getFirst();</li>
+      <li class="list-group-item">public E getLast();</li>
+      <li class="list-group-item">public void addFirst(E element);</li>
+      <li class="list-group-item">public void addLast(E element);</li>
+      <li class="list-group-item">public E removeFirst();</li>
+      <li class="list-group-item">public E removeLast();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/Collections.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/Collections.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static void shuffle(List<?> list, Random rnd);</li>
+      <li class="list-group-item">public static void shuffle(@GuardSatisfied List<?> list, RandomGenerator rnd);</li>
+      <li class="list-group-item">public static <T> SequencedCollection<T> unmodifiableSequencedCollection(SequencedCollection<? extends T> c);</li>
+      <li class="list-group-item">public SequencedCollection<E> reversed();</li>
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+      <li class="list-group-item">public E getFirst();</li>
+      <li class="list-group-item">public E getLast();</li>
+      <li class="list-group-item">public E removeFirst();</li>
+      <li class="list-group-item">public E removeLast();</li>
+      <li class="list-group-item">public static <T> SequencedSet<T> unmodifiableSequencedSet(SequencedSet<? extends T> s);</li>
+      <li class="list-group-item">public boolean equals(Object o);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public SequencedSet<E> reversed();</li>
+      <li class="list-group-item">public static <K, V> SequencedMap<K, V> unmodifiableSequencedMap(SequencedMap<? extends K, ? extends V> m);</li>
+      <li class="list-group-item">public SequencedMap<K, V> reversed();</li>
+      <li class="list-group-item">public Entry<K, V> pollFirstEntry();</li>
+      <li class="list-group-item">public Entry<K, V> pollLastEntry();</li>
+      <li class="list-group-item">public V putFirst(K k, V v);</li>
+      <li class="list-group-item">public V putLast(K k, V v);</li>
+      <li class="list-group-item">public static <E> SequencedSet<E> newSequencedSetFromMap(SequencedMap<E, Boolean> map);</li>
+      <li class="list-group-item">public SequencedSet<E> reversed();</li>
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+      <li class="list-group-item">public E getFirst();</li>
+      <li class="list-group-item">public E getLast();</li>
+      <li class="list-group-item">public E removeFirst();</li>
+      <li class="list-group-item">public E removeLast();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/Deque.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/Deque.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default Deque<E> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/Formatter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/Formatter.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static List<FormatString> parse(String s);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/ImmutableCollections.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/ImmutableCollections.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public List<E> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/LinkedHashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/LinkedHashMap.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public V putFirst(K k, V v);</li>
+      <li class="list-group-item">public V putLast(K k, V v);</li>
+      <li class="list-group-item">public SequencedSet<K> sequencedKeySet();</li>
+      <li class="list-group-item">static <K1, V1> Node<K1, V1> nsee(Node<K1, V1> node);</li>
+      <li class="list-group-item">final <T> T[] keysToArray(T[] a, boolean reversed);</li>
+      <li class="list-group-item">final <T> T[] valuesToArray(T[] a, boolean reversed);</li>
+      <li class="list-group-item">public final void addFirst(K k);</li>
+      <li class="list-group-item">public final void addLast(K k);</li>
+      <li class="list-group-item">public final K getFirst();</li>
+      <li class="list-group-item">public final K getLast();</li>
+      <li class="list-group-item">public final K removeFirst();</li>
+      <li class="list-group-item">public final K removeLast();</li>
+      <li class="list-group-item">public SequencedSet<K> reversed();</li>
+      <li class="list-group-item">public SequencedCollection<V> sequencedValues();</li>
+      <li class="list-group-item">public final void addFirst(V v);</li>
+      <li class="list-group-item">public final void addLast(V v);</li>
+      <li class="list-group-item">public final V getFirst();</li>
+      <li class="list-group-item">public final V getLast();</li>
+      <li class="list-group-item">public final V removeFirst();</li>
+      <li class="list-group-item">public final V removeLast();</li>
+      <li class="list-group-item">public SequencedCollection<V> reversed();</li>
+      <li class="list-group-item">public SequencedSet<Map.Entry<K, V>> sequencedEntrySet();</li>
+      <li class="list-group-item">final Node<K, V> nsee(Node<K, V> e);</li>
+      <li class="list-group-item">public final void addFirst(Map.Entry<K, V> e);</li>
+      <li class="list-group-item">public final void addLast(Map.Entry<K, V> e);</li>
+      <li class="list-group-item">public final Map.Entry<K, V> getFirst();</li>
+      <li class="list-group-item">public final Map.Entry<K, V> getLast();</li>
+      <li class="list-group-item">public final Map.Entry<K, V> removeFirst();</li>
+      <li class="list-group-item">public final Map.Entry<K, V> removeLast();</li>
+      <li class="list-group-item">public SequencedSet<Map.Entry<K, V>> reversed();</li>
+      <li class="list-group-item">public SequencedMap<K, V> reversed();</li>
+      <li class="list-group-item">public boolean equals(Object o);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public int size();</li>
+      <li class="list-group-item">public boolean isEmpty();</li>
+      <li class="list-group-item">public boolean containsKey(Object key);</li>
+      <li class="list-group-item">public boolean containsValue(Object value);</li>
+      <li class="list-group-item">public V get(Object key);</li>
+      <li class="list-group-item">public V put(K key, V value);</li>
+      <li class="list-group-item">public V remove(Object key);</li>
+      <li class="list-group-item">public void putAll(Map<? extends K, ? extends V> m);</li>
+      <li class="list-group-item">public void clear();</li>
+      <li class="list-group-item">public Set<K> keySet();</li>
+      <li class="list-group-item">public Collection<V> values();</li>
+      <li class="list-group-item">public Set<Entry<K, V>> entrySet();</li>
+      <li class="list-group-item">public V getOrDefault(Object key, V defaultValue);</li>
+      <li class="list-group-item">public void forEach(BiConsumer<? super K, ? super V> action);</li>
+      <li class="list-group-item">public void replaceAll(BiFunction<? super K, ? super V, ? extends V> function);</li>
+      <li class="list-group-item">public V putIfAbsent(K key, V value);</li>
+      <li class="list-group-item">public boolean remove(Object key, Object value);</li>
+      <li class="list-group-item">public boolean replace(K key, V oldValue, V newValue);</li>
+      <li class="list-group-item">public V replace(K key, V value);</li>
+      <li class="list-group-item">public V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunction);</li>
+      <li class="list-group-item">public V computeIfPresent(K key, BiFunction<? super K, ? super V, ? extends V> remappingFunction);</li>
+      <li class="list-group-item">public V compute(K key, BiFunction<? super K, ? super V, ? extends V> remappingFunction);</li>
+      <li class="list-group-item">public V merge(K key, V value, BiFunction<? super V, ? super V, ? extends V> remappingFunction);</li>
+      <li class="list-group-item">public SequencedMap<K, V> reversed();</li>
+      <li class="list-group-item">public Entry<K, V> firstEntry();</li>
+      <li class="list-group-item">public Entry<K, V> lastEntry();</li>
+      <li class="list-group-item">public Entry<K, V> pollFirstEntry();</li>
+      <li class="list-group-item">public Entry<K, V> pollLastEntry();</li>
+      <li class="list-group-item">public V putFirst(K k, V v);</li>
+      <li class="list-group-item">public V putLast(K k, V v);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/LinkedHashSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/LinkedHashSet.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">LinkedHashMap<E, Object> map();</li>
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+      <li class="list-group-item">public E getFirst();</li>
+      <li class="list-group-item">public E getLast();</li>
+      <li class="list-group-item">public E removeFirst();</li>
+      <li class="list-group-item">public E removeLast();</li>
+      <li class="list-group-item">public SequencedSet<E> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/LinkedList.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/LinkedList.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public LinkedList<E> reversed();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean retainAll(Collection<?> c);</li>
+      <li class="list-group-item">public boolean removeAll(Collection<?> c);</li>
+      <li class="list-group-item">public boolean containsAll(Collection<?> c);</li>
+      <li class="list-group-item">public boolean isEmpty();</li>
+      <li class="list-group-item">public Stream<E> parallelStream();</li>
+      <li class="list-group-item">public Stream<E> stream();</li>
+      <li class="list-group-item">public boolean removeIf(Predicate<? super E> filter);</li>
+      <li class="list-group-item">public <T> T[] toArray(IntFunction<T[]> generator);</li>
+      <li class="list-group-item">public void forEach(Consumer<? super E> action);</li>
+      <li class="list-group-item">public Iterator<E> iterator();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(Object o);</li>
+      <li class="list-group-item">public List<E> subList(int fromIndex, int toIndex);</li>
+      <li class="list-group-item">public ListIterator<E> listIterator();</li>
+      <li class="list-group-item">public void sort(Comparator<? super E> c);</li>
+      <li class="list-group-item">public void replaceAll(UnaryOperator<E> operator);</li>
+      <li class="list-group-item">public LinkedList<E> reversed();</li>
+      <li class="list-group-item">public Spliterator<E> spliterator();</li>
+      <li class="list-group-item">public <T> T[] toArray(T[] a);</li>
+      <li class="list-group-item">public Object[] toArray();</li>
+      <li class="list-group-item">public Iterator<E> descendingIterator();</li>
+      <li class="list-group-item">public ListIterator<E> listIterator(int index);</li>
+      <li class="list-group-item">public boolean removeLastOccurrence(Object o);</li>
+      <li class="list-group-item">public boolean removeFirstOccurrence(Object o);</li>
+      <li class="list-group-item">public E pop();</li>
+      <li class="list-group-item">public void push(E e);</li>
+      <li class="list-group-item">public E pollLast();</li>
+      <li class="list-group-item">public E pollFirst();</li>
+      <li class="list-group-item">public E peekLast();</li>
+      <li class="list-group-item">public E peekFirst();</li>
+      <li class="list-group-item">public boolean offerLast(E e);</li>
+      <li class="list-group-item">public boolean offerFirst(E e);</li>
+      <li class="list-group-item">public boolean offer(E e);</li>
+      <li class="list-group-item">public E remove();</li>
+      <li class="list-group-item">public E poll();</li>
+      <li class="list-group-item">public E element();</li>
+      <li class="list-group-item">public E peek();</li>
+      <li class="list-group-item">public int lastIndexOf(Object o);</li>
+      <li class="list-group-item">public int indexOf(Object o);</li>
+      <li class="list-group-item">public E remove(int index);</li>
+      <li class="list-group-item">public void add(int index, E element);</li>
+      <li class="list-group-item">public E set(int index, E element);</li>
+      <li class="list-group-item">public E get(int index);</li>
+      <li class="list-group-item">public void clear();</li>
+      <li class="list-group-item">public boolean addAll(int index, Collection<? extends E> c);</li>
+      <li class="list-group-item">public boolean addAll(Collection<? extends E> c);</li>
+      <li class="list-group-item">public boolean remove(Object o);</li>
+      <li class="list-group-item">public boolean add(E e);</li>
+      <li class="list-group-item">public int size();</li>
+      <li class="list-group-item">public boolean contains(Object o);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public E removeLast();</li>
+      <li class="list-group-item">public E removeFirst();</li>
+      <li class="list-group-item">public E getLast();</li>
+      <li class="list-group-item">public E getFirst();</li>
+      <li class="list-group-item">public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException;</li>
+      <li class="list-group-item">public void writeExternal(ObjectOutput out) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/List.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/List.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default void addFirst(E e);</li>
+      <li class="list-group-item">default void addLast(E e);</li>
+      <li class="list-group-item">default E getFirst();</li>
+      <li class="list-group-item">default E getLast();</li>
+      <li class="list-group-item">default E removeFirst();</li>
+      <li class="list-group-item">default E removeLast();</li>
+      <li class="list-group-item">default List<E> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/Locale.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/Locale.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static Stream<Locale> availableLocales();</li>
+      <li class="list-group-item">public static String caseFoldLanguageTag(String languageTag);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/NavigableMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/NavigableMap.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default NavigableMap<K, V> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/NavigableSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/NavigableSet.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default E removeFirst();</li>
+      <li class="list-group-item">default E removeLast();</li>
+      <li class="list-group-item">default NavigableSet<E> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/SortedMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/SortedMap.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default V putFirst(K k, V v);</li>
+      <li class="list-group-item">default V putLast(K k, V v);</li>
+      <li class="list-group-item">default SortedMap<K, V> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/SortedSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/SortedSet.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default void addFirst(E e);</li>
+      <li class="list-group-item">default void addLast(E e);</li>
+      <li class="list-group-item">default E getFirst();</li>
+      <li class="list-group-item">default E getLast();</li>
+      <li class="list-group-item">default E removeFirst();</li>
+      <li class="list-group-item">default E removeLast();</li>
+      <li class="list-group-item">default SortedSet<E> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/TreeMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/TreeMap.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public V putFirst(K k, V v);</li>
+      <li class="list-group-item">public V putLast(K k, V v);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/TreeSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/TreeSet.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/ConcurrentSkipListMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/ConcurrentSkipListMap.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public V putFirst(K k, V v);</li>
+      <li class="list-group-item">public V putLast(K k, V v);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/ConcurrentSkipListSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/ConcurrentSkipListSet.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/CopyOnWriteArrayList.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/CopyOnWriteArrayList.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public E getFirst();</li>
+      <li class="list-group-item">public E getLast();</li>
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+      <li class="list-group-item">public E removeFirst();</li>
+      <li class="list-group-item">public E removeLast();</li>
+      <li class="list-group-item">public E getFirst();</li>
+      <li class="list-group-item">public E getLast();</li>
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+      <li class="list-group-item">public E removeFirst();</li>
+      <li class="list-group-item">public E removeLast();</li>
+      <li class="list-group-item">public List<E> reversed();</li>
+      <li class="list-group-item">public List<E> reversed();</li>
+      <li class="list-group-item">public boolean hasNext();</li>
+      <li class="list-group-item">public E next();</li>
+      <li class="list-group-item">public void remove();</li>
+      <li class="list-group-item">public boolean hasNext();</li>
+      <li class="list-group-item">public E next();</li>
+      <li class="list-group-item">public boolean hasPrevious();</li>
+      <li class="list-group-item">public E previous();</li>
+      <li class="list-group-item">public int nextIndex();</li>
+      <li class="list-group-item">public int previousIndex();</li>
+      <li class="list-group-item">public void remove();</li>
+      <li class="list-group-item">public void set(E e);</li>
+      <li class="list-group-item">public void add(E e);</li>
+      <li class="list-group-item">public void forEach(Consumer<? super E> action);</li>
+      <li class="list-group-item">public Iterator<E> iterator();</li>
+      <li class="list-group-item">public Spliterator<E> spliterator();</li>
+      <li class="list-group-item">public boolean add(E e);</li>
+      <li class="list-group-item">public boolean addAll(Collection<? extends E> c);</li>
+      <li class="list-group-item">public void clear();</li>
+      <li class="list-group-item">public boolean contains(Object o);</li>
+      <li class="list-group-item">public boolean containsAll(Collection<?> c);</li>
+      <li class="list-group-item">public boolean equals(Object o);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean isEmpty();</li>
+      <li class="list-group-item">public Stream<E> parallelStream();</li>
+      <li class="list-group-item">public boolean remove(Object o);</li>
+      <li class="list-group-item">public boolean removeAll(Collection<?> c);</li>
+      <li class="list-group-item">public boolean retainAll(Collection<?> c);</li>
+      <li class="list-group-item">public int size();</li>
+      <li class="list-group-item">public Stream<E> stream();</li>
+      <li class="list-group-item">public Object[] toArray();</li>
+      <li class="list-group-item">public <T> T[] toArray(T[] a);</li>
+      <li class="list-group-item">public <T> T[] toArray(IntFunction<T[]> generator);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public void add(int index, E element);</li>
+      <li class="list-group-item">public void addFirst(E e);</li>
+      <li class="list-group-item">public void addLast(E e);</li>
+      <li class="list-group-item">public boolean addAll(int index, Collection<? extends E> c);</li>
+      <li class="list-group-item">public E get(int i);</li>
+      <li class="list-group-item">public E getFirst();</li>
+      <li class="list-group-item">public E getLast();</li>
+      <li class="list-group-item">public int indexOf(Object o);</li>
+      <li class="list-group-item">public int lastIndexOf(Object o);</li>
+      <li class="list-group-item">public ListIterator<E> listIterator();</li>
+      <li class="list-group-item">public ListIterator<E> listIterator(int index);</li>
+      <li class="list-group-item">public E remove(int index);</li>
+      <li class="list-group-item">public E removeFirst();</li>
+      <li class="list-group-item">public E removeLast();</li>
+      <li class="list-group-item">public boolean removeIf(Predicate<? super E> filter);</li>
+      <li class="list-group-item">public void replaceAll(UnaryOperator<E> operator);</li>
+      <li class="list-group-item">public void sort(Comparator<? super E> c);</li>
+      <li class="list-group-item">public E set(int index, E element);</li>
+      <li class="list-group-item">public List<E> subList(int fromIndex, int toIndex);</li>
+      <li class="list-group-item">public List<E> reversed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/DelayQueue.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/DelayQueue.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public E remove();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/Executors.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/concurrent/Executors.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void shutdown();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/regex/Pattern.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/regex/Pattern.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public String @MinLen(1) [] splitWithDelimiters(CharSequence input, int limit);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/stream/Collectors.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/stream/Collectors.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public int size();</li>
+      <li class="list-group-item">public boolean isEmpty();</li>
+      <li class="list-group-item">public T get(Object key);</li>
+      <li class="list-group-item">public boolean containsKey(Object key);</li>
+      <li class="list-group-item">public boolean containsValue(Object value);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/zip/ZipCoder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/java/util/zip/ZipCoder.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Comparison compare(String str, byte[] b, int off, int len, boolean matchDirectory);</li>
+      <li class="list-group-item">Comparison compare(String str, byte[] b, int off, int len, boolean matchDirectory);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/javax/net/ssl/TrustManagerFactory.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/javax/net/ssl/TrustManagerFactory.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static final String getDefaultAlgorithm();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/net/www/http/KeepAliveCache.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/net/www/http/KeepAliveCache.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">HttpClient get();</li>
+      <li class="list-group-item">HttpClient put(HttpClient h);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/net/www/protocol/https/HttpsURLConnectionImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/net/www/protocol/https/HttpsURLConnectionImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public long getHeaderFieldDate(String name, long defaultValue);</li>
+      <li class="list-group-item">public int getHeaderFieldInt(String name, int defaultValue);</li>
+      <li class="list-group-item">public long getHeaderFieldLong(String name, long defaultValue);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static FileChannel open(FileDescriptor fd, String path, boolean readable, boolean writable, boolean direct, Closeable parent);</li>
+      <li class="list-group-item">public MemorySegment map(MapMode mode, long offset, long size, Arena arena) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/security/util/SignatureFileVerifier.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/security/util/SignatureFileVerifier.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static boolean isInMetaInf(String name);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/security/x509/X509Key.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.base/share/classes/sun/security/x509/X509Key.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">void decode(DerValue val) throws InvalidKeyException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.compiler/share/classes/javax/lang/model/element/TypeElement.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.compiler/share/classes/javax/lang/model/element/TypeElement.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default boolean isUnnamed();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.logging/share/classes/java/util/logging/ErrorManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.logging/share/classes/java/util/logging/ErrorManager.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void error(String msg, Exception ex, int code);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.logging/share/classes/java/util/logging/Handler.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.logging/share/classes/java/util/logging/Handler.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">boolean tryUseLock();</li>
+      <li class="list-group-item">void unlock();</li>
+      <li class="list-group-item">public void setFormatter(Formatter newFormatter) throws SecurityException;</li>
+      <li class="list-group-item">public void setEncoding(@Nullable String encoding) throws SecurityException, java.io.UnsupportedEncodingException;</li>
+      <li class="list-group-item">public void setFilter(@Nullable Filter newFilter) throws SecurityException;</li>
+      <li class="list-group-item">public void setErrorManager(ErrorManager em);</li>
+      <li class="list-group-item">public void setLevel(Level newLevel) throws SecurityException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">void start();</li>
+      <li class="list-group-item">HttpConnection getConnection(boolean secure, InetSocketAddress addr, InetSocketAddress proxy);</li>
+      <li class="list-group-item">boolean contains(HttpConnection c);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.net.http/share/classes/jdk/internal/net/http/RequestPublishers.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.net.http/share/classes/jdk/internal/net/http/RequestPublishers.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public boolean hasNext();</li>
+      <li class="list-group-item">public ByteBuffer next();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/classfile/Utility.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/classfile/Utility.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void write(final char[] cbuf, final int off, final int len) throws IOException;</li>
+      <li class="list-group-item">public void write(final int b) throws IOException;</li>
+      <li class="list-group-item">public static String accessToString(final int accessFlags);</li>
+      <li class="list-group-item">public static String accessToString(final int accessFlags, final boolean forClass);</li>
+      <li class="list-group-item">public static String classOrInterface(final int accessFlags);</li>
+      <li class="list-group-item">public static int clearBit(final int flag, final int i);</li>
+      <li class="list-group-item">public static String codeToString(final byte[] code, final ConstantPool constantPool, final int index, final int length);</li>
+      <li class="list-group-item">public static String codeToString(final byte[] code, final ConstantPool constantPool, final int index, final int length, final boolean verbose);</li>
+      <li class="list-group-item">public static String codeToString(final ByteSequence bytes, final ConstantPool constantPool) throws IOException;</li>
+      <li class="list-group-item">public static String codeToString(final ByteSequence bytes, final ConstantPool constantPool, final boolean verbose) throws IOException;</li>
+      <li class="list-group-item">public static String compactClassName(final String str);</li>
+      <li class="list-group-item">public static String compactClassName(final String str, final boolean chopit);</li>
+      <li class="list-group-item">public static String compactClassName(String str, final String prefix, final boolean chopit);</li>
+      <li class="list-group-item">public static byte[] decode(final String s, final boolean uncompress) throws IOException;</li>
+      <li class="list-group-item">public static String encode(byte[] bytes, final boolean compress) throws IOException;</li>
+      <li class="list-group-item">public static String fillup(final String str, final int length, final boolean leftJustify, final char fill);</li>
+      <li class="list-group-item">public static String format(final int i, final int length, final boolean leftJustify, final char fill);</li>
+      <li class="list-group-item">public static String getSignature(String type);</li>
+      <li class="list-group-item">public static boolean isJavaIdentifierPart(final char ch);</li>
+      <li class="list-group-item">public static boolean isSet(final int flag, final int i);</li>
+      <li class="list-group-item">public static String[] methodSignatureArgumentTypes(final String signature) throws ClassFormatException;</li>
+      <li class="list-group-item">public static String[] methodSignatureArgumentTypes(final String signature, final boolean chopit) throws ClassFormatException;</li>
+      <li class="list-group-item">public static String methodSignatureReturnType(final String signature) throws ClassFormatException;</li>
+      <li class="list-group-item">public static String methodSignatureReturnType(final String signature, final boolean chopit) throws ClassFormatException;</li>
+      <li class="list-group-item">public static String methodSignatureToString(final String signature, final String name, final String access);</li>
+      <li class="list-group-item">public static String methodSignatureToString(final String signature, final String name, final String access, final boolean chopit);</li>
+      <li class="list-group-item">public static String methodSignatureToString(final String signature, final String name, final String access, final boolean chopit, final LocalVariableTable vars) throws ClassFormatException;</li>
+      <li class="list-group-item">public static String methodTypeToSignature(final String ret, final String[] argv) throws ClassFormatException;</li>
+      <li class="list-group-item">public static String packageToPath(final String name);</li>
+      <li class="list-group-item">public static String pathToPackage(final String str);</li>
+      <li class="list-group-item">public static String printArray(final Object[] obj);</li>
+      <li class="list-group-item">public static String printArray(final Object[] obj, final boolean braces);</li>
+      <li class="list-group-item">public static String printArray(final Object[] obj, final boolean braces, final boolean quote);</li>
+      <li class="list-group-item">public static void printArray(final PrintStream out, final Object[] obj);</li>
+      <li class="list-group-item">public static void printArray(final PrintWriter out, final Object[] obj);</li>
+      <li class="list-group-item">public static String replace(String str, final String old, final String new_);</li>
+      <li class="list-group-item">public static short searchOpcode(String name);</li>
+      <li class="list-group-item">public static int setBit(final int flag, final int i);</li>
+      <li class="list-group-item">public static String signatureToString(final String signature);</li>
+      <li class="list-group-item">public static String signatureToString(final String signature, final boolean chopit);</li>
+      <li class="list-group-item">public static String toHexString(final byte[] bytes);</li>
+      <li class="list-group-item">public static byte typeOfMethodSignature(final String signature) throws ClassFormatException;</li>
+      <li class="list-group-item">public static byte typeOfSignature(final String signature) throws ClassFormatException;</li>
+      <li class="list-group-item">public static String typeSignatureToString(final String signature, final boolean chopit) throws ClassFormatException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/BranchInstruction.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/BranchInstruction.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static void notifyTarget(final InstructionHandle oldIh, final InstructionHandle newIh, final InstructionTargeter t);</li>
+      <li class="list-group-item">void dispose();</li>
+      <li class="list-group-item">public void dump(final DataOutputStream out) throws IOException;</li>
+      <li class="list-group-item">public final int getIndex();</li>
+      <li class="list-group-item">public InstructionHandle getTarget();</li>
+      <li class="list-group-item">protected int getTargetOffset();</li>
+      <li class="list-group-item">protected int getTargetOffset(final InstructionHandle target);</li>
+      <li class="list-group-item">protected void initFromFile(final ByteSequence bytes, final boolean wide) throws IOException;</li>
+      <li class="list-group-item">protected void setIndex(final int index);</li>
+      <li class="list-group-item">void setOpcode(final short opcode);</li>
+      <li class="list-group-item">public void setTarget(final InstructionHandle target);</li>
+      <li class="list-group-item">public String toString(final boolean verbose);</li>
+      <li class="list-group-item">protected int updatePosition(final int offset, final int maxOffset);</li>
+      <li class="list-group-item">public void updateTarget(final InstructionHandle oldIh, final InstructionHandle newIh);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/ClassGen.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/ClassGen.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static BCELComparator getComparator();</li>
+      <li class="list-group-item">public static void setComparator(final BCELComparator comparator);</li>
+      <li class="list-group-item">public ClassGen(final JavaClass clazz) {</li>
+      <li class="list-group-item">public ClassGen(final String className, final String superClassName, final String fileName, final int accessFlags, final String[] interfaces, final ConstantPoolGen cp) {</li>
+      <li class="list-group-item">public void addAnnotationEntry(final AnnotationEntryGen a);</li>
+      <li class="list-group-item">public void addAttribute(final Attribute a);</li>
+      <li class="list-group-item">public void addEmptyConstructor(final int accessFlags);</li>
+      <li class="list-group-item">public void addField(final Field f);</li>
+      <li class="list-group-item">public void addObserver(final ClassObserver o);</li>
+      <li class="list-group-item">public Object clone();</li>
+      <li class="list-group-item">public boolean equals(final Object obj);</li>
+      <li class="list-group-item">public AnnotationEntryGen[] getAnnotationEntries();</li>
+      <li class="list-group-item">public Attribute[] getAttributes();</li>
+      <li class="list-group-item">public int getClassNameIndex();</li>
+      <li class="list-group-item">public ConstantPoolGen getConstantPool();</li>
+      <li class="list-group-item">public Field[] getFields();</li>
+      <li class="list-group-item">public JavaClass getJavaClass();</li>
+      <li class="list-group-item">public int getMajor();</li>
+      <li class="list-group-item">public Method getMethodAt(final int pos);</li>
+      <li class="list-group-item">public Method[] getMethods();</li>
+      <li class="list-group-item">public int getMinor();</li>
+      <li class="list-group-item">public String getSuperclassName();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public void removeAttribute(final Attribute a);</li>
+      <li class="list-group-item">public void removeField(final Field f);</li>
+      <li class="list-group-item">public void removeInterface(final String name);</li>
+      <li class="list-group-item">public void removeMethod(final Method m);</li>
+      <li class="list-group-item">public void replaceField(final Field old, final Field newField);</li>
+      <li class="list-group-item">public void replaceMethod(final Method old, final Method newMethod);</li>
+      <li class="list-group-item">public void setClassName(final String name);</li>
+      <li class="list-group-item">public void setClassNameIndex(final int classNameIndex);</li>
+      <li class="list-group-item">public void setConstantPool(final ConstantPoolGen constantPool);</li>
+      <li class="list-group-item">public void setMajor(final int major);</li>
+      <li class="list-group-item">public void setMethodAt(final Method method, final int pos);</li>
+      <li class="list-group-item">public void setMethods(final Method[] methods);</li>
+      <li class="list-group-item">public void setMinor(final int minor);</li>
+      <li class="list-group-item">public void setSuperclassName(final String name);</li>
+      <li class="list-group-item">public void setSuperclassNameIndex(final int superclassNameIndex);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/CodeExceptionGen.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/CodeExceptionGen.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Object clone();</li>
+      <li class="list-group-item">public CodeException getCodeException(final ConstantPoolGen cp);</li>
+      <li class="list-group-item">public InstructionHandle getStartPC();</li>
+      <li class="list-group-item">public void setCatchType(final ObjectType catchType);</li>
+      <li class="list-group-item">public void setEndPC(final InstructionHandle endPc);</li>
+      <li class="list-group-item">public void setHandlerPC(final InstructionHandle handlerPc);</li>
+      <li class="list-group-item">public void setStartPC(final InstructionHandle startPc);</li>
+      <li class="list-group-item">public void updateTarget(final InstructionHandle oldIh, final InstructionHandle newIh);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/InstructionList.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/InstructionList.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static InstructionHandle findHandle(final InstructionHandle[] ihs, final int[] pos, final int count, final int target);</li>
+      <li class="list-group-item">public InstructionList(final BranchInstruction i) {</li>
+      <li class="list-group-item">public InstructionList(final byte[] code) {</li>
+      <li class="list-group-item">public InstructionList(final CompoundInstruction c) {</li>
+      <li class="list-group-item">public void addObserver(final InstructionListObserver o);</li>
+      <li class="list-group-item">public BranchHandle append(final BranchInstruction i);</li>
+      <li class="list-group-item">public InstructionHandle append(final CompoundInstruction c);</li>
+      <li class="list-group-item">public InstructionHandle append(final Instruction i);</li>
+      <li class="list-group-item">public InstructionHandle append(final Instruction i, final CompoundInstruction c);</li>
+      <li class="list-group-item">public InstructionHandle append(final Instruction i, final Instruction j);</li>
+      <li class="list-group-item">public BranchHandle append(final InstructionHandle ih, final BranchInstruction i);</li>
+      <li class="list-group-item">public InstructionHandle append(final InstructionHandle ih, final InstructionList il);</li>
+      <li class="list-group-item">public InstructionHandle append(final InstructionList il);</li>
+      <li class="list-group-item">public boolean contains(final Instruction i);</li>
+      <li class="list-group-item">public boolean contains(final InstructionHandle i);</li>
+      <li class="list-group-item">public InstructionList copy();</li>
+      <li class="list-group-item">public void delete(final Instruction i) throws TargetLostException;</li>
+      <li class="list-group-item">public void delete(final Instruction from, final Instruction to) throws TargetLostException;</li>
+      <li class="list-group-item">public void delete(final InstructionHandle ih) throws TargetLostException;</li>
+      <li class="list-group-item">public void delete(final InstructionHandle from, final InstructionHandle to) throws TargetLostException;</li>
+      <li class="list-group-item">public void dispose();</li>
+      <li class="list-group-item">public InstructionHandle findHandle(final int pos);</li>
+      <li class="list-group-item">public byte[] getByteCode();</li>
+      <li class="list-group-item">public InstructionHandle getEnd();</li>
+      <li class="list-group-item">public InstructionHandle[] getInstructionHandles();</li>
+      <li class="list-group-item">public int[] getInstructionPositions();</li>
+      <li class="list-group-item">public Instruction[] getInstructions();</li>
+      <li class="list-group-item">public int getLength();</li>
+      <li class="list-group-item">public InstructionHandle getStart();</li>
+      <li class="list-group-item">public BranchHandle insert(final BranchInstruction i);</li>
+      <li class="list-group-item">public InstructionHandle insert(final CompoundInstruction c);</li>
+      <li class="list-group-item">public InstructionHandle insert(final Instruction i);</li>
+      <li class="list-group-item">public InstructionHandle insert(final Instruction i, final CompoundInstruction c);</li>
+      <li class="list-group-item">public InstructionHandle insert(final Instruction i, final Instruction j);</li>
+      <li class="list-group-item">public InstructionHandle insert(final Instruction i, final InstructionList il);</li>
+      <li class="list-group-item">public BranchHandle insert(final InstructionHandle ih, final BranchInstruction i);</li>
+      <li class="list-group-item">public InstructionHandle insert(final InstructionHandle ih, final CompoundInstruction c);</li>
+      <li class="list-group-item">public InstructionHandle insert(final InstructionHandle ih, final Instruction i);</li>
+      <li class="list-group-item">public boolean isEmpty();</li>
+      <li class="list-group-item">public Iterator<InstructionHandle> iterator();</li>
+      <li class="list-group-item">public void move(final InstructionHandle ih, final InstructionHandle target);</li>
+      <li class="list-group-item">public void redirectBranches(final InstructionHandle oldTarget, final InstructionHandle newTarget);</li>
+      <li class="list-group-item">public void redirectExceptionHandlers(final CodeExceptionGen[] exceptions, final InstructionHandle oldTarget, final InstructionHandle newTarget);</li>
+      <li class="list-group-item">public void redirectLocalVariables(final LocalVariableGen[] lg, final InstructionHandle oldTarget, final InstructionHandle newTarget);</li>
+      <li class="list-group-item">public void removeObserver(final InstructionListObserver o);</li>
+      <li class="list-group-item">public void replaceConstantPool(final ConstantPoolGen oldCp, final ConstantPoolGen newCp);</li>
+      <li class="list-group-item">public int size();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/InstructionTargeter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/InstructionTargeter.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">void updateTarget(InstructionHandle oldIh, InstructionHandle newIh) throws ClassGenException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/LineNumberGen.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/LineNumberGen.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public LineNumberGen(final InstructionHandle ih, final int srcLine) {</li>
+      <li class="list-group-item">public Object clone();</li>
+      <li class="list-group-item">public InstructionHandle getInstruction();</li>
+      <li class="list-group-item">public int getSourceLine();</li>
+      <li class="list-group-item">public void setSourceLine(final int srcLine);</li>
+      <li class="list-group-item">public void updateTarget(final InstructionHandle oldIh, final InstructionHandle newIh);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/LocalVariableGen.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/LocalVariableGen.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Object clone();</li>
+      <li class="list-group-item">public boolean containsTarget(final InstructionHandle ih);</li>
+      <li class="list-group-item">void dispose();</li>
+      <li class="list-group-item">public boolean equals(final Object o);</li>
+      <li class="list-group-item">public InstructionHandle getEnd();</li>
+      <li class="list-group-item">public int getIndex();</li>
+      <li class="list-group-item">public boolean getLiveToEnd();</li>
+      <li class="list-group-item">public String getName();</li>
+      <li class="list-group-item">public int getOrigIndex();</li>
+      <li class="list-group-item">public InstructionHandle getStart();</li>
+      <li class="list-group-item">public Type getType();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public void setEnd(final InstructionHandle end);</li>
+      <li class="list-group-item">public void setLiveToEnd(final boolean liveToEnd);</li>
+      <li class="list-group-item">public void setStart(final InstructionHandle start);</li>
+      <li class="list-group-item">public void updateTarget(final InstructionHandle oldIh, final InstructionHandle newIh);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/Select.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/generic/Select.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">protected Object clone() throws CloneNotSupportedException;</li>
+      <li class="list-group-item">void dispose();</li>
+      <li class="list-group-item">public void dump(final DataOutputStream out) throws IOException;</li>
+      <li class="list-group-item">final int getFixedLength();</li>
+      <li class="list-group-item">public int[] getIndices();</li>
+      <li class="list-group-item">final int getIndices(final int index);</li>
+      <li class="list-group-item">final int getMatch(final int index);</li>
+      <li class="list-group-item">final int getMatchLength();</li>
+      <li class="list-group-item">final int getPadding();</li>
+      <li class="list-group-item">final InstructionHandle getTarget(final int index);</li>
+      <li class="list-group-item">protected void initFromFile(final ByteSequence bytes, final boolean wide) throws IOException;</li>
+      <li class="list-group-item">final void setFixedLength(final int fixedLength);</li>
+      <li class="list-group-item">final int setIndices(final int i, final int value);</li>
+      <li class="list-group-item">final void setIndices(final int[] array);</li>
+      <li class="list-group-item">final void setMatches(final int[] array);</li>
+      <li class="list-group-item">final int setMatchLength(final int matchLength);</li>
+      <li class="list-group-item">public void setTarget(final int i, final InstructionHandle target);</li>
+      <li class="list-group-item">public String toString(final boolean verbose);</li>
+      <li class="list-group-item">protected int updatePosition(final int offset, final int maxOffset);</li>
+      <li class="list-group-item">public void updateTarget(final InstructionHandle oldIh, final InstructionHandle newIh);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.compiler/share/classes/com/sun/source/tree/Tree.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.compiler/share/classes/com/sun/source/tree/Tree.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">TEMPLATE(StringTemplateTree.class),</li>
+      <li class="list-group-item">ANY_PATTERN(AnyPatternTree.class),</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Name getSimpleName();</li>
+      <li class="list-group-item">public boolean isUnnamed();</li>
+      <li class="list-group-item">public boolean isUnnamedVariable();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Type.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Type.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Type(TypeSymbol tsym, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">protected Type cloneWithMetadata(List<TypeMetadata> metadata);</li>
+      <li class="list-group-item">public List<TypeMetadata> getMetadata();</li>
+      <li class="list-group-item">public <M extends TypeMetadata> M getMetadata(Class<M> metadataClass);</li>
+      <li class="list-group-item">public <M extends TypeMetadata, Z> Z getMetadata(Class<M> metadataClass, Function<M, Z> metadataFunc, Z defaultValue);</li>
+      <li class="list-group-item">public Type addMetadata(TypeMetadata md);</li>
+      <li class="list-group-item">public Type dropMetadata(Class<? extends TypeMetadata> metadataClass);</li>
+      <li class="list-group-item">public Type preannotatedType();</li>
+      <li class="list-group-item">protected JCPrimitiveType cloneWithMetadata(List<TypeMetadata> md);</li>
+      <li class="list-group-item">public WildcardType(Type type, BoundKind kind, TypeSymbol tsym, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">public WildcardType(Type type, BoundKind kind, TypeSymbol tsym, TypeVar bound, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">protected WildcardType cloneWithMetadata(List<TypeMetadata> md);</li>
+      <li class="list-group-item">public ClassType(Type outer, List<Type> typarams, TypeSymbol tsym, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">protected ClassType cloneWithMetadata(List<TypeMetadata> md);</li>
+      <li class="list-group-item">public ErasedClassType(Type outer, TypeSymbol tsym, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">public ArrayType(Type elemtype, TypeSymbol arrayClass, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">protected ArrayType cloneWithMetadata(List<TypeMetadata> md);</li>
+      <li class="list-group-item">public TypeVar(TypeSymbol tsym, Type bound, Type lower, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">protected TypeVar cloneWithMetadata(List<TypeMetadata> md);</li>
+      <li class="list-group-item">public CapturedType(TypeSymbol tsym, Type bound, Type upper, Type lower, WildcardType wildcard, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">protected CapturedType cloneWithMetadata(List<TypeMetadata> md);</li>
+      <li class="list-group-item">public DelegatedType(TypeTag tag, Type qtype, List<TypeMetadata> metadata) {</li>
+      <li class="list-group-item">protected ErrorType cloneWithMetadata(List<TypeMetadata> md);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static boolean unguardedCase(JCCase cse);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static SecretKey pbeKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, char[] password, byte[] salt, int iterationCount);</li>
+      <li class="list-group-item">public char[] getPassword();</li>
+      <li class="list-group-item">public byte[] getSalt();</li>
+      <li class="list-group-item">public int getIterationCount();</li>
+      <li class="list-group-item">void clearPassword();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/wrapper/Functions.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/wrapper/Functions.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static int getLength(byte[] value);</li>
+      <li class="list-group-item">public static String getPrfName(long id);</li>
+      <li class="list-group-item">public static long getPrfId(String name);</li>
+      <li class="list-group-item">public static String getParamSourcesName(long id);</li>
+      <li class="list-group-item">public static long getParamSourcesId(String name);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/BytecodeFrame.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/BytecodeFrame.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static boolean isPlaceholderBci(int bci);</li>
+      <li class="list-group-item">public static String getPlaceholderBciName(int bci);</li>
+      <li class="list-group-item">public BytecodeFrame(BytecodeFrame caller, ResolvedJavaMethod method, int bci, boolean rethrowException, boolean duringCall, JavaValue[] values, JavaKind[] slotKinds, int numLocals, int numStack, int numLocks) {</li>
+      <li class="list-group-item">public void verifyInvariants();</li>
+      <li class="list-group-item">public boolean validateFormat();</li>
+      <li class="list-group-item">public JavaKind getLocalValueKind(int i);</li>
+      <li class="list-group-item">public JavaKind getStackValueKind(int i);</li>
+      <li class="list-group-item">public JavaValue getLocalValue(int i);</li>
+      <li class="list-group-item">public JavaValue getStackValue(int i);</li>
+      <li class="list-group-item">public JavaValue getLockValue(int i);</li>
+      <li class="list-group-item">public BytecodeFrame caller();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/BytecodePosition.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/BytecodePosition.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public BytecodePosition(BytecodePosition caller, ResolvedJavaMethod method, int bci) {</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public int getBCI();</li>
+      <li class="list-group-item">public ResolvedJavaMethod getMethod();</li>
+      <li class="list-group-item">public BytecodePosition getCaller();</li>
+      <li class="list-group-item">public BytecodePosition addCaller(BytecodePosition link);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/DebugInfo.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/DebugInfo.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public DebugInfo(BytecodePosition codePos, VirtualObject[] virtualObjectMapping) {</li>
+      <li class="list-group-item">public DebugInfo(BytecodePosition codePos) {</li>
+      <li class="list-group-item">public void setReferenceMap(ReferenceMap referenceMap);</li>
+      <li class="list-group-item">public boolean hasFrame();</li>
+      <li class="list-group-item">public BytecodeFrame frame();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public BytecodePosition getBytecodePosition();</li>
+      <li class="list-group-item">public ReferenceMap getReferenceMap();</li>
+      <li class="list-group-item">public VirtualObject[] getVirtualObjectMapping();</li>
+      <li class="list-group-item">public void setCalleeSaveInfo(RegisterSaveLayout calleeSaveInfo);</li>
+      <li class="list-group-item">public RegisterSaveLayout getCalleeSaveInfo();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/Register.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/Register.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public int encoding();</li>
+      <li class="list-group-item">public RegisterCategory(String name) {</li>
+      <li class="list-group-item">public RegisterCategory(String name, boolean mayContainReference) {</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(Object obj);</li>
+      <li class="list-group-item">public Register(int number, int encoding, String name, RegisterCategory registerCategory) {</li>
+      <li class="list-group-item">public RegisterCategory getRegisterCategory();</li>
+      <li class="list-group-item">public boolean mayContainReference();</li>
+      <li class="list-group-item">public RegisterValue asValue(ValueKind<?> kind);</li>
+      <li class="list-group-item">public RegisterValue asValue();</li>
+      <li class="list-group-item">public boolean isValid();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public int compareTo(Register o);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/RegisterArray.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/RegisterArray.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public RegisterArray(Register... registers) {</li>
+      <li class="list-group-item">public RegisterArray(Collection<Register> registers) {</li>
+      <li class="list-group-item">public int size();</li>
+      <li class="list-group-item">public Register get(int index);</li>
+      <li class="list-group-item">public void addTo(Collection<Register> collection);</li>
+      <li class="list-group-item">public List<Register> asList();</li>
+      <li class="list-group-item">public Register[] toArray();</li>
+      <li class="list-group-item">public Iterator<Register> iterator();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/RegisterSaveLayout.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/RegisterSaveLayout.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public RegisterSaveLayout(Register[] registers, int[] slots) {</li>
+      <li class="list-group-item">public int size();</li>
+      <li class="list-group-item">public int registerToSlot(Register register);</li>
+      <li class="list-group-item">public Map<Register, Integer> registersToSlots(boolean sorted);</li>
+      <li class="list-group-item">public Map<Integer, Register> slotsToRegisters(boolean sorted);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/RegisterValue.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/RegisterValue.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">protected RegisterValue(ValueKind<?> kind, Register register) {</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public Register getRegister();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/StackLockValue.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/StackLockValue.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public StackLockValue(JavaValue object, AllocatableValue slot, boolean eliminated) {</li>
+      <li class="list-group-item">public JavaValue getOwner();</li>
+      <li class="list-group-item">public void setOwner(JavaValue newOwner);</li>
+      <li class="list-group-item">public AllocatableValue getSlot();</li>
+      <li class="list-group-item">public boolean isEliminated();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public void setSlot(AllocatableValue stackSlot);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/StackSlot.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/StackSlot.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static StackSlot get(ValueKind<?> kind, int offset, boolean addFrameSize);</li>
+      <li class="list-group-item">public int getOffset(int totalFrameSize);</li>
+      <li class="list-group-item">public boolean isInCallerFrame();</li>
+      <li class="list-group-item">public int getRawOffset();</li>
+      <li class="list-group-item">public boolean getRawAddFrameSize();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public StackSlot asOutArg();</li>
+      <li class="list-group-item">public StackSlot asInArg();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/VirtualObject.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/VirtualObject.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static VirtualObject get(ResolvedJavaType type, int id);</li>
+      <li class="list-group-item">public static VirtualObject get(ResolvedJavaType type, int id, boolean isAutoBox);</li>
+      <li class="list-group-item">int getOffset(ResolvedJavaField field);</li>
+      <li class="list-group-item">default JavaKind getStorageKind(ResolvedJavaField field);</li>
+      <li class="list-group-item">public void verifyLayout(LayoutVerifier verifier);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public ResolvedJavaType getType();</li>
+      <li class="list-group-item">public JavaValue[] getValues();</li>
+      <li class="list-group-item">public JavaKind getSlotKind(int index);</li>
+      <li class="list-group-item">public int getId();</li>
+      <li class="list-group-item">public boolean isAutoBox();</li>
+      <li class="list-group-item">public void setValues(JavaValue[] values, JavaKind[] slotKinds);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object o);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/Call.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/Call.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Call(InvokeTarget target, int pcOffset, int size, boolean direct, DebugInfo debugInfo) {</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/ConstantReference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/ConstantReference.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public ConstantReference(VMConstant constant) {</li>
+      <li class="list-group-item">public VMConstant getConstant();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/DataPatch.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/DataPatch.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public DataPatch(int pcOffset, Reference reference) {</li>
+      <li class="list-group-item">public DataPatch(int pcOffset, Reference reference, Object note) {</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/DataSectionReference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/DataSectionReference.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public DataSectionReference() {</li>
+      <li class="list-group-item">public int getOffset();</li>
+      <li class="list-group-item">public void setOffset(int offset);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/ExceptionHandler.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/ExceptionHandler.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public ExceptionHandler(int pcOffset, int handlerPos) {</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/Infopoint.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/Infopoint.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Infopoint(int pcOffset, DebugInfo debugInfo, InfopointReason reason) {</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public int compareTo(Infopoint o);</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">protected static void appendDebugInfo(StringBuilder sb, DebugInfo info);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/Mark.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/site/Mark.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Mark(int pcOffset, Object id) {</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotCompressedNullConstant.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotCompressedNullConstant.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public JavaKind getJavaKind();</li>
+      <li class="list-group-item">public boolean isNull();</li>
+      <li class="list-group-item">public boolean isCompressed();</li>
+      <li class="list-group-item">public Constant compress();</li>
+      <li class="list-group-item">public Constant uncompress();</li>
+      <li class="list-group-item">public boolean isDefaultForKind();</li>
+      <li class="list-group-item">public Object asBoxedPrimitive();</li>
+      <li class="list-group-item">public int asInt();</li>
+      <li class="list-group-item">public boolean asBoolean();</li>
+      <li class="list-group-item">public long asLong();</li>
+      <li class="list-group-item">public float asFloat();</li>
+      <li class="list-group-item">public double asDouble();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public String toValueString();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object o);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotMetaspaceConstantImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotMetaspaceConstantImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static HotSpotMetaspaceConstantImpl forMetaspaceObject(MetaspaceObject metaspaceObject, boolean compressed);</li>
+      <li class="list-group-item">static MetaspaceObject getMetaspaceObject(Constant constant);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object o);</li>
+      <li class="list-group-item">public String toValueString();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean isDefaultForKind();</li>
+      <li class="list-group-item">public boolean isCompressed();</li>
+      <li class="list-group-item">public Constant compress();</li>
+      <li class="list-group-item">public Constant uncompress();</li>
+      <li class="list-group-item">public HotSpotResolvedObjectType asResolvedJavaType();</li>
+      <li class="list-group-item">public HotSpotResolvedJavaMethod asResolvedJavaMethod();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotObjectConstantImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotObjectConstantImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public JavaKind getJavaKind();</li>
+      <li class="list-group-item">public boolean isCompressed();</li>
+      <li class="list-group-item">public abstract JavaConstant compress();</li>
+      <li class="list-group-item">public abstract JavaConstant uncompress();</li>
+      <li class="list-group-item">public HotSpotResolvedObjectType getType();</li>
+      <li class="list-group-item">public abstract int getIdentityHashCode();</li>
+      <li class="list-group-item">public JavaConstant getCallSiteTarget(Assumptions assumptions);</li>
+      <li class="list-group-item">public boolean isInternedString();</li>
+      <li class="list-group-item">public <T> T asObject(Class<T> type);</li>
+      <li class="list-group-item">public Object asObject(ResolvedJavaType type);</li>
+      <li class="list-group-item">public boolean isNull();</li>
+      <li class="list-group-item">public boolean isDefaultForKind();</li>
+      <li class="list-group-item">public Object asBoxedPrimitive();</li>
+      <li class="list-group-item">public int asInt();</li>
+      <li class="list-group-item">public boolean asBoolean();</li>
+      <li class="list-group-item">public long asLong();</li>
+      <li class="list-group-item">public float asFloat();</li>
+      <li class="list-group-item">public double asDouble();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object o);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public String toValueString();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public JavaConstant readFieldValue(HotSpotResolvedJavaField field);</li>
+      <li class="list-group-item">public ResolvedJavaType asJavaType();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotReferenceMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotReferenceMap.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public HotSpotReferenceMap(Location[] objects, Location[] derivedBase, int[] sizeInBytes, int maxRegisterSize) {</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotResolvedJavaFieldImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotResolvedJavaFieldImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public int getModifiers();</li>
+      <li class="list-group-item">public boolean isInternal();</li>
+      <li class="list-group-item">public boolean isInObject(JavaConstant object);</li>
+      <li class="list-group-item">public HotSpotResolvedObjectTypeImpl getDeclaringClass();</li>
+      <li class="list-group-item">public String getName();</li>
+      <li class="list-group-item">public JavaType getType();</li>
+      <li class="list-group-item">public int getOffset();</li>
+      <li class="list-group-item">int getIndex();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean isSynthetic();</li>
+      <li class="list-group-item">public boolean isStable();</li>
+      <li class="list-group-item">public Annotation[] getAnnotations();</li>
+      <li class="list-group-item">public Annotation[] getDeclaredAnnotations();</li>
+      <li class="list-group-item">public <T extends Annotation> T getAnnotation(Class<T> annotationClass);</li>
+      <li class="list-group-item">public JavaConstant getConstantValue();</li>
+      <li class="list-group-item">public AnnotationData getAnnotationData(ResolvedJavaType annotationType);</li>
+      <li class="list-group-item">public List<AnnotationData> getAnnotationData(ResolvedJavaType type1, ResolvedJavaType type2, ResolvedJavaType... types);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotResolvedJavaMethodImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotResolvedJavaMethodImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public String getName();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public HotSpotResolvedObjectTypeImpl getDeclaringClass();</li>
+      <li class="list-group-item">long getMethodPointer();</li>
+      <li class="list-group-item">public long getMetadataHandle();</li>
+      <li class="list-group-item">public Constant getEncoding();</li>
+      <li class="list-group-item">public int getAllModifiers();</li>
+      <li class="list-group-item">public int getModifiers();</li>
+      <li class="list-group-item">public boolean canBeStaticallyBound();</li>
+      <li class="list-group-item">public byte[] getCode();</li>
+      <li class="list-group-item">public int getCodeSize();</li>
+      <li class="list-group-item">public ExceptionHandler[] getExceptionHandlers();</li>
+      <li class="list-group-item">public boolean isCallerSensitive();</li>
+      <li class="list-group-item">public boolean isForceInline();</li>
+      <li class="list-group-item">public boolean hasReservedStackAccess();</li>
+      <li class="list-group-item">public void setNotInlinableOrCompilable();</li>
+      <li class="list-group-item">public boolean ignoredBySecurityStackWalk();</li>
+      <li class="list-group-item">public boolean isClassInitializer();</li>
+      <li class="list-group-item">public boolean isConstructor();</li>
+      <li class="list-group-item">public int getMaxLocals();</li>
+      <li class="list-group-item">public int getMaxStackSize();</li>
+      <li class="list-group-item">public StackTraceElement asStackTraceElement(int bci);</li>
+      <li class="list-group-item">public ResolvedJavaMethod uniqueConcreteMethod(HotSpotResolvedObjectType receiver);</li>
+      <li class="list-group-item">public HotSpotSignature getSignature();</li>
+      <li class="list-group-item">public boolean hasCompiledCode();</li>
+      <li class="list-group-item">public boolean hasCompiledCodeAtLevel(int level);</li>
+      <li class="list-group-item">public ProfilingInfo getProfilingInfo(boolean includeNormal, boolean includeOSR);</li>
+      <li class="list-group-item">public void reprofile();</li>
+      <li class="list-group-item">public ConstantPool getConstantPool();</li>
+      <li class="list-group-item">public Parameter[] getParameters();</li>
+      <li class="list-group-item">public Annotation[][] getParameterAnnotations();</li>
+      <li class="list-group-item">public Annotation[] getAnnotations();</li>
+      <li class="list-group-item">public Annotation[] getDeclaredAnnotations();</li>
+      <li class="list-group-item">public <T extends Annotation> T getAnnotation(Class<T> annotationClass);</li>
+      <li class="list-group-item">public boolean isBridge();</li>
+      <li class="list-group-item">public boolean isSynthetic();</li>
+      <li class="list-group-item">public boolean isVarArgs();</li>
+      <li class="list-group-item">public boolean isDefault();</li>
+      <li class="list-group-item">public Type[] getGenericParameterTypes();</li>
+      <li class="list-group-item">public boolean canBeInlined();</li>
+      <li class="list-group-item">public boolean hasNeverInlineDirective();</li>
+      <li class="list-group-item">public boolean shouldBeInlined();</li>
+      <li class="list-group-item">public LineNumberTable getLineNumberTable();</li>
+      <li class="list-group-item">public LocalVariableTable getLocalVariableTable();</li>
+      <li class="list-group-item">public int vtableEntryOffset(ResolvedJavaType resolved);</li>
+      <li class="list-group-item">public boolean isInVirtualMethodTable(ResolvedJavaType resolved);</li>
+      <li class="list-group-item">public SpeculationLog getSpeculationLog();</li>
+      <li class="list-group-item">public int intrinsicId();</li>
+      <li class="list-group-item">public boolean isIntrinsicCandidate();</li>
+      <li class="list-group-item">public int allocateCompileId(int entryBCI);</li>
+      <li class="list-group-item">public boolean hasCodeAtLevel(int entryBCI, int level);</li>
+      <li class="list-group-item">public int methodIdnum();</li>
+      <li class="list-group-item">public AnnotationData getAnnotationData(ResolvedJavaType type);</li>
+      <li class="list-group-item">public List<AnnotationData> getAnnotationData(ResolvedJavaType type1, ResolvedJavaType type2, ResolvedJavaType... types);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotSignature.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotSignature.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public HotSpotSignature(HotSpotJVMCIRuntime runtime, String signature) {</li>
+      <li class="list-group-item">public HotSpotSignature(HotSpotJVMCIRuntime runtime, ResolvedJavaType returnType, ResolvedJavaType... parameterTypes) {</li>
+      <li class="list-group-item">public int getParameterCount(boolean withReceiver);</li>
+      <li class="list-group-item">public JavaKind getParameterKind(int index);</li>
+      <li class="list-group-item">public JavaType getParameterType(int index, ResolvedJavaType accessingClass);</li>
+      <li class="list-group-item">public String toMethodDescriptor();</li>
+      <li class="list-group-item">public JavaKind getReturnKind();</li>
+      <li class="list-group-item">public JavaType getReturnType(ResolvedJavaType accessingClass);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public int hashCode();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/VMIntrinsicMethod.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/VMIntrinsicMethod.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/AbstractJavaProfile.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/AbstractJavaProfile.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public AbstractJavaProfile(double notRecordedProbability, T[] pitems) {</li>
+      <li class="list-group-item">public double getNotRecordedProbability();</li>
+      <li class="list-group-item">protected T[] getItems();</li>
+      <li class="list-group-item">public T findEntry(ResolvedJavaType type);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean isIncluded(U item);</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public int hashCode();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/AbstractProfiledItem.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/AbstractProfiledItem.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public AbstractProfiledItem(T item, double probability) {</li>
+      <li class="list-group-item">protected T getItem();</li>
+      <li class="list-group-item">public double getProbability();</li>
+      <li class="list-group-item">public int compareTo(AbstractProfiledItem<?> o);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public abstract String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/Assumptions.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/Assumptions.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public AssumptionResult(T result, Assumption... assumptions) {</li>
+      <li class="list-group-item">public AssumptionResult(T result) {</li>
+      <li class="list-group-item">public T getResult();</li>
+      <li class="list-group-item">public boolean isAssumptionFree();</li>
+      <li class="list-group-item">public void add(AssumptionResult<T> other);</li>
+      <li class="list-group-item">public boolean canRecordTo(Assumptions target);</li>
+      <li class="list-group-item">public void recordTo(Assumptions target);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public NoFinalizableSubclass(ResolvedJavaType receiverType) {</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public ConcreteSubtype(ResolvedJavaType context, ResolvedJavaType subtype) {</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public LeafType(ResolvedJavaType context) {</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public ConcreteMethod(ResolvedJavaMethod method, ResolvedJavaType context, ResolvedJavaMethod impl) {</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public CallSiteTargetValue(JavaConstant callSite, JavaConstant methodHandle) {</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean isEmpty();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public Iterator<Assumption> iterator();</li>
+      <li class="list-group-item">public void recordNoFinalizableSubclassAssumption(ResolvedJavaType receiverType);</li>
+      <li class="list-group-item">public void recordConcreteSubtype(ResolvedJavaType context, ResolvedJavaType subtype);</li>
+      <li class="list-group-item">public void recordConcreteMethod(ResolvedJavaMethod method, ResolvedJavaType context, ResolvedJavaMethod impl);</li>
+      <li class="list-group-item">public void record(Assumption assumption);</li>
+      <li class="list-group-item">public Assumption[] toArray();</li>
+      <li class="list-group-item">public void record(Assumptions other);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/ExceptionHandler.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/ExceptionHandler.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public ExceptionHandler(int startBCI, int endBCI, int catchBCI, int catchTypeCPI, JavaType catchType) {</li>
+      <li class="list-group-item">public int getStartBCI();</li>
+      <li class="list-group-item">public int getEndBCI();</li>
+      <li class="list-group-item">public int getHandlerBCI();</li>
+      <li class="list-group-item">public int catchTypeCPI();</li>
+      <li class="list-group-item">public boolean isCatchAll();</li>
+      <li class="list-group-item">public JavaType getCatchType();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public int hashCode();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/JavaTypeProfile.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/JavaTypeProfile.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public JavaTypeProfile(TriState nullSeen, double notRecordedProbability, ProfiledType[] pitems) {</li>
+      <li class="list-group-item">public TriState getNullSeen();</li>
+      <li class="list-group-item">public ProfiledType[] getTypes();</li>
+      <li class="list-group-item">public JavaTypeProfile restrict(JavaTypeProfile otherProfile);</li>
+      <li class="list-group-item">public JavaTypeProfile restrict(ResolvedJavaType declaredType, boolean nonNull);</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object other);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public ProfiledType(ResolvedJavaType type, double probability) {</li>
+      <li class="list-group-item">public ResolvedJavaType getType();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean allTypesRecorded();</li>
+      <li class="list-group-item">public ResolvedJavaType asSingleType();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/Local.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/Local.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Local(String name, JavaType type, int startBci, int endBci, int slot) {</li>
+      <li class="list-group-item">public int getStartBCI();</li>
+      <li class="list-group-item">public int getEndBCI();</li>
+      <li class="list-group-item">public String getName();</li>
+      <li class="list-group-item">public JavaType getType();</li>
+      <li class="list-group-item">public int getSlot();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/NullConstant.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/NullConstant.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">protected NullConstant() {</li>
+      <li class="list-group-item">public JavaKind getJavaKind();</li>
+      <li class="list-group-item">public boolean isNull();</li>
+      <li class="list-group-item">public boolean isDefaultForKind();</li>
+      <li class="list-group-item">public Object asBoxedPrimitive();</li>
+      <li class="list-group-item">public int asInt();</li>
+      <li class="list-group-item">public boolean asBoolean();</li>
+      <li class="list-group-item">public long asLong();</li>
+      <li class="list-group-item">public float asFloat();</li>
+      <li class="list-group-item">public double asDouble();</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public String toValueString();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object o);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/PrimitiveConstant.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/PrimitiveConstant.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">protected PrimitiveConstant(JavaKind kind, long primitive) {</li>
+      <li class="list-group-item">static PrimitiveConstant forTypeChar(char kind, long i);</li>
+      <li class="list-group-item">public long getRawValue();</li>
+      <li class="list-group-item">public JavaKind getJavaKind();</li>
+      <li class="list-group-item">public boolean isNull();</li>
+      <li class="list-group-item">public boolean isDefaultForKind();</li>
+      <li class="list-group-item">public boolean asBoolean();</li>
+      <li class="list-group-item">public int asInt();</li>
+      <li class="list-group-item">public long asLong();</li>
+      <li class="list-group-item">public float asFloat();</li>
+      <li class="list-group-item">public double asDouble();</li>
+      <li class="list-group-item">public Object asBoxedPrimitive();</li>
+      <li class="list-group-item">public int getSerializedSize();</li>
+      <li class="list-group-item">public void serialize(ByteBuffer buffer);</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object o);</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/UnresolvedJavaField.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/UnresolvedJavaField.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public UnresolvedJavaField(JavaType holder, String name, JavaType type) {</li>
+      <li class="list-group-item">public String getName();</li>
+      <li class="list-group-item">public JavaType getType();</li>
+      <li class="list-group-item">public JavaType getDeclaringClass();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public ResolvedJavaField resolve(ResolvedJavaType accessingClass);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/UnresolvedJavaMethod.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/UnresolvedJavaMethod.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public UnresolvedJavaMethod(String name, Signature signature, JavaType holder) {</li>
+      <li class="list-group-item">public String getName();</li>
+      <li class="list-group-item">public Signature getSignature();</li>
+      <li class="list-group-item">public JavaType getDeclaringClass();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/UnresolvedJavaType.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/UnresolvedJavaType.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public String getName();</li>
+      <li class="list-group-item">public static UnresolvedJavaType create(String name);</li>
+      <li class="list-group-item">public JavaType getComponentType();</li>
+      <li class="list-group-item">public JavaType getArrayClass();</li>
+      <li class="list-group-item">public JavaKind getJavaKind();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public ResolvedJavaType resolve(ResolvedJavaType accessingClass);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/Value.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/meta/Value.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public boolean equals(Object other);</li>
+      <li class="list-group-item">protected Value(ValueKind<?> valueKind) {</li>
+      <li class="list-group-item">protected final String getKindSuffix();</li>
+      <li class="list-group-item">public final ValueKind<?> getValueKind();</li>
+      <li class="list-group-item">public final <K extends ValueKind<K>> K getValueKind(Class<K> cls);</li>
+      <li class="list-group-item">public final PlatformKind getPlatformKind();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(@Nullable Object obj);</li>
+      <li class="list-group-item">public final boolean identityEquals(Value other);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlLinkInfo.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlLinkInfo.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public HtmlLinkInfo forType(TypeMirror type);</li>
+      <li class="list-group-item">public void setTypeElement(TypeElement typeElement);</li>
+      <li class="list-group-item">public TypeElement getTypeElement();</li>
+      <li class="list-group-item">public ExecutableElement getExecutableElement();</li>
+      <li class="list-group-item">public TypeMirror getType();</li>
+      <li class="list-group-item">public Content getLabel();</li>
+      <li class="list-group-item">public HtmlStyle getStyle();</li>
+      <li class="list-group-item">public boolean isVarArg();</li>
+      <li class="list-group-item">public HtmlLinkInfo fragment(String fragment);</li>
+      <li class="list-group-item">public String getFragment();</li>
+      <li class="list-group-item">public HtmlLinkInfo addLineBreaksInTypeParameters(boolean addLineBreaksInTypeParameters);</li>
+      <li class="list-group-item">public boolean addLineBreaksInTypeParameters();</li>
+      <li class="list-group-item">public HtmlLinkInfo addLineBreakOpportunitiesInTypeParameters(boolean addLineBreakOpportunities);</li>
+      <li class="list-group-item">public boolean addLineBreakOpportunitiesInTypeParameters();</li>
+      <li class="list-group-item">public HtmlLinkInfo linkToSelf(boolean linkToSelf);</li>
+      <li class="list-group-item">public boolean linkToSelf();</li>
+      <li class="list-group-item">public boolean linkTypeParameters();</li>
+      <li class="list-group-item">public void showTypeBounds(boolean showTypeBounds);</li>
+      <li class="list-group-item">public boolean showTypeBounds();</li>
+      <li class="list-group-item">public HtmlLinkInfo showTypeParameterAnnotations(boolean showTypeParameterAnnotations);</li>
+      <li class="list-group-item">public boolean showTypeParameterAnnotations();</li>
+      <li class="list-group-item">public Element getTargetMember();</li>
+      <li class="list-group-item">public boolean isSkipPreview();</li>
+      <li class="list-group-item">public boolean showTypeParameters();</li>
+      <li class="list-group-item">public Content getClassLinkLabel(BaseConfiguration configuration);</li>
+      <li class="list-group-item">protected Content newContent();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public record OverrideInfo(ExecutableElement overriddenMethod, DeclaredType overriddenMethodOwner) {</li>
+      <li class="list-group-item">public OverrideInfo overriddenMethod(ExecutableElement method);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">List<Element> getMembers(Name simpleName, Kind kind);</li>
+      <li class="list-group-item"><T extends Element> List<T> getMembers(Name simpleName, Kind kind, Class<T> clazz);</li>
+      <li class="list-group-item">List<ExecutableElement> getPropertyMethods(Name simpleName);</li>
+      <li class="list-group-item">private record PropertyMembers(ExecutableElement propertyMethod, VariableElement field, ExecutableElement getter, ExecutableElement setter) {</li>
+      <li class="list-group-item">public ImplementedMethods(ExecutableElement implementer) {</li>
+      <li class="list-group-item">private record OverrideInfo(ExecutableElement overriddenMethod, boolean simpleOverride) {</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public int hashCode();</li>
+      <li class="list-group-item">public boolean equals(Object obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ToolEnvironment.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ToolEnvironment.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">boolean isUnnamed(Symbol sym);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-21/src/utils/IdealGraphVisualizer/Filter/src/main/java/com/sun/hotspot/igv/filter/FilterChain.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-21/src/utils/IdealGraphVisualizer/Filter/src/main/java/com/sun/hotspot/igv/filter/FilterChain.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public FilterChain(String name) {</li>
+      <li class="list-group-item">public void sortBy(List<String> order);</li>
+      <li class="list-group-item">public void applyInOrder(Diagram diagram, FilterChain filterOrder);</li>
+      <li class="list-group-item">public void clearFilters();</li>
+      <li class="list-group-item">public void addFilters(List<Filter> filtersToAdd);</li>
+      <li class="list-group-item">public String getName();</li>
+      <li class="list-group-item">public String toString();</li>
+
+    </ul>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

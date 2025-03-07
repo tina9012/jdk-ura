@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JDK jdk-18 API Changes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+<style>
+  body {
+    background-color: #f8f9fa;
+    padding: 2rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+    border: none;
+  }
+  .card-header {
+    background-color: #3230a1;
+    color: white;
+    font-weight: bold;
+  }
+  .card-header a {
+    color: white;
+  }
+</style>
+
+</head>
+<body>
+<div class="container">
+  <h1>JDK jdk-18 API Changes</h1>
+  <a href="../index.html" class="back-link">← Back to Table of Contents</a>
+  <hr>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/FileInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/FileInputStream.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public long transferTo(OutputStream out) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectInputStream.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public abstract Object get(String name, @Nullable Object val) throws IOException, ClassNotFoundException;</li>
+      <li class="list-group-item">public Object get(String name, Object val) throws ClassNotFoundException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/PrintStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/PrintStream.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Charset charset();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static int divideExact(int x, int y);</li>
+      <li class="list-group-item">public static long divideExact(long x, long y);</li>
+      <li class="list-group-item">public static int floorDivExact(int x, int y);</li>
+      <li class="list-group-item">public static long floorDivExact(long x, long y);</li>
+      <li class="list-group-item">public static int ceilDivExact(int x, int y);</li>
+      <li class="list-group-item">public static long ceilDivExact(long x, long y);</li>
+      <li class="list-group-item">public static long unsignedMultiplyHigh(long x, long y);</li>
+      <li class="list-group-item">public static int ceilDiv(int x, int y);</li>
+      <li class="list-group-item">public static long ceilDiv(long x, int y);</li>
+      <li class="list-group-item">public static long ceilDiv(long x, long y);</li>
+      <li class="list-group-item">public static int ceilMod(int x, int y);</li>
+      <li class="list-group-item">public static int ceilMod(long x, int y);</li>
+      <li class="list-group-item">public static long ceilMod(long x, long y);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static int divideExact(int x, int y);</li>
+      <li class="list-group-item">public static long divideExact(long x, long y);</li>
+      <li class="list-group-item">public static int floorDivExact(int x, int y);</li>
+      <li class="list-group-item">public static long floorDivExact(long x, long y);</li>
+      <li class="list-group-item">public static int ceilDivExact(int x, int y);</li>
+      <li class="list-group-item">public static long ceilDivExact(long x, long y);</li>
+      <li class="list-group-item">public static long unsignedMultiplyHigh(long x, long y);</li>
+      <li class="list-group-item">public static int ceilDiv(int x, int y);</li>
+      <li class="list-group-item">public static long ceilDiv(long x, int y);</li>
+      <li class="list-group-item">public static long ceilDiv(long x, long y);</li>
+      <li class="list-group-item">public static int ceilMod(int x, int y);</li>
+      <li class="list-group-item">public static int ceilMod(long x, int y);</li>
+      <li class="list-group-item">public static long ceilMod(long x, long y);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StringCoding.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StringCoding.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static int implEncodeAsciiArray(char[] sa, int sp, byte[] da, int dp, int len);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static MethodHandle reflectiveInvoker(Class<?> caller);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandles.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandles.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static Object classData(Class<?> c);</li>
+      <li class="list-group-item">ClassDefiner makeHiddenClassDefiner(String name, byte[] bytes, Set<ClassOption> options);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ref/PhantomReference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ref/PhantomReference.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">boolean refersToImpl(T obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ref/Reference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ref/Reference.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">boolean refersToImpl(T obj);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/reflect/Method.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/reflect/Method.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Object invoke(Object obj, Object... args) throws IllegalAccessException, InvocationTargetException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet4AddressImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet4AddressImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public InetAddress[] lookupAllHostAddr(String hostname, LookupPolicy lookupPolicy) throws UnknownHostException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet6AddressImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet6AddressImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public InetAddress[] lookupAllHostAddr(String hostname, LookupPolicy lookupPolicy) throws UnknownHostException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static boolean systemAddressesOrder(int lookupCharacteristics);</li>
+      <li class="list-group-item">static boolean ipv4AddressesFirst(int lookupCharacteristics);</li>
+      <li class="list-group-item">static boolean ipv6AddressesFirst(int lookupCharacteristics);</li>
+      <li class="list-group-item">public Stream<InetAddress> lookupByName(String host, LookupPolicy policy) throws UnknownHostException;</li>
+      <li class="list-group-item">public String lookupByAddress(byte[] addr) throws UnknownHostException;</li>
+      <li class="list-group-item">public HostsFileResolver(String hostsFileName) {</li>
+      <li class="list-group-item">public String lookupByAddress(byte[] addr) throws UnknownHostException;</li>
+      <li class="list-group-item">public Stream<InetAddress> lookupByName(String host, LookupPolicy lookupPolicy) throws UnknownHostException;</li>
+      <li class="list-group-item">static InetAddress[] getAddressesFromNameService(String host) throws UnknownHostException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/ServerSocket.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/ServerSocket.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void setSoTimeout(int timeout) throws SocketException;</li>
+      <li class="list-group-item">public int getSoTimeout() throws IOException;</li>
+      <li class="list-group-item">public void setReceiveBufferSize(int size) throws SocketException;</li>
+      <li class="list-group-item">public int getReceiveBufferSize() throws SocketException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/nio/charset/Charset.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/nio/charset/Charset.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static Charset forName(String charsetName, Charset fallback);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/KeyStore.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/KeyStore.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public final Set<Entry.Attribute> getAttributes(String alias) throws KeyStoreException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/KeyStoreSpi.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/KeyStoreSpi.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Set<Entry.Attribute> engineGetAttributes(String alias);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/Provider.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/Provider.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public Set<Service> getServices();</li>
+      <li class="list-group-item">Service getDefaultSecureRandomService();</li>
+      <li class="list-group-item">void removeAttribute(String type, String value);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/time/Duration.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/time/Duration.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public boolean isPositive();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Collections.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Collections.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void forEach(Consumer<? super E> action);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/HashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/HashMap.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">static void putLoadFactor(HashMap<?, ?> map, float lf);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Hashtable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Hashtable.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">void readHashtable(ObjectInputStream s) throws IOException, ClassNotFoundException;</li>
+      <li class="list-group-item">static void putLoadFactor(Hashtable<?, ?> table, float lf);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/regex/Pattern.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/regex/Pattern.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default CharPredicate union(CharPredicate p1, CharPredicate p2);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/javax/security/auth/Subject.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/javax/security/auth/Subject.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static Subject current();</li>
+      <li class="list-group-item">public static <T> T callAs(final Subject subject, final Callable<T> action) throws CompletionException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">abstract boolean canTransferToFromOverlappedMap();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerInputStream.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void atEnd() throws IOException;</li>
+      <li class="list-group-item">public Optional<DerValue> getOptional(byte tag) throws IOException;</li>
+      <li class="list-group-item">public boolean seeOptionalContextSpecific(int n) throws IOException;</li>
+      <li class="list-group-item">public Optional<DerValue> getOptionalExplicitContextSpecific(int n) throws IOException;</li>
+      <li class="list-group-item">public Optional<DerValue> getOptionalImplicitContextSpecific(int n, byte tag) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerValue.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerValue.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static DerValue wrap(byte[] buf) throws IOException;</li>
+      <li class="list-group-item">public static DerValue wrap(byte[] buf, int offset, int len) throws IOException;</li>
+      <li class="list-group-item">public DerValue[] subs(byte expectedTag, int startLen) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/x509/AlgorithmId.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/x509/AlgorithmId.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public byte[] getEncodedParams();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.base/windows/classes/sun/nio/fs/WindowsPath.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.base/windows/classes/sun/nio/fs/WindowsPath.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">String getPathWithPrefixForWin32Calls() throws WindowsException;</li>
+      <li class="list-group-item">static String addPrefix(String path);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/lang/model/util/Elements.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/lang/model/util/Elements.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default TypeElement getOutermostTypeElement(Element e);</li>
+      <li class="list-group-item">default javax.tools.JavaFileObject getFileObjectOf(Element e);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/ForwardingJavaFileManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/ForwardingJavaFileManager.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;</li>
+      <li class="list-group-item">public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/JavaFileManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/JavaFileManager.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">default JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;</li>
+      <li class="list-group-item">default FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;</li>
+      <li class="list-group-item">private static FileObject siblingFrom(FileObject[] originatingFiles);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RMISocketFactory.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RMISocketFactory.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static synchronized void setSocketFactory(RMISocketFactory fac) throws IOException;</li>
+      <li class="list-group-item">public static synchronized RMISocketFactory getSocketFactory();</li>
+      <li class="list-group-item">public static synchronized RMISocketFactory getDefaultSocketFactory();</li>
+      <li class="list-group-item">public static synchronized void setFailureHandler(RMIFailureHandler fh);</li>
+      <li class="list-group-item">public static synchronized RMIFailureHandler getFailureHandler();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public final synchronized void getProps(int number, MessageProp prop);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static GraphicsConfiguration getGraphicsConfigurationAtPoint(double x, double y);</li>
+      <li class="list-group-item">public static GraphicsConfiguration getGraphicsConfigurationAtPoint(GraphicsConfiguration current, double x, double y);</li>
+      <li class="list-group-item">public static GraphicsConfiguration getGraphicsConfigurationAtDevicePoint(double x, double y);</li>
+      <li class="list-group-item">public static GraphicsConfiguration getGraphicsConfigurationAtDevicePoint(GraphicsConfiguration current, double x, double y);</li>
+      <li class="list-group-item">public static Point toUserSpace(int x, int y);</li>
+      <li class="list-group-item">public static Point toUserSpace(GraphicsConfiguration gc, int x, int y);</li>
+      <li class="list-group-item">public static Rectangle toDeviceSpaceAbs(Rectangle rect);</li>
+      <li class="list-group-item">public static Rectangle toDeviceSpaceAbs(GraphicsConfiguration gc, int x, int y, int w, int h);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/api/ClientCodeWrapper.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/api/ClientCodeWrapper.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;</li>
+      <li class="list-group-item">public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">boolean isSerializable(Type t);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/main/DelegatingJavaFileManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/main/DelegatingJavaFileManager.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;</li>
+      <li class="list-group-item">public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">CK_ATTRIBUTE[] fetchAttributes(CK_ATTRIBUTE[] attrs);</li>
+      <li class="list-group-item">BigInteger[] fetchAttributesAsInts(CK_ATTRIBUTE[] attrs);</li>
+      <li class="list-group-item">static SecretKey secretKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);</li>
+      <li class="list-group-item">static SecretKey masterSecretKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, int major, int minor);</li>
+      <li class="list-group-item">static PublicKey publicKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);</li>
+      <li class="list-group-item">static PrivateKey privateKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);</li>
+      <li class="list-group-item">static P11RSAPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);</li>
+      <li class="list-group-item">public String getFormat();</li>
+      <li class="list-group-item">synchronized byte[] getEncodedInternal();</li>
+      <li class="list-group-item">public BigInteger getModulus();</li>
+      <li class="list-group-item">static P11DSAPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);</li>
+      <li class="list-group-item">protected DSAParams getParams();</li>
+      <li class="list-group-item">static P11DHPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);</li>
+      <li class="list-group-item">public DHParameterSpec getParams();</li>
+      <li class="list-group-item">static P11ECPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);</li>
+      <li class="list-group-item">protected ECParameterSpec getParams();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.httpserver/share/classes/com/sun/net/httpserver/Headers.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.httpserver/share/classes/com/sun/net/httpserver/Headers.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Headers(Map<String, List<String>> headers) {</li>
+      <li class="list-group-item">public void replaceAll(BiFunction<? super String, ? super List<String>, ? extends List<String>> function);</li>
+      <li class="list-group-item">public String toString();</li>
+      <li class="list-group-item">public static Headers of(String... headers);</li>
+      <li class="list-group-item">public static Headers of(Map<String, List<String>> headers);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public String toAnsi(int colors, ForceMode force);</li>
+      <li class="list-group-item">public String toAnsi(int colors, ForceMode force, ColorPalette palette);</li>
+      <li class="list-group-item">public String toAnsi(int colors, ForceMode force, ColorPalette palette, String altIn, String altOut);</li>
+      <li class="list-group-item">long styleCodeAt(int index);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotObjectConstantImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotObjectConstantImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public JavaConstant readFieldValue(HotSpotResolvedJavaField field);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public List<DocPath> getAdditionalScripts();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public Content linkToContent(Element referrer, Element target, String targetSignature, String text);</li>
+      <li class="list-group-item">protected Content invalidTagOutput(String summary, Optional<Content> detail);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public static HtmlTree INPUT(String type, HtmlId id);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public boolean isMandated(AnnotationMirror aDesc);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public TypeElement getReferencedClass(Element e);</li>
+      <li class="list-group-item">public String getReferencedModuleName(String signature);</li>
+      <li class="list-group-item">public Element getReferencedMember(Element e);</li>
+      <li class="list-group-item">public String getReferencedMemberName(String signature);</li>
+      <li class="list-group-item">public PackageElement getReferencedPackage(Element e);</li>
+      <li class="list-group-item">public ModuleElement getReferencedModule(Element e);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public TypeMirror getThrowableType();</li>
+      <li class="list-group-item">public boolean isThrowable(TypeElement te);</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public List<Element> getAllVisibleMembers(Kind kind);</li>
+      <li class="list-group-item">public List<Element> getVisibleMembers(Kind kind, Predicate<Element> p);</li>
+      <li class="list-group-item">public List<Element> getVisibleMembers(Kind kind);</li>
+      <li class="list-group-item">public List<Element> getMembers(Kind kind);</li>
+      <li class="list-group-item">public VariableElement getPropertyField(ExecutableElement ee);</li>
+      <li class="list-group-item">public ExecutableElement getPropertyGetter(ExecutableElement ee);</li>
+      <li class="list-group-item">public ExecutableElement getPropertySetter(ExecutableElement ee);</li>
+      <li class="list-group-item">public ExecutableElement getPropertyMethod(ExecutableElement ee);</li>
+      <li class="list-group-item"><T extends Element> List<T> getMembers(String key, Kind kind, Class<T> clazz);</li>
+      <li class="list-group-item">List<ExecutableElement> getPropertyMethods(String methodName, int argcount);</li>
+      <li class="list-group-item">record PropertyMembers(ExecutableElement propertyMethod, VariableElement field, ExecutableElement getter, ExecutableElement setter) {</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/ReferenceTypeImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/ReferenceTypeImpl.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public abstract List<Method> allMethods();</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a href="https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java</a>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">public void setVisible(boolean visible);</li>
+      <li class="list-group-item">public boolean isVisible();</li>
+      <li class="list-group-item">public void setInternal(boolean internal);</li>
+      <li class="list-group-item">public boolean isInternal();</li>
+
+    </ul>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
