@@ -67,7 +67,7 @@ for version in data:
 <body>
 <div class="container">
   <h1>JDK {version} API Changes</h1>
-  <a href="../index.html" class="back-link">← Back to Table of Contents</a>
+  <a href="../report-styling.html" class="back-link">← Back to Table of Contents</a>
   <hr>
 """
 
@@ -93,11 +93,9 @@ for version in data:
 </html>
 """
 
-    # Write the version-specific file
     with open(version_file, "w", encoding="utf-8") as f:
         f.write(version_content)
 
-# Close out the index page
 index_content += """  </ul>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -105,9 +103,7 @@ index_content += """  </ul>
 </html>
 """
 
-# Write the index file
-with open("index.html", "w", encoding="utf-8") as f:
+with open("report-styling.html", "w", encoding="utf-8") as f:
     f.write(index_content)
 
-# Open the index file in a browser
-webbrowser.open("file://" + os.path.abspath("index.html"))
+webbrowser.open("file://" + os.path.abspath("report-styling.html"))
