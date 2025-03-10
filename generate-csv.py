@@ -21,15 +21,30 @@ for version in data:
         writer.writeheader()
 
         #since methods are grouped by file_url in the methods json
-        for file_url in data[version]:
-            for method in data[version][file_url]:
+        for file_url, file_data in data[version].items():
+            new_changes = file_data.get("new_changes", {})
+            new_classes = new_changes.get("new_classes", [])
+            new_methods = new_changes.get("new_methods", [])
 
-                #initialize all checks to false on the first time
+            # Write new class methods
+            for cls in new_classes:
+                declaration = cls.get("declaration", "").strip()
+                for method in cls.get("methods", []):
+                    writer.writerow({
+                        "version": version,
+                        "file_url": file_url,
+                        "method": method.strip(),
+                        "checked": "False"
+                    })
+
+            # Write new methods in existing classes
+            for method in new_methods:
                 writer.writerow({
                     "version": version,
                     "file_url": file_url,
-                    "method": method,
+                    "method": method.strip(),
                     "checked": "False"
                 })
+
 
     print(f"done")

@@ -16,8 +16,6 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.compiler/share/classes/c
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,"public RecordComponent(VarSymbol field, JCVariableDecl ast) {",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,"public RecordComponent(VarSymbol field, JCVariableDecl ast, boolean isVarargs) {",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,public JCVariableDecl declarationFor();,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,boolean isCaseInsensitiveAndPreserving();,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,protected static class Flags {,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,static Flags fromCopyOptions(CopyOption... options);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,static Flags fromMoveOptions(CopyOption... options);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,"int directCopy(int dst, int src, long addressToPollForCancel) throws UnixException;",False
@@ -26,8 +24,10 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/n
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,static void ensureEmptyDir(UnixPath dir) throws IOException;,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,"void move(UnixPath source, UnixPath target, CopyOption... options) throws IOException;",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,"void copy(final UnixPath source, final UnixPath target, CopyOption... options) throws IOException;",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,boolean isCaseInsensitiveAndPreserving();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/net/www/HeaderParser.java,public OptionalInt findInt(String k);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/net/www/protocol/https/HttpsClient.java,public void closeServer();,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/net/www/protocol/https/HttpsClient.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/net/www/http/KeepAliveCache.java,HttpClient put(HttpClient h);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/util/ObjectIdentifier.java,void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/util/DerValue.java,public void encode(DerOutputStream out);,False
@@ -35,28 +35,31 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/util/DerValue.java,public byte[] toByteArray();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/util/SignatureFileVerifier.java,"public void process(Hashtable<String, CodeSigner[]> signers, List<Object> manifestDigests, String manifestName) throws IOException, SignatureException, NoSuchAlgorithmException, CertificateException;",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/provider/certpath/ResponderId.java,public enum Type {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X500Name.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X500Name.java,public void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtrees.java,"public class GeneralSubtrees implements Cloneable, DerEncoder {",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtrees.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtrees.java,public void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CRLExtensions.java,"public void encode(DerOutputStream out, boolean isExplicit);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CRLExtensions.java,public Extension getExtension(String alias);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CRLExtensions.java,"public void setExtension(String alias, Extension ext);",False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/Extension.java,"public class Extension implements java.security.cert.Extension, DerEncoder {",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/Extension.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/Extension.java,public final void encode(OutputStream out) throws IOException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/Extension.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/Extension.java,public void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/Extension.java,public String getName();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralNames.java,public void encode(DerOutputStream out);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/URIName.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/URIName.java,public void encode(DerOutputStream out);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DNSName.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DNSName.java,public void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,"public class X509Key implements PublicKey, DerEncoder {",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,protected void parseKeyBits() throws InvalidKeyException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,public final void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,public byte[] getEncodedInternal();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,public byte[] encode();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,"static void encode(DerOutputStream out, AlgorithmId algid, BitArray key);",False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralName.java,public class GeneralName implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralName.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralName.java,public void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public class X509CertInfo {,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public void encode(DerOutputStream out) throws CertificateException;,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public CertificateExtensions getExtensions();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public UniqueIdentity getIssuerUniqueId();,False
@@ -78,34 +81,42 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public void setIssuerUniqueId(UniqueIdentity val) throws CertificateException;,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public void setSubjectUniqueId(UniqueIdentity val) throws CertificateException;,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public void setExtensions(CertificateExtensions val) throws CertificateException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/IPAddressName.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/IPAddressName.java,public void encode(DerOutputStream out);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/OIDName.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/OIDName.java,public void encode(DerOutputStream out);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AVA.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AVA.java,public void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/KeyIdentifier.java,void encode(DerOutputStream out);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/EDIPartyName.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/EDIPartyName.java,public void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/PolicyInformation.java,public class PolicyInformation implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/PolicyInformation.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/PolicyInformation.java,public void encode(DerOutputStream out);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/OtherName.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/OtherName.java,public void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/RDN.java,void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificatePolicyId.java,public class CertificatePolicyId implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificatePolicyId.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificatePolicyId.java,public void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPointName.java,public class DistributionPointName implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPointName.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPointName.java,public void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,public class CertificateExtensions implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,public void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,"public void encode(DerOutputStream out, boolean isCertReq);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,"public void setExtension(String name, Extension ext);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,public Extension getExtension(String alias);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,public String getNameByOid(ObjectIdentifier oid);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/RFC822Name.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/RFC822Name.java,public void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPoint.java,public class DistributionPoint implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPoint.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPoint.java,public void encode(DerOutputStream out);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtree.java,public class GeneralSubtree implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtree.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtree.java,public void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AccessDescription.java,public void encode(DerOutputStream out);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AlgorithmId.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AlgorithmId.java,public void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AlgorithmId.java,public final byte[] encode();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/pkcs10/PKCS10.java,"public void encodeAndSign(X500Name subject, PrivateKey key, String algorithm) throws SignatureException, NoSuchAlgorithmException, InvalidKeyException;",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/pkcs10/PKCS10Attributes.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/pkcs10/PKCS10Attributes.java,public void encode(DerOutputStream out);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/pkcs/EncryptedPrivateKeyInfo.java,public byte[] getEncoded();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,"public MemorySegment map(MapMode mode, long offset, long size, SegmentScope session) throws IOException;",False
@@ -116,16 +127,28 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java,"abstract long transferTo(FileDescriptor src, long position, long count, FileDescriptor dst, boolean append);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java,"abstract long transferFrom(FileDescriptor src, FileDescriptor dst, long position, long count, boolean append);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/jdk/internal/module/ModuleReferenceImpl.java,"private record CachedHash(byte[] hash, String algorithm) {",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,@Deprecated(),False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,@Deprecated(),False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,@Deprecated(),False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,@Deprecated(),False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,@Deprecated(),False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,@Deprecated(),False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,"public static URL of(URI uri, URLStreamHandler handler) throws MalformedURLException;",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,static String lowerCaseProtocol(String protocol);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/IdentityHashMap.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/IdentityHashMap.java,"public boolean remove(Object key, Object value);",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/IdentityHashMap.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/IdentityHashMap.java,"public boolean replace(K key, V oldValue, V newValue);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/stream/Collectors.java,"record CollectorImpl<T, A, R>(Supplier<A> supplier, BiConsumer<A, T> accumulator, BinaryOperator<A> combiner, Function<A, R> finisher, Set<Characteristics> characteristics) implements Collector<T, A, R> {",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/jar/JarVerifier.java,public Certificate[] getCerts(JarEntry entry);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/jar/JarVerifier.java,public CodeSigner[] getCodeSigners(JarEntry entry);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,"public Map<String, Integer> namedGroups();",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,public boolean hasMatch();,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,"public Map<String, Integer> namedGroups();",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,public boolean hasMatch();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Pattern.java,"public Map<String, Integer> namedGroups();",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,int start();,False
@@ -136,21 +159,33 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,default int end(String name);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,String group();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,String group(int group);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,@Nullable,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,default String group(String name);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,int groupCount();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,"default Map<String, Integer> namedGroups();",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,private int groupNumber(String name);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,default boolean hasMatch();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/Inflater.java,boolean hasPendingOutput();,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,public int read() throws IOException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,public byte[] readAllBytes() throws IOException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,public byte[] readNBytes(int len) throws IOException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,"public int readNBytes(byte[] b, int off, int len) throws IOException;",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,public void skipNBytes(long n) throws IOException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,public long transferTo(OutputStream out) throws IOException;,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,public <T> ForkJoinTask<T> externalSubmit(ForkJoinTask<T> task);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/KeyRep.java,public enum Type {,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/Security.java,private static class Criteria {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/UnresolvedPermission.java,@Override,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/UnresolvedPermission.java,@Override,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/UnresolvedPermission.java,@Override,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/UnresolvedPermission.java,@Override,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/UnresolvedPermission.java,@Override,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/UnresolvedPermission.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/Principal.java,boolean equals(@Nullable Object another);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/Principal.java,String toString();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/Principal.java,int hashCode();,False
@@ -171,14 +206,24 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/KeyStore.java,String getValue();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/cert/CertStore.java,public static String getDefaultType();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/interfaces/ECPrivateKey.java,long serialVersionUID;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/SequenceInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/SequenceInputStream.java,public long transferTo(OutputStream out) throws IOException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/PushbackInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/PushbackInputStream.java,public long transferTo(OutputStream out) throws IOException;,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/BufferedInputStream.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/BufferedInputStream.java,public long transferTo(OutputStream out) throws IOException;,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/Console.java,public class Console implements Flushable {,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/math/BigInteger.java,"static void putSignAndMag(BigInteger bi, int sign, int[] magnitude);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/math/BigDecimal.java,"static void setIntValAndScale(BigDecimal bd, BigInteger intVal, int scale);",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Integer.java,@IntrinsicCandidate,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Integer.java,@IntrinsicCandidate,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/StackTraceElement.java,@Override,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Float.java,@IntrinsicCandidate,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Float.java,@IntrinsicCandidate,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Float.java,public static float float16ToFloat(short floatBinary16);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Float.java,@IntrinsicCandidate,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Float.java,public static short floatToFloat16(float f);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Long.java,@IntrinsicCandidate,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Long.java,@IntrinsicCandidate,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Class.java,public Set<AccessFlag> accessFlags();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/String.java,"static int checkBoundsOffCount(int offset, int count, int length);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock ARABIC_EXTENDED_C;,False
@@ -192,12 +237,15 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Character.java,"NAG_MUNDARI,",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/ThreadLocal.java,boolean isCarrierThreadLocalPresent();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/ThreadLocal.java,void removeCarrierThreadLocal();,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Double.java,@IntrinsicCandidate,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,static Object scopedValueBindings();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,static void setScopedValueBindings(Object bindings);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,@IntrinsicCandidate,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,static native Object findScopedValueBindings();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,void inheritScopedValueBindings(ThreadContainer container);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,static native Object[] scopedValueCache();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,static native void setScopedValueCache(Object[] cache);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,@IntrinsicCandidate,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,static native void ensureMaterializedForStackWalk(Object o);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/invoke/LambdaForm.java,String debugString(int indentLevel);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/module/ModuleDescriptor.java,"OPEN(AccessFlag.OPEN.mask()), AUTOMATIC(0), SYNTHETIC(AccessFlag.SYNTHETIC.mask()), MANDATED(AccessFlag.MANDATED.mask())",False
@@ -209,9 +257,14 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/module/ModuleDescriptor.java,public Set<AccessFlag> accessFlags();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/module/ModuleDescriptor.java,public Set<AccessFlag> accessFlags();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Parameter.java,public Set<AccessFlag> accessFlags();,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Executable.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Executable.java,public Set<AccessFlag> accessFlags();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Executable.java,public abstract int getParameterCount();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Executable.java,"record ParameterData(@Stable Parameter[] parameters, boolean isReal) {",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,if (Modifier.isPublic(accessFlags)) {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"throw new InternalError(""public proxy in unnamed module: "" + module);",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,if ((accessFlags & ~Modifier.PUBLIC) != 0) {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"throw new InternalError(""proxy access flags must be Modifier.PUBLIC or 0"");",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"private record ProxyClassContext(Module module, String packageName, int accessFlags) {",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,private ProxyClassContext {,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,if (module.isNamed()) {,False
@@ -219,12 +272,7 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"throw new InternalError(""Unnamed package cannot be added to "" + module);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,if (!module.getDescriptor().packages().contains(packageName)) {,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"throw new InternalError(packageName + "" not exist in "" + module.getName());",False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"if (!module.isOpen(packageName, Proxy.class.getModule())) {",False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"throw new InternalError(packageName + "" not open to "" + Proxy.class.getModule());",False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,if (Modifier.isPublic(accessFlags)) {,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"throw new InternalError(""public proxy in unnamed module: "" + module);",False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,if ((accessFlags & ~Modifier.PUBLIC) != 0) {,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"throw new InternalError(""proxy access flags must be Modifier.PUBLIC or 0"");",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Field.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Field.java,public Set<AccessFlag> accessFlags();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/nio/file/spi/FileSystemProvider.java,"public boolean exists(Path path, LinkOption... options);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/nio/file/spi/FileSystemProvider.java,"public <A extends BasicFileAttributes> A readAttributesIfExists(Path path, Class<A> type, LinkOption... options) throws IOException;",False
@@ -232,6 +280,7 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/text/RBCollationTables.java,"static void reverse(StringBuilder result, int from, int to);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/text/PatternEntry.java,"void addToBuilder(StringBuilder toAddTo, boolean showExtension, boolean showWhiteSpace, PatternEntry lastEntry);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,"static CacheKey cacheKey(boolean secure, InetSocketAddress destination, InetSocketAddress proxy);",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.sql.rowset/share/classes/javax/sql/rowset/serial/SerialDatalink.java,"@SuppressWarnings(""deprecation"")",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.naming/share/classes/javax/naming/spi/NamingManager.java,public static void setObjectFactoryBuilder(ObjectFactoryBuilder builder) throws NamingException;,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.naming/share/classes/javax/naming/spi/NamingManager.java,static ObjectFactoryBuilder getObjectFactoryBuilder();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public TagletWriterImpl getTagletWriterInstance(TagletWriterImpl.Context context);,False
@@ -265,23 +314,36 @@ jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jd
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/Content.java,"public abstract boolean write(Writer writer, String newline, boolean atNewline) throws IOException;",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,public String getReferencedFragment(String signature);,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,public Element getReferencedElement(DocTree dtree);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,@Pure,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,@Pure,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public Object getPreviewFeature(Element e);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,@Pure,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,@Pure,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,@Pure,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,@Pure,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public List<? extends SpecTree> getSpecTrees(Element element);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,@Pure,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,@Pure,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public DocFinder docFinder();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/SimpleTaglet.java,"public Output inherit(Element owner, DocTree tag, boolean isFirstSentence, BaseConfiguration configuration);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/SimpleTaglet.java,"record Documentation(DocTree tag, List<? extends DocTree> description, ExecutableElement method) {",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.jlink/share/classes/jdk/tools/jmod/JmodOutputStream.java,"static JmodOutputStream newOutputStream(Path file, LocalDateTime date, int compressLevel) throws IOException;",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/sun/font/AttributeValues.java,"@SuppressWarnings(""unchecked"")",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/sun/font/AttributeValues.java,"public static float getTracking(Map<?, ?> map);",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/AbstractButton.java,public void setMultiClickThreshhold(long threshold);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,"@SuppressWarnings(""deprecation"")",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,public void actionPerformed(ActionEvent e);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,"@SuppressWarnings(""serial"")",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,"@SuppressWarnings(""deprecation"")",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,public void actionPerformed(ActionEvent e);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,"@SuppressWarnings(""serial"")",False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,public static final String beginLineUpAction;,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,public static final String endLineDownAction;,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,static class EndLineDownAction extends TextAction {,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,public void actionPerformed(ActionEvent e);,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,static class BeginLineUpAction extends TextAction {,False
-jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,public void actionPerformed(ActionEvent e);,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotResolvedJavaFieldImpl.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotResolvedJavaFieldImpl.java,public JavaConstant getConstantValue();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotResolvedJavaMethodImpl.java,long getMethodPointer();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.meta/src/jdk/vm/ci/meta/PrimitiveConstant.java,public long getRawValue();,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.meta/src/jdk/vm/ci/meta/Assumptions.java,@Override,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.meta/src/jdk/vm/ci/meta/Assumptions.java,public String toString();,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.meta/src/jdk/vm/ci/meta/Assumptions.java,public final ResolvedJavaType receiverType;,False
 jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.code/src/jdk/vm/ci/code/RegisterSaveLayout.java,public int size();,False

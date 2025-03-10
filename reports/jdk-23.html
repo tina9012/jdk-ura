@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JDK jdk-23 Changes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JDK jdk-23 Changes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
 <style>
   body {
     background-color: #f8f9fa;
@@ -27,634 +27,1121 @@
     font-size: 0.8rem;
     margin-left: 0.5rem;
   }
+  /* Styles for new classes */
+  .new-class-card {
+    border: 1px solid #FF5733;
+  }
+  .new-class-header {
+    background-color: #FF5733;
+    color: white;
+    font-weight: bold;
+  }
 </style>
 
-  </head>
-  <body>
-  <div class="container">
-    <h1>JDK jdk-23 Changes</h1>
-    <a href="../report-styling.html" class="back-link">← Back to all versions</a>
-    <hr>
-  
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public void setFields(List&lt;ValueDescriptor&gt; fields); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public &lt;T&gt; T getAnnotationValue(Class&lt;? extends java.lang.annotation.Annotation&gt; clazz, T defaultValue); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public boolean hasAnnotation(Class&lt;? extends java.lang.annotation.Annotation&gt; clazz); <span class="badge bg-warning text-dark">Not Checked</span></li>
+</head>
+<body>
+<div class="container">
+  <h1>JDK jdk-23 Changes</h1>
+  <a href="../report-styling.html" class="back-link">← Back to all versions</a>
+  <hr>
 
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Elements.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Elements.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">default DocCommentKind getDocCommentKind(Element e); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">enum DocCommentKind { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">END_OF_LINE, TRADITIONAL <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public void setFields(List&lt;ValueDescriptor&gt; fields); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public &lt;T&gt; T getAnnotationValue(Class&lt;? extends java.lang.annotation.Annotation&gt; clazz, T defaultValue); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean hasAnnotation(Class&lt;? extends java.lang.annotation.Annotation&gt; clazz); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Types.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Types.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">default &lt;T extends TypeMirror&gt; T stripAnnotations(T t); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Elements.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Elements.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public static boolean isExplicitThisReference(Types types, Type.ClassType currentClass, JCTree tree); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public static boolean isConstructorCall(JCMethodInvocation invoke); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">default DocCommentKind getDocCommentKind(Element e); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">enum DocCommentKind { <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">END_OF_LINE, TRADITIONAL <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">private record PermittedClassWithPos(Symbol permittedClass, int pos) { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void addPermittedSubclass(ClassSymbol csym, int pos); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public boolean isPermittedSubclass(Symbol csym); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void clearPermittedSubclasses(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void setPermittedSubclasses(List&lt;Symbol&gt; permittedSubs); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Types.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Types.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public boolean isUnconditionallyExact(Type source, Type target); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public boolean isUnconditionallyExactPrimitives(Type selectorType, Type targetType); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">default &lt;T extends TypeMirror&gt; T stripAnnotations(T t); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Symbol findVar(DiagnosticPosition pos, Env&lt;AttrContext&gt; env, Name name); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">Symbol findIdentInternal(DiagnosticPosition pos, Env&lt;AttrContext&gt; env, Name name, KindSelector kind); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public boolean isEarlyReference(Env&lt;AttrContext&gt; env, JCTree base, VarSymbol v); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/model/JavacTypes.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/model/JavacTypes.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public &lt;T extends TypeMirror&gt; T stripAnnotations(T t); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public static boolean isExplicitThisReference(Types types, Type.ClassType currentClass, JCTree tree); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public static boolean isConstructorCall(JCMethodInvocation invoke); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">private abstract static class P11PrivateKey extends P11Key implements PrivateKey { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">private abstract static class P11PublicKey extends P11Key implements PublicKey { <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/net/www/MessageHeader.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/net/www/MessageHeader.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public final class MessageHeader { <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">private record PermittedClassWithPos(Symbol permittedClass, int pos) { <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void addPermittedSubclass(ClassSymbol csym, int pos); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean isPermittedSubclass(Symbol csym); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void clearPermittedSubclasses(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void setPermittedSubclasses(List&lt;Symbol&gt; permittedSubs); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/calendar/CalendarDate.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/calendar/CalendarDate.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public abstract sealed class CalendarDate implements Cloneable permits BaseCalendar.Date { <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/locale/BaseLocale.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/locale/BaseLocale.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public static final byte ROOT, ENGLISH, US, FRENCH, GERMAN, ITALIAN, JAPANESE, KOREAN, CHINESE, SIMPLIFIED_CHINESE, TRADITIONAL_CHINESE, FRANCE, GERMANY, ITALY, JAPAN, KOREA, UK, CANADA, CANADA_FRENCH, NUM_CONSTANTS; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public static final UnaryOperator&lt;BaseLocale&gt; INTERNER; <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public boolean isUnconditionallyExact(Type source, Type target); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean isUnconditionallyExactPrimitives(Type selectorType, Type targetType); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public Iterator&lt;Service&gt; getServices(String type, String algorithm); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Iterator&lt;Service&gt; getServices(List&lt;ServiceId&gt; ids); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">private final class ServiceIterator implements Iterator&lt;Service&gt; { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public boolean hasNext(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Service next(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void remove(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">ArrayList&lt;PreferredEntry&gt; getAll(ServiceIterator s); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public static FileChannel open(FileDescriptor fd, String path, boolean readable, boolean writable, boolean sync, boolean direct, Closeable parent); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">private abstract static sealed class Unmapper implements Runnable, UnmapperProxy { <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">Symbol findVar(DiagnosticPosition pos, Env&lt;AttrContext&gt; env, Name name); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">Symbol findIdentInternal(DiagnosticPosition pos, Env&lt;AttrContext&gt; env, Name name, KindSelector kind); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean isEarlyReference(Env&lt;AttrContext&gt; env, JCTree base, VarSymbol v); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/Inet4Address.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/Inet4Address.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public static Inet4Address ofPosixLiteral(String posixIPAddressLiteral); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/model/JavacTypes.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/model/JavacTypes.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/ImmutableCollections.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/ImmutableCollections.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public E removeFirst(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public E removeLast(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@DefinedBy(Api.LANGUAGE_MODEL) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;unchecked&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public &lt;T extends TypeMirror&gt; T stripAnnotations(T t); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Formatter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Formatter.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">static final class FormatSpecifierParser { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">void reset(char first, int start); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">int parse(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">static boolean isConversion(char c); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/ZipFile.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/ZipFile.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">private abstract static class P11PrivateKey extends P11Key implements PrivateKey { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private abstract static class P11PublicKey extends P11Key implements PublicKey { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">final ForkJoinTask&lt;?&gt; poll(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">final void topLevelExec(ForkJoinTask&lt;?&gt; task, int cfg); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">final void signalWork(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/net/www/MessageHeader.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/net/www/MessageHeader.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">abstract static class InterruptibleTask&lt;T&gt; extends ForkJoinTask&lt;T&gt; implements RunnableFuture&lt;T&gt; { <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">public final class MessageHeader { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public Console println(Object obj); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Console print(Object obj); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public String readln(String prompt); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Console format(String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Console format(Locale locale, String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Console printf(Locale locale, String format, Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public String readLine(String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public String readLine(Locale locale, String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public char @Nullable [] readPassword(String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public char @Nullable [] readPassword(Locale locale, String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/calendar/CalendarDate.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/calendar/CalendarDate.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ByteArrayOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ByteArrayOutputStream.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public void writeTo(OutputStream out) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">public abstract sealed class CalendarDate implements Cloneable permits BaseCalendar.Date { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/time/Instant.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/time/Instant.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public Duration until(Instant endExclusive); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/locale/BaseLocale.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/locale/BaseLocale.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">private static class In extends FileInputStream { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public int read() throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public int read(byte[] b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public int read(byte[] b, int off, int len) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">private static class Out extends FileOutputStream { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void write(int b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void write(byte[] b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void write(byte[] b, int off, int len) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public static final byte ROOT, ENGLISH, US, FRENCH, GERMAN, ITALIAN, JAPANESE, KOREAN, CHINESE, SIMPLIFIED_CHINESE, TRADITIONAL_CHINESE, FRANCE, GERMANY, ITALY, JAPAN, KOREA, UK, CANADA, CANADA_FRENCH, NUM_CONSTANTS; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public static final UnaryOperator&lt;BaseLocale&gt; INTERNER; <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public int read() throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public int read(byte[] b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public int read(byte[] b, int off, int len) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">static class PipeOutputStream extends FileOutputStream { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void write(int b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void write(byte[] b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void write(byte[] b, int off, int len) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/util/BitArray.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/util/BitArray.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Thread.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Thread.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Interruptible nioBlocker(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">void blockedOn(Interruptible b); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/invoke/MemberName.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/invoke/MemberName.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">void ensureTypeVisible(Class&lt;?&gt; refc); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/util/DerValue.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/util/DerValue.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DecimalFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DecimalFormat.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public boolean isStrict(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void setStrict(boolean strict); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/MessageFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/MessageFormat.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/x509/GeneralSubtrees.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/x509/GeneralSubtrees.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/SimpleDateFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/SimpleDateFormat.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/ChoiceFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/ChoiceFormat.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public boolean isStrict(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void setStrict(boolean strict); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public static double nextDouble(double d, boolean positive); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/x509/GeneralNames.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/x509/GeneralNames.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/NumberFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/NumberFormat.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public boolean isStrict(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void setStrict(boolean strict); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">static String matchToStyle(NumberFormat fmt, Locale locale); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.httpserver/share/classes/sun/net/httpserver/UnmodifiableHeaders.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.httpserver/share/classes/sun/net/httpserver/UnmodifiableHeaders.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/x509/RFC822Name.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/x509/RFC822Name.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/CodeBlob.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/CodeBlob.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public int getContentOffset(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public int getCodeOffset(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public class ContiguousSpace extends VMObject implements LiveRegionsProvider { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Address bottom(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Address end(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public OopHandle bottomAsOopHandle(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public OopHandle nextOopHandle(OopHandle handle, long size); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void print(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/x509/AlgorithmId.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/x509/AlgorithmId.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">protected final TableOfContents tableOfContents; <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public String getFileTitle(DocFileElement element); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">boolean ignoreNonInlineTag(DocTree dtree, List&lt;Name&gt; openTags); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">private class MarkdownHandler { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">boolean handle(DocTree tree, InlineVisitor visitor); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">void addContent(Content result); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">private class HeadingNodeRenderer extends AbstractVisitor implements NodeRenderer { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Set&lt;Class&lt;? extends Node&gt;&gt; getNodeTypes(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void render(Node node); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public void visit(Heading heading); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">protected void visitChildren(Node parent); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">private class InlineVisitor extends SimpleDocTreeVisitor&lt;Boolean, Content&gt; { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitAttribute(AttributeTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitComment(CommentTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitDocRoot(DocRootTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitEndElement(EndElementTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitEntity(EntityTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitErroneous(ErroneousTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitEscape(EscapeTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitInheritDoc(InheritDocTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitStartElement(StartElementTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public Boolean visitText(TextTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">protected Boolean defaultAction(DocTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public record JavaScriptFile(DocPath path, boolean isModule) { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public List&lt;JavaScriptFile&gt; getAdditionalScripts(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">private final class ServiceIterator implements Iterator&lt;Service&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean hasNext(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Service next(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void remove(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div><ul class="list-group list-group-flush"><li class="list-group-item">public Iterator&lt;Service&gt; getServices(String type, String algorithm); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Iterator&lt;Service&gt; getServices(List&lt;ServiceId&gt; ids); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">ArrayList&lt;PreferredEntry&gt; getAll(ServiceIterator s); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">static SimpleTaglet createWithDefaultForNested(HtmlConfiguration config, DocTree.Kind tagKind, String header, Set&lt;Taglet.Location&gt; locations, boolean enabled); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">protected List&lt;? extends BlockTagTree&gt; getDefaultBlockTags(Element e, Predicate&lt;? super BlockTagTree&gt; accepts); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/TextBuilder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/TextBuilder.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">private abstract static sealed class Unmapper implements Runnable, UnmapperProxy { <span class="badge bg-warning text-dark">Not Checked</span></div></div><ul class="list-group list-group-flush"><li class="list-group-item">public static FileChannel open(FileDescriptor fd, String path, boolean readable, boolean writable, boolean sync, boolean direct, Closeable parent); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/Text.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/Text.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/MulticastSocket.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/MulticastSocket.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public Map&lt;HtmlAttr, String&gt; getAttrs(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public List&lt;Content&gt; getContents(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public static HtmlTree INPUT(HtmlAttr.InputType type, HtmlId id); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public static HtmlTree INPUT(HtmlAttr.InputType type, HtmlStyle style); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public static HtmlTree OL(HtmlStyle style); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/RawHtml.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/RawHtml.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public static RawHtml markdown(CharSequence markdownOutput); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/Inet4Address.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/Inet4Address.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/ContentBuilder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/ContentBuilder.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public List&lt;Content&gt; getContents(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public static Inet4Address ofPosixLiteral(String posixIPAddressLiteral); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public Map&lt;String, Object&gt; getJepInfo(String feature); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/DatagramSocketImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/DatagramSocketImpl.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/BaseConfiguration.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/BaseConfiguration.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">protected DocLint doclint; <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ElementsTable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ElementsTable.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">ElementsTable compilationUnits(com.sun.tools.javac.util.List&lt;JCCompilationUnit&gt; compilationUnits); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/Socket.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/Socket.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ResourcePoolManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ResourcePoolManager.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">public static CompressedModuleData newCompressedResource(ResourcePoolEntry original, ByteBuffer compressed, String plugin, StringTable strings, ByteOrder order); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">private abstract static class AccessibilityGraphicsEnvironment extends GraphicsEnvironment { <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/ServerSocket.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/ServerSocket.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jshell/share/classes/jdk/internal/jshell/tool/Startup.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jshell/share/classes/jdk/internal/jshell/tool/Startup.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">static Startup unpack(String storedForm, boolean preview, MessageHandler mh); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">static Startup defaultStartup(boolean preview, MessageHandler mh); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/StyleContext.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/StyleContext.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">static final class KeyEnumeration implements Enumeration&lt;Object&gt; { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">static final class FontKey { <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/TreeMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/TreeMap.java</a>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">void convertAttributes(HTML.Tag t, MutableAttributeSet attr); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">final class ConvertSpanAction extends CharacterAction { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">void convertAttributes(HTML.Tag t, MutableAttributeSet attr); <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">final class ConvertAction extends CharacterAction { <span class="badge bg-warning text-dark">Not Checked</span></li>
-      <li class="list-group-item">void convertAttributes(HTML.Tag t, MutableAttributeSet attr); <span class="badge bg-warning text-dark">Not Checked</span></li>
-
-    </ul>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
   </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/LinkedList.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/LinkedList.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/EnumMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/EnumMap.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/LinkedHashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/LinkedHashMap.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/IdentityHashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/IdentityHashMap.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/HashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/HashMap.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/ImmutableCollections.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/ImmutableCollections.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public E removeFirst(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public E removeLast(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/SimpleTimeZone.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/SimpleTimeZone.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/WeakHashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/WeakHashMap.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/ArrayDeque.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/ArrayDeque.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Timer.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Timer.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Random.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Random.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Formatter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Formatter.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">static final class FormatSpecifierParser { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">void reset(char first, int start); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">int parse(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">static boolean isConversion(char c); <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/GregorianCalendar.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/GregorianCalendar.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/HashSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/HashSet.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Hashtable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Hashtable.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/LinkedHashSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/LinkedHashSet.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/TreeSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/TreeSet.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/jar/Manifest.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/jar/Manifest.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/jar/JarOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/jar/JarOutputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/jar/JarInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/jar/JarInputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/Inflater.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/Inflater.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/Deflater.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/Deflater.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/ZipFile.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/ZipFile.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">final ForkJoinTask&lt;?&gt; poll(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">final void topLevelExec(ForkJoinTask&lt;?&gt; task, int cfg); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">final void signalWork(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ConcurrentSkipListSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ConcurrentSkipListSet.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/DelayQueue.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/DelayQueue.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ConcurrentSkipListMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ConcurrentSkipListMap.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">abstract static class InterruptibleTask&lt;T&gt; extends ForkJoinTask&lt;T&gt; implements RunnableFuture&lt;T&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/AbstractExecutorService.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/AbstractExecutorService.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/LinkedBlockingDeque.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/LinkedBlockingDeque.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/security/DigestOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/security/DigestOutputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/security/DigestInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/security/DigestInputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/security/Provider.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/security/Provider.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/security/cert/PKIXParameters.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/security/cert/PKIXParameters.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PrintStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PrintStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ObjectInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ObjectInputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ObjectOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ObjectOutputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/FileOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/FileOutputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/FileInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/FileInputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/OutputStreamWriter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/OutputStreamWriter.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/InputStreamReader.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/InputStreamReader.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PipedReader.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PipedReader.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/RandomAccessFile.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/RandomAccessFile.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/StreamTokenizer.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/StreamTokenizer.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/WriteAbortedException.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/WriteAbortedException.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PipedInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PipedInputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PipedWriter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PipedWriter.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.IMPLICIT_CLASSES) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Console println(Object obj); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.IMPLICIT_CLASSES) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Console print(Object obj); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.IMPLICIT_CLASSES) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String readln(String prompt); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Console format(String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@FormatMethod <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Console format(Locale locale, String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Console printf(Locale locale, String format, Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String readLine(String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Nullable <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String readLine(Locale locale, String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public char @Nullable [] readPassword(String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public char @Nullable [] readPassword(Locale locale, String format, @Nullable Object... args); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ByteArrayOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ByteArrayOutputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public void writeTo(OutputStream out) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PipedOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/PipedOutputStream.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/math/BigInteger.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/math/BigInteger.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/time/Instant.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/time/Instant.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public Duration until(Instant endExclusive); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class In extends FileInputStream { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public int read() throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public int read(byte[] b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public int read(byte[] b, int off, int len) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class Out extends FileOutputStream { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">public void write(int b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void write(byte[] b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void write(byte[] b, int off, int len) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/StringBuilder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/StringBuilder.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@IntrinsicCandidate <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/AssertionError.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/AssertionError.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/StringBuffer.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/StringBuffer.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@IntrinsicCandidate <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">static class PipeOutputStream extends FileOutputStream { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void write(int b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void write(byte[] b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void write(byte[] b, int off, int len) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public int read() throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public int read(byte[] b) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public int read(byte[] b, int off, int len) throws IOException; <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Throwable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Throwable.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/ClassLoader.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/ClassLoader.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/ExceptionInInitializerError.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/ExceptionInInitializerError.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/ThreadGroup.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/ThreadGroup.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Thread.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Thread.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">Interruptible nioBlocker(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">void blockedOn(Interruptible b); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/invoke/MemberName.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/invoke/MemberName.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">void ensureTypeVisible(Class&lt;?&gt; refc); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/reflect/Executable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/reflect/Executable.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DecimalFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DecimalFormat.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean isStrict(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void setStrict(boolean strict); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/MessageFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/MessageFormat.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/RuleBasedCollator.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/RuleBasedCollator.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/SimpleDateFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/SimpleDateFormat.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/ChoiceFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/ChoiceFormat.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean isStrict(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void setStrict(boolean strict); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public static double nextDouble(double d, boolean positive); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/AttributedString.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/AttributedString.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DateFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DateFormat.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/NumberFormat.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/NumberFormat.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public boolean isStrict(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void setStrict(boolean strict); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">static String matchToStyle(NumberFormat fmt, Locale locale); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings(&quot;this-escape&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.httpserver/share/classes/sun/net/httpserver/UnmodifiableHeaders.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.httpserver/share/classes/sun/net/httpserver/UnmodifiableHeaders.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String toString(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/CodeBlob.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/CodeBlob.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public int getContentOffset(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public int getCodeOffset(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">public class ContiguousSpace extends VMObject implements LiveRegionsProvider { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">public Address bottom(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Address end(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public OopHandle bottomAsOopHandle(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public OopHandle nextOopHandle(OopHandle handle, long size); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void print(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">private class MarkdownHandler { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">boolean handle(DocTree tree, InlineVisitor visitor); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">void addContent(Content result); <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private class HeadingNodeRenderer extends AbstractVisitor implements NodeRenderer { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Set&lt;Class&lt;? extends Node&gt;&gt; getNodeTypes(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void render(Node node); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public void visit(Heading heading); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">protected void visitChildren(Node parent); <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private class InlineVisitor extends SimpleDocTreeVisitor&lt;Boolean, Content&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitAttribute(AttributeTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitComment(CommentTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitDocRoot(DocRootTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitEndElement(EndElementTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitEntity(EntityTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitErroneous(ErroneousTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitEscape(EscapeTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitInheritDoc(InheritDocTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitStartElement(StartElementTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public Boolean visitText(TextTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">protected Boolean defaultAction(DocTree node, Content content); <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div><ul class="list-group list-group-flush"><li class="list-group-item">protected final TableOfContents tableOfContents; <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public String getFileTitle(DocFileElement element); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">boolean ignoreNonInlineTag(DocTree dtree, List&lt;Name&gt; openTags); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public record JavaScriptFile(DocPath path, boolean isModule) { <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public List&lt;JavaScriptFile&gt; getAdditionalScripts(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">static SimpleTaglet createWithDefaultForNested(HtmlConfiguration config, DocTree.Kind tagKind, String header, Set&lt;Taglet.Location&gt; locations, boolean enabled); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">protected List&lt;? extends BlockTagTree&gt; getDefaultBlockTags(Element e, Predicate&lt;? super BlockTagTree&gt; accepts); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/TextBuilder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/TextBuilder.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/Text.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/Text.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public Map&lt;HtmlAttr, String&gt; getAttrs(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public List&lt;Content&gt; getContents(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public static HtmlTree INPUT(HtmlAttr.InputType type, HtmlId id); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public static HtmlTree INPUT(HtmlAttr.InputType type, HtmlStyle style); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public static HtmlTree OL(HtmlStyle style); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/RawHtml.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/RawHtml.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public static RawHtml markdown(CharSequence markdownOutput); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/ContentBuilder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/ContentBuilder.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public List&lt;Content&gt; getContents(); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">public boolean isPhrasingContent(); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public Map&lt;String, Object&gt; getJepInfo(String feature); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/BaseConfiguration.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/BaseConfiguration.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">protected DocLint doclint; <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ElementsTable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ElementsTable.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">ElementsTable compilationUnits(com.sun.tools.javac.util.List&lt;JCCompilationUnit&gt; compilationUnits); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ResourcePoolManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ResourcePoolManager.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">public static CompressedModuleData newCompressedResource(ResourcePoolEntry original, ByteBuffer compressed, String plugin, StringTable strings, ByteOrder order); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">private abstract static class AccessibilityGraphicsEnvironment extends GraphicsEnvironment { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jshell/share/classes/jdk/internal/jshell/tool/Startup.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jshell/share/classes/jdk/internal/jshell/tool/Startup.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">static Startup unpack(String storedForm, boolean preview, MessageHandler mh); <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">static Startup defaultStartup(boolean preview, MessageHandler mh); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/java/beans/Beans.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/java/beans/Beans.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@SuppressWarnings({ &quot;deprecation&quot;, &quot;removal&quot; }) <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/java/beans/beancontext/BeanContextChildSupport.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/java/beans/beancontext/BeanContextChildSupport.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;removal&quot;) <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/plaf/basic/BasicSliderUI.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/plaf/basic/BasicSliderUI.java</a>
+  </div>
+  <div class="card-body">
+<ul class="list-group list-group-flush"><li class="list-group-item">@Deprecated() <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/StyleContext.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/StyleContext.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">static final class KeyEnumeration implements Enumeration&lt;Object&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">static final class FontKey { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a href="https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java</a>
+  </div>
+  <div class="card-body">
+<div class="card mb-3 new-class-card"><div class="card-header new-class-header">final class ConvertSpanAction extends CharacterAction { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">void convertAttributes(HTML.Tag t, MutableAttributeSet attr); <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">final class ConvertAction extends CharacterAction { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override <span class="badge bg-warning text-dark">Not Checked</span></li><li class="list-group-item">void convertAttributes(HTML.Tag t, MutableAttributeSet attr); <span class="badge bg-warning text-dark">Not Checked</span></li></ul></div><ul class="list-group list-group-flush"><li class="list-group-item">void convertAttributes(HTML.Tag t, MutableAttributeSet attr); <span class="badge bg-warning text-dark">Not Checked</span></li></ul>
+  </div>
+</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
