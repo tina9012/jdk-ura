@@ -19,7 +19,8 @@ for version in data:
             reader = csv.DictReader(f_csv)
             for row in reader:
                 key = (row["version"], row["file_url"], row["method"])
-                checked_methods[key] = row["checked"].strip().lower() == "true"
+                #gets the checked status and stores in checked_methods, identified by version, file_url, and method
+                checked_methods[key] = (row["checked"].strip().lower() == "true")
 
 
 output_dir = "reports"
@@ -51,6 +52,8 @@ custom_css = """
 </style>
 """
 
+#html for the index page
+#uses bootstrap for styling
 index_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,25 +69,26 @@ index_content = f"""<!DOCTYPE html>
   <ul class="toc">
 """
 
+#using bootstrap to for css styling
 for version in data:
     version_file = f"{output_dir}/{version}.html"
     index_content += f'    <li><a href="{version_file}">JDK {version} API Changes</a></li>\n'
 
     version_content = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JDK {version} API Changes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  {custom_css}
-</head>
-<body>
-<div class="container">
-  <h1>JDK {version} API Changes</h1>
-  <a href="../report-styling.html" class="back-link">← Back to Table of Contents</a>
-  <hr>
-"""
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JDK {version} Changes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    {custom_css}
+  </head>
+  <body>
+  <div class="container">
+    <h1>JDK {version} Changes</h1>
+    <a href="../report-styling.html" class="back-link">← Back to all versions</a>
+    <hr>
+  """
 
     for file_url in data[version]:
         version_content += f"""
@@ -96,6 +100,8 @@ for version in data:
 """
         for method in data[version][file_url]:
 
+            #gets the key to access the checked_method status created earlier
+            
             key = (version, file_url, method)
             if checked_methods.get(key, False):
                 indicator = '<span class="badge bg-success">Checked</span>'
