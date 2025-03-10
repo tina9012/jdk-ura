@@ -1,0 +1,408 @@
+version,file_url,method,checked
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xpath/regex/RegularExpression.java,boolean claim();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xpath/regex/RegularExpression.java,void release();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/util/ErrorMsg.java,public static final String UNSUPPORTED_EXT_FUNC_ERR;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/file/JavacFileManager.java,"public ArchiveContainer(Path archivePath) throws IOException, ProviderNotFoundException {",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Type.java,"public ErrorType(Type originalType, TypeSymbol tsym, List<TypeMetadata> metadata) {",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,public ClassSymbol innermostAccessibleEnclosingClass();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,public final boolean dumpStacktraceOnError;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,public static class FunctionDescriptorLookupError extends CompilerInternalException {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,"boolean areDisjoint(ClassSymbol csym, List<Type> permittedSubtypes);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,public abstract class SignatureGenerator {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,public class InvalidSignatureException extends CompilerInternalException {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,public static class InapplicableMethodException extends CompilerInternalException {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"Symbol access(Env<AttrContext> env, DiagnosticPosition pos, Symbol location, Symbol sym);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"void debug(DiagnosticPosition pos, Symbol sym);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,abstract class ReferenceLookupHelper extends LookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,ReferenceLookupHelper unboundLookup(InferenceContext inferenceContext);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,abstract JCMemberReference.ReferenceKind referenceKind(Symbol sym);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"Symbol access(Env<AttrContext> env, DiagnosticPosition pos, Symbol location, Symbol sym);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class MethodReferenceLookupHelper extends ReferenceLookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,ReferenceLookupHelper unboundLookup(InferenceContext inferenceContext);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,ReferenceKind referenceKind(Symbol sym);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class UnboundMethodReferenceLookupHelper extends MethodReferenceLookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class ArrayConstructorReferenceLookupHelper extends ReferenceLookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"protected Symbol lookup(Env<AttrContext> env, MethodResolutionPhase phase);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class ConstructorReferenceLookupHelper extends ReferenceLookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"Symbol findSelfContaining(DiagnosticPosition pos, Env<AttrContext> env, TypeSymbol c, boolean isSuper);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"Symbol findLocalClassOwner(Env<AttrContext> env, TypeSymbol c);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class BadLocalClassCreation extends StaticError {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"JCDiagnostic getDiagnostic(JCDiagnostic.DiagnosticType dkind, DiagnosticPosition pos, Symbol location, Type site, Name name, List<Type> argtypes, List<Type> typeargtypes);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/api/JavacScope.java,public ScopeType getScopeType();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Handler.java,public abstract void close();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Handler.java,public synchronized void setFormatter(Formatter newFormatter);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Handler.java,public synchronized void setEncoding(@Nullable String encoding) throws java.io.UnsupportedEncodingException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Handler.java,public synchronized void setFilter(@Nullable Filter newFilter);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Handler.java,public synchronized void setErrorManager(ErrorManager em);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Handler.java,public synchronized void setLevel(Level newLevel);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Logger.java,"public void setFilter(@GuardSatisfied Logger this, @Nullable Filter newFilter);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Logger.java,"public void setLevel(@GuardSatisfied Logger this, @Nullable Level newLevel);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Logger.java,"public void addHandler(@GuardSatisfied Logger this, Handler handler);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Logger.java,"public void removeHandler(@GuardSatisfied Logger this, @Nullable Handler handler);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/LogManager.java,public void readConfiguration() throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/LogManager.java,String getConfigurationFileName();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/LogManager.java,public void reset();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/LogManager.java,public void readConfiguration(InputStream ins) throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/LogManager.java,public void checkAccess();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/LogManager.java,private static final class LoggingProviderAccess implements LoggingProviderImpl.LogManagerAccess {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/net/www/MessageHeader.java,public MessageHeader(int maxHeaderSize) {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/security/ssl/SSLSessionImpl.java,byte[] incrTicketNonceCounter();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/security/ssl/SSLSessionImpl.java,public boolean isPSK();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,int available() throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,boolean isOther() throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java,abstract int available(FileDescriptor fd) throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java,abstract boolean isOther(FileDescriptor fd) throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/net/NetworkInterface.java,public List<InterfaceAddress> getInterfaceAddresses();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/net/InetAddress.java,static InetAddress[] getAllByName0(String host) throws UnknownHostException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/ArrayList.java,public void sort(Comparator<? super E> c);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/Locale.java,"private static final class LocaleCache implements Function<Object, Locale> {",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/Locale.java,public static Locale cache(Object key);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/Locale.java,public Locale apply(Object key);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/Formatter.java,"private record FixedString(String s, int start, int end) implements FormatString {",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipEntry.java,"static boolean isCENHeaderValid(String name, byte[] extra, String comment);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipFile.java,"static record EntryPos(String name, int pos) {",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipCoder.java,"byte compare(String str, byte[] b, int off, int len, boolean matchDirectory);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipCoder.java,"byte compare(String str, byte[] b, int off, int len, boolean matchDirectory);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipUtils.java,"public static final long get64S(byte[] b, int off);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/concurrent/Exchanger.java,static final class Slot {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final void topLevelExec(ForkJoinTask<?> task, int fifo);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final void cancelTasks();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Security.java,private static final class SecPropLoader {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Security.java,static void loadAll();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Security.java,static boolean isInclude(String key);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Security.java,static void checkReservedKey(String key) throws IllegalArgumentException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Security.java,static void loadInclude(String propFile);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Policy.java,public boolean isReadOnly();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ObjectInputStream.java,protected ObjectInputStream() throws IOException {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ObjectInputStream.java,protected boolean enableResolveObject(boolean enable);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ObjectOutputStream.java,protected ObjectOutputStream() throws IOException {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ObjectOutputStream.java,protected boolean enableReplaceObject(boolean enable);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ObjectOutputStream.java,"void writeBytes(String s, int len) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ObjectOutputStream.java,public void writeUTF(String str) throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/PushbackInputStream.java,public synchronized void close() throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedInputStream.java,"public synchronized int read(byte[] b, @IndexOrHigh({ ""#1"" }) int off, @LTLengthOf(value = { ""#1"" }, offset = { ""#2 - 1"" }) @NonNegative int len) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedInputStream.java,public synchronized long skip(long n) throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedInputStream.java,public synchronized int available() throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedInputStream.java,public synchronized void mark(int readlimit);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedInputStream.java,public synchronized void reset() throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedInputStream.java,public synchronized long transferTo(OutputStream out) throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/Reader.java,public static Reader of(final CharSequence cs);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedOutputStream.java,public synchronized void write(@PolySigned int b) throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedOutputStream.java,public synchronized void flush() throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/Console.java,public Console println();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/Console.java,public String readln();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ByteArrayOutputStream.java,public synchronized void writeTo(OutputStream out) throws IOException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/math/BigInteger.java,static int bitLengthForLong(long n);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/math/MutableBigInteger.java,"void shiftAdd(MutableBigInteger addend, int n);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/math/MutableBigInteger.java,"void shiftAddDisjoint(MutableBigInteger addend, int n);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/math/MutableBigInteger.java,MutableBigInteger[] sqrtRem(boolean needRemainder);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/time/LocalDateTime.java,void formatTo(StringBuilder buf);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/time/LocalTime.java,void formatTo(StringBuilder buf);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/time/LocalDate.java,void formatTo(StringBuilder buf);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Process.java,public boolean waitFor(Duration duration) throws InterruptedException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Object @Nullable [] getSigners();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,void setSigners(Object[] signers);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Method getEnclosingMethod();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Constructor<? extends Object> getEnclosingConstructor();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Class<? extends Object> getDeclaringClass();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Class<? extends Object> getEnclosingClass();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Class<? extends Object>[] getClasses();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Field[] getFields();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Method[] getMethods();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Constructor<? extends Object>[] getConstructors();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Field getField(String name) throws NoSuchFieldException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,"public Method getMethod(String name, Class<?>@Nullable ... parameterTypes) throws NoSuchMethodException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Constructor<T> getConstructor(Class<?>... parameterTypes) throws NoSuchMethodException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Class<? extends Object>[] getDeclaredClasses();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Field[] getDeclaredFields();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public RecordComponent[] getRecordComponents();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Method[] getDeclaredMethods();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Constructor<?>[] getDeclaredConstructors();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Field getDeclaredField(String name) throws NoSuchFieldException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,"public Method getDeclaredMethod(String name, Class<?>... parameterTypes) throws NoSuchMethodException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,"List<Method> getDeclaredPublicMethods(String name, Class<?>... parameterTypes);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,"Method findMethod(boolean publicOnly, String name, Class<?>... parameterTypes);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public Constructor<T> getDeclaredConstructor(Class<?>... parameterTypes) throws NoSuchMethodException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public InputStream getResourceAsStream(String name);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,public ProtectionDomain getProtectionDomain();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,private static class Holder {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,ProtectionDomain protectionDomain();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,static native <T> Class<T> getPrimitiveClass(String name);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock TODHRI;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock GARAY;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock TULU_TIGALARI;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock MYANMAR_EXTENDED_C;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock SUNUWAR;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock EGYPTIAN_HIEROGLYPHS_EXTENDED_A;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock GURUNG_KHEMA;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock KIRAT_RAI;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock SYMBOLS_FOR_LEGACY_COMPUTING_SUPPLEMENT;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock OL_ONAL;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,"TODHRI,",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,"GARAY,",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,"TULU_TIGALARI,",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,"SUNUWAR,",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,"GURUNG_KHEMA,",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,"KIRAT_RAI,",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,"OL_ONAL,",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ClassLoader.java,"static long findNative(@Nullable ClassLoader loader, Class<?> clazz, String entryName, String javaName);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ClassLoader.java,static NativeLibraries nativeLibrariesFor(@Nullable ClassLoader loader);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/StringCoding.java,public static int countNonZeroAscii(String s);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/StringCoding.java,"public static int countNonZeroAsciiLatin1(byte[] ba, int off, int len);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/StringCoding.java,"public static int countNonZeroAsciiUTF16(byte[] ba, int off, int strlen);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/SecurityManager.java,protected Class<?>[] getClassContext();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/SecurityManager.java,private static class StackWalkerHolder {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ref/ReferenceQueue.java,private static class Lock {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ref/Reference.java,void clearImpl();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ref/PhantomReference.java,void clearImpl();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodType.java,"static HashMap<MethodType, MethodType> copyInternTable();",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodType.java,static void createArchivedObjects();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,static int optionsToFlag(ClassOption[] options);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,"static String validateAndFindInternalName(byte[] bytes, String pkgName);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,"ClassDefiner makeClassDefiner(String internalName, byte[] bytes, ClassFileDumper dumper);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,"ClassDefiner makeHiddenClassDefiner(String internalName, byte[] bytes, ClassFileDumper dumper);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,"ClassDefiner makeHiddenClassDefiner(String internalName, byte[] bytes, ClassFileDumper dumper, int flags);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,"record ClassDefiner(Lookup lookup, String internalName, byte[] bytes, int classFlags, ClassFileDumper dumper) {",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,ClassDefiner {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,assert ((classFlags & HIDDEN_CLASS) != 0 || (classFlags & STRONG_LOADER_LINK) == STRONG_LOADER_LINK);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/LambdaForm.java,Name withIndex(int i);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/LambdaForm.java,"static Name[] invokeArguments(int extra, MethodType types);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/reflect/Constructor.java,Constructor<T> newWithAccessor(ConstructorAccessor accessor);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/reflect/ReflectAccess.java,final class ReflectAccess implements JavaLangReflectAccess {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/reflect/ReflectAccess.java,"public <T> Constructor<T> newConstructorWithAccessor(Constructor<T> original, ConstructorAccessor accessor);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/nio/Buffer.java,abstract int scaleShifts();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/nio/Buffer.java,"abstract AbstractMemorySegmentImpl heapSegment(Object base, long offset, long length, boolean readOnly, MemorySessionImpl bufferScope);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"final StringBuf format(Object number, StringBuf toAppendTo, FieldPosition pos);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"StringBuf format(double number, StringBuf result, FieldPosition fieldPosition);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"StringBuf format(double number, StringBuf result, FieldDelegate delegate);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"boolean handleNaN(double number, StringBuf result, FieldDelegate delegate);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"boolean handleInfinity(double number, StringBuf result, FieldDelegate delegate, boolean isNegative);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"StringBuf doubleSubformat(double number, StringBuf result, FieldDelegate delegate, boolean isNegative);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"StringBuf format(long number, StringBuf result, FieldPosition fieldPosition);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"StringBuf format(long number, StringBuf result, FieldDelegate delegate);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"StringBuf format(BigDecimal number, StringBuf result, FieldDelegate delegate);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"StringBuf format(BigInteger number, StringBuf result, FieldDelegate delegate, boolean formatLong);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,DigitList getDigitList();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"void subformatNumber(StringBuf result, FieldDelegate delegate, boolean isNegative, boolean isInteger, int maxIntDigits, int minIntDigits, int maxFraDigits, int minFraDigits);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"record NumericPosition(int fullPos, int intPos) {",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,"NumericPosition subparseNumber(String text, int position, DigitList digits, boolean checkExponent, boolean isExponent, boolean[] status);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/MessageFormat.java,"final StringBuf format(Object arguments, StringBuf result, FieldPosition pos);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/SimpleDateFormat.java,"final StringBuf format(Date date, StringBuf toAppendTo, FieldPosition pos);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/ChoiceFormat.java,"StringBuf format(long number, StringBuf toAppendTo, FieldPosition status);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/ChoiceFormat.java,"StringBuf format(double number, StringBuf toAppendTo, FieldPosition status);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/CharacterIteratorFieldDelegate.java,"public void formatted(Format.Field attr, Object value, int start, int end, Format.StringBuf buffer);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/CharacterIteratorFieldDelegate.java,"public void formatted(int fieldID, Format.Field attr, Object value, int start, int end, Format.StringBuf buffer);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DateFormat.java,"final StringBuf format(Object obj, StringBuf toAppendTo, FieldPosition fieldPosition);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DateFormat.java,"StringBuf format(Date date, StringBuf toAppendTo, FieldPosition fieldPosition);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/NumberFormat.java,"StringBuf format(Object number, StringBuf toAppendTo, FieldPosition pos);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/NumberFormat.java,"StringBuf format(double number, StringBuf toAppendTo, FieldPosition pos);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/NumberFormat.java,"StringBuf format(long number, StringBuf toAppendTo, FieldPosition pos);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/FieldPosition.java,"public void formatted(Format.Field attr, Object value, int start, int end, Format.StringBuf buffer);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/FieldPosition.java,"public void formatted(int fieldID, Format.Field attr, Object value, int start, int end, Format.StringBuf buffer);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/com/sun/crypto/provider/DHPrivateKey.java,private static class DHComponents {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/com/sun/crypto/provider/DHPublicKey.java,private static class DHComponents {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,"void cleanup(HttpConnection c, long pendingData, Throwable error);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,public void dropSubscription();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.rmi/share/classes/java/rmi/server/RMIClassLoader.java,public static ClassLoader getClassLoader(String codebase) throws MalformedURLException;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/CodeBlob.java,public boolean isUpcallStub();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected static final int LONG_TYPE_PARAM;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,"public void addIndirectPackages(Table<?> table, Map<ModuleElement, SortedSet<PackageElement>> ip, Predicate<ModuleElement> acceptModule);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,"SEARCH_TAGS,",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,package jdk.javadoc.internal.html;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public class TextBuilder extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public TextBuilder() {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public TextBuilder(CharSequence initialContent) {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public TextBuilder add(CharSequence strContent);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public boolean isEmpty();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public boolean isPhrasingContent();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public int charCount();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public String toString();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,"public boolean write(Writer out, String newline, boolean atNewline) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,package jdk.javadoc.internal.html;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public class Text extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public static final Text EMPTY;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public static Text of(CharSequence content);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public boolean isEmpty();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public boolean isPhrasingContent();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public int charCount();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,static int charCount(CharSequence cs);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public String toString();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,"public boolean write(Writer out, String newline, boolean atNewline) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public static final String NL;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public static CharSequence normalizeNewlines(CharSequence text);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,static boolean checkNewlines(CharSequence cs);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Comment.java,package jdk.javadoc.internal.html;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Comment.java,public class Comment extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Comment.java,public Comment(String comment) {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Comment.java,public boolean isEmpty();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Comment.java,"public boolean write(Writer out, String newline, boolean atNewline) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,package jdk.javadoc.internal.html;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public class HtmlTree extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public final HtmlTag tag;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree of(HtmlTag tag);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public HtmlTree put(HtmlAttr attrName, String attrValue);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree setId(HtmlId id);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree setTitle(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree setRole(HtmlAttr.Role role);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree setStyle(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree addStyle(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree addStyle(String style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree add(Content content);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree addUnchecked(Content content);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree add(CharSequence stringContent);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public HtmlTree add(List<? extends Content> list);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public Map<HtmlAttr, String> getAttrs();",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public List<Content> getContents();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public <T> HtmlTree addAll(Collection<T> items, Function<T, Content> mapper);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public int charCount();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static final BitSet MAIN_CHARS;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static final BitSet QUERY_FRAGMENT_CHARS;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static String encodeURL(String url);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree A(String ref, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree A(URI ref, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree BODY(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree BR();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree BUTTON(HtmlId id);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree BUTTON(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree CAPTION(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree CODE();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree CODE(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DD();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DD(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DETAILS();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DETAILS(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DIV(HtmlId id);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DIV(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree DIV(HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DIV(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DL(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree DL(HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree DT(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree EM(String body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree FOOTER();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree HEADER();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree HEADING(HtmlTag headingTag, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree HEADING(HtmlTag headingTag, HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree HEADING_TITLE(HtmlTag headingTag, HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree HEADING_TITLE(HtmlTag headingTag, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree HR();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree HTML(String lang, Content head, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree INPUT(HtmlAttr.InputType type, HtmlId id);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree INPUT(HtmlAttr.InputType type, HtmlStyle style);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree LABEL(String forLabel, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree LI();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree LI(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree LI(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree LI(HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree LINK(String rel, String type, String href, String title);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree MAIN();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree MAIN(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree META(String httpEquiv, String content, String charset);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree META(String name, String content);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree NAV();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree NOSCRIPT(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree OL(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree P(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree P(HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree PRE();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree PRE(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree PRE(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree SCRIPT(String src);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree SECTION(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree SECTION(HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree SMALL(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree SPAN(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree SPAN(HtmlStyle styleClass);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree SPAN(HtmlStyle styleClass, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree SPAN_ID(HtmlId id, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree SPAN(HtmlId id, HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree SUMMARY(Content body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree SUP(HtmlStyle style, Content body);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree TITLE(String body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree UL();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree UL(HtmlStyle style);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree UL(HtmlId id, HtmlStyle style);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static HtmlTree UL(HtmlStyle style, Content first, Content... more);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public static <T> HtmlTree UL(HtmlStyle style, Collection<T> items, Function<T, Content> mapper);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public static HtmlTree WBR();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public boolean isEmpty();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public boolean isPhrasingContent();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public boolean hasContent();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public boolean hasAttrs();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public boolean hasAttr(HtmlAttr attrName);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public boolean isDiscardable();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public boolean isInline();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public boolean isVoid();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,"public boolean write(Writer out, String newline, boolean atNewline) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,package jdk.javadoc.internal.html;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public class RawHtml extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,protected final String rawHtmlContent;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public static RawHtml of(CharSequence rawHtml);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public static RawHtml markdown(CharSequence markdownOutput);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,"public static RawHtml startElement(CharSequence name, Content attrs, boolean selfClosing);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public static RawHtml endElement(CharSequence name);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public static RawHtml comment(String body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public static RawHtml cdata(String body);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public boolean isEmpty();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public boolean isPhrasingContent();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public String toString();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,protected static int charCount(CharSequence htmlText);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,"public boolean write(Writer out, String newline, boolean atNewline) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,package jdk.javadoc.internal.html;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public class ContentBuilder extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,protected List<Content> contents;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public ContentBuilder() {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public ContentBuilder(Content... contents) {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public ContentBuilder add(Content content);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public ContentBuilder add(CharSequence text);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public List<Content> getContents();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,"public boolean write(Writer writer, String newline, boolean atNewline) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public boolean isEmpty();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public int charCount();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public boolean isPhrasingContent();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,package jdk.javadoc.internal.html;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public class Script {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public Script() {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public Script(String code) {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public Script append(CharSequence code);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public Script appendStringLiteral(CharSequence text);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,"public Script appendStringLiteral(CharSequence text, char quoteChar);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public Content asContent();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public static String stringLiteral(CharSequence s);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,"public static String stringLiteral(CharSequence s, char quoteChar);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,private static class ScriptContent extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public ScriptContent add(CharSequence code);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,"public boolean write(Writer writer, String newline, boolean atNewline) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public boolean isEmpty();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,package jdk.javadoc.internal.html;,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public abstract class Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public String toString();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public Content add(Content content);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public Content add(CharSequence stringContent);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,"public <T> Content addAll(Collection<T> items, Function<T, Content> mapper);",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,"public abstract boolean write(Writer writer, String newline, boolean atNewline) throws IOException;",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public abstract boolean isEmpty();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public boolean isDiscardable();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public int charCount();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public boolean isPhrasingContent();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/beans/Beans.java,public static void setDesignTime(boolean isDesignTime);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/beans/Beans.java,public static void setGuiAvailable(boolean isGuiAvailable);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/Window.java,public final void setAlwaysOnTop(boolean alwaysOnTop);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,public static void setCurrentKeyboardFocusManager(KeyboardFocusManager newManager);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected Component getGlobalFocusOwner();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected void setGlobalFocusOwner(Component focusOwner);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,public void clearGlobalFocusOwner();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected Component getGlobalPermanentFocusOwner();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected void setGlobalPermanentFocusOwner(Component permanentFocusOwner);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected Window getGlobalFocusedWindow();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected void setGlobalFocusedWindow(Window focusedWindow);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected Window getGlobalActiveWindow();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected void setGlobalActiveWindow(Window activeWindow);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,protected Container getGlobalCurrentFocusCycleRoot();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,public void setGlobalCurrentFocusCycleRoot(Container newFocusCycleRoot);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/font/TextLine.java,public Shape getOutline();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/javax/swing/UIManager.java,public static void setInstalledLookAndFeels(LookAndFeelInfo[] infos);,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotObjectConstantImpl.java,public boolean isCompressible();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotCompressedNullConstant.java,public boolean isCompressible();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotResolvedJavaMethodImpl.java,public boolean isScoped();,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotMetaspaceConstantImpl.java,public boolean isCompressible();,False

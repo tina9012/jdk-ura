@@ -1,0 +1,249 @@
+version,file_url,method,checked
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java,"public final synchronized void getProps(int number, MessageProp prop);",True
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public void setVisible(boolean visible);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public boolean isVisible();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public void setInternal(boolean internal);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public boolean isInternal();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/JavaFileManager.java,"default JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/JavaFileManager.java,"default FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/JavaFileManager.java,private static FileObject siblingFrom(FileObject[] originatingFiles);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/ForwardingJavaFileManager.java,"public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/ForwardingJavaFileManager.java,"public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/lang/model/util/Elements.java,default TypeElement getOutermostTypeElement(Element e);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/lang/model/util/Elements.java,default javax.tools.JavaFileObject getFileObjectOf(Element e);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/file/Locations.java,protected abstract static class LocationHandler {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/file/Locations.java,private abstract static class BasicLocationHandler extends LocationHandler {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Type.java,public abstract static class StructuralTypeMapping<S> extends Types.TypeMapping<S> {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Type.java,public abstract static class DelegatedType extends Type {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,public abstract static class TypeSymbol extends Symbol {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,"public abstract static class DefaultTypeVisitor<R, S> implements Type.Visitor<R, S> {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,"public abstract static class DefaultSymbolVisitor<R, S> implements Symbol.Visitor<R, S> {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,"public abstract static class SimpleVisitor<R, S> extends DefaultTypeVisitor<R, S> {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,"public abstract static class TypeRelation extends SimpleVisitor<Boolean, Type> {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,"public abstract static class UnaryVisitor<R> extends SimpleVisitor<R, Void> {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,public abstract static class SignatureGenerator {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,boolean isSerializable(Type t);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/api/ClientCodeWrapper.java,"public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/api/ClientCodeWrapper.java,"public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/main/DelegatingJavaFileManager.java,"public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/main/DelegatingJavaFileManager.java,"public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.prefs/share/classes/java/util/prefs/AbstractPreferences.java,private static class NodeAddedEvent extends NodeChangeEvent {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.prefs/share/classes/java/util/prefs/AbstractPreferences.java,private static class NodeRemovedEvent extends NodeChangeEvent {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,CK_ATTRIBUTE[] fetchAttributes(CK_ATTRIBUTE[] attrs);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,BigInteger[] fetchAttributesAsInts(CK_ATTRIBUTE[] attrs);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,"static SecretKey secretKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,"static SecretKey masterSecretKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, int major, int minor);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,"static PublicKey publicKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,"static PrivateKey privateKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static abstract class P11PrivateKey extends P11Key implements PrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,protected byte[] encoded;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static abstract class P11PublicKey extends P11Key implements PublicKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,protected byte[] encoded;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,static class P11RSAPrivateKeyInternal extends P11PrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,"static P11RSAPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,protected transient BigInteger n;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11RSAPrivateKey extends P11RSAPrivateKeyInternal implements RSAPrivateCrtKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,public String getFormat();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,synchronized byte[] getEncodedInternal();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,public BigInteger getModulus();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11RSAPrivateNonCRTKey extends P11RSAPrivateKeyInternal implements RSAPrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11RSAPublicKey extends P11PublicKey implements RSAPublicKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11DSAPublicKey extends P11PublicKey implements DSAPublicKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,static class P11DSAPrivateKeyInternal extends P11PrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,protected transient DSAParams params;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,"static P11DSAPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,protected DSAParams getParams();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11DSAPrivateKey extends P11DSAPrivateKeyInternal implements DSAPrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,static class P11DHPrivateKeyInternal extends P11PrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,protected transient DHParameterSpec params;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,"static P11DHPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,public DHParameterSpec getParams();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11DHPrivateKey extends P11DHPrivateKeyInternal implements DHPrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11DHPublicKey extends P11PublicKey implements DHPublicKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,static class P11ECPrivateKeyInternal extends P11PrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,protected transient ECParameterSpec params;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,"static P11ECPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,protected ECParameterSpec getParams();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11ECPrivateKey extends P11ECPrivateKeyInternal implements ECPrivateKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private static final class P11ECPublicKey extends P11PublicKey implements ECPublicKey {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/windows/classes/sun/nio/fs/WindowsPath.java,String getPathWithPrefixForWin32Calls() throws WindowsException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/windows/classes/sun/nio/fs/WindowsPath.java,static String addPrefix(String path);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/util/resources/LocaleData.java,private abstract static class LocaleDataResourceBundleProvider implements ResourceBundleProvider {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/util/resources/LocaleData.java,public abstract static class CommonResourceBundleProvider extends LocaleDataResourceBundleProvider {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/util/resources/LocaleData.java,public abstract static class SupplementaryResourceBundleProvider extends LocaleDataResourceBundleProvider {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerInputStream.java,public void atEnd() throws IOException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerInputStream.java,public Optional<DerValue> getOptional(byte tag) throws IOException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerInputStream.java,public boolean seeOptionalContextSpecific(int n) throws IOException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerInputStream.java,public Optional<DerValue> getOptionalExplicitContextSpecific(int n) throws IOException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerInputStream.java,"public Optional<DerValue> getOptionalImplicitContextSpecific(int n, byte tag) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerValue.java,public static DerValue wrap(byte[] buf) throws IOException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerValue.java,"public static DerValue wrap(byte[] buf, int offset, int len) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerValue.java,"public DerValue[] subs(byte expectedTag, int startLen) throws IOException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/x509/AlgorithmId.java,public byte[] getEncodedParams();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,"private abstract static class Unmapper implements Runnable, UnmapperProxy {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java,abstract boolean canTransferToFromOverlappedMap();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet6AddressImpl.java,final class Inet6AddressImpl implements InetAddressImpl {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet6AddressImpl.java,"public InetAddress[] lookupAllHostAddr(String hostname, LookupPolicy lookupPolicy) throws UnknownHostException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet4AddressImpl.java,final class Inet4AddressImpl implements InetAddressImpl {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet4AddressImpl.java,"public InetAddress[] lookupAllHostAddr(String hostname, LookupPolicy lookupPolicy) throws UnknownHostException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/ServerSocket.java,public void setSoTimeout(int timeout) throws SocketException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/ServerSocket.java,public int getSoTimeout() throws IOException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/ServerSocket.java,public void setReceiveBufferSize(int size) throws SocketException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/ServerSocket.java,public int getReceiveBufferSize() throws SocketException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,static boolean systemAddressesOrder(int lookupCharacteristics);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,static boolean ipv4AddressesFirst(int lookupCharacteristics);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,static boolean ipv6AddressesFirst(int lookupCharacteristics);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,private static final class PlatformResolver implements InetAddressResolver {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,"public Stream<InetAddress> lookupByName(String host, LookupPolicy policy) throws UnknownHostException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,public String lookupByAddress(byte[] addr) throws UnknownHostException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,private static final class HostsFileResolver implements InetAddressResolver {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,public HostsFileResolver(String hostsFileName) {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,public String lookupByAddress(byte[] addr) throws UnknownHostException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,"public Stream<InetAddress> lookupByName(String host, LookupPolicy lookupPolicy) throws UnknownHostException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java,static InetAddress[] getAddressesFromNameService(String host) throws UnknownHostException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/HashMap.java,private static final class UnsafeHolder {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/HashMap.java,"static void putLoadFactor(HashMap<?, ?> map, float lf);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/ImmutableCollections.java,abstract static class AbstractImmutableCollection<E> extends AbstractCollection<E> {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/ImmutableCollections.java,"abstract static class AbstractImmutableList<E> extends AbstractImmutableCollection<E> implements List<E>, RandomAccess {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/ImmutableCollections.java,abstract static class AbstractImmutableSet<E> extends AbstractImmutableCollection<E> implements Set<E> {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Hashtable.java,"void readHashtable(ObjectInputStream s) throws IOException, ClassNotFoundException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Hashtable.java,private static final class UnsafeHolder {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Hashtable.java,"static void putLoadFactor(Hashtable<?, ?> table, float lf);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Collections.java,public void forEach(Consumer<? super E> action);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/regex/Pattern.java,"default CharPredicate union(CharPredicate p1, CharPredicate p2);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/Provider.java,public String toString();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/Provider.java,public Set<Service> getServices();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/Provider.java,Service getDefaultSecureRandomService();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/Provider.java,"void removeAttribute(String type, String value);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/KeyStoreSpi.java,public Set<Entry.Attribute> engineGetAttributes(String alias);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/KeyStore.java,public final Set<Entry.Attribute> getAttributes(String alias) throws KeyStoreException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/PrintStream.java,public Charset charset();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectInputStream.java,"public abstract Object get(String name, @Nullable Object val) throws IOException, ClassNotFoundException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectInputStream.java,"public Object get(String name, Object val) throws ClassNotFoundException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/FileInputStream.java,public long transferTo(OutputStream out) throws IOException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectStreamClass.java,abstract static class Key {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/time/Duration.java,public boolean isPositive();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/System.java,public abstract static class LoggerFinder {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StackStreamFactory.java,"abstract static class AbstractStackWalker<R, T> {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StackStreamFactory.java,abstract static class FrameBuffer<F> {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StringBuffer.java,"public final class StringBuffer extends AbstractStringBuilder implements Serializable, Comparable<StringBuffer>, CharSequence {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StringCoding.java,"public static int implEncodeAsciiArray(char[] sa, int sp, byte[] da, int dp, int len);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static int divideExact(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static long divideExact(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static int floorDivExact(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static long floorDivExact(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static int ceilDivExact(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static long ceilDivExact(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static long unsignedMultiplyHigh(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static int ceilDiv(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static long ceilDiv(long x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static long ceilDiv(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static int ceilMod(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static int ceilMod(long x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java,"public static long ceilMod(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/WeakPairMap.java,private abstract static class WeakRefPeer<K> extends WeakReference<K> {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static int divideExact(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static long divideExact(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static int floorDivExact(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static long floorDivExact(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static int ceilDivExact(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static long ceilDivExact(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static long unsignedMultiplyHigh(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static int ceilDiv(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static long ceilDiv(long x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static long ceilDiv(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static int ceilMod(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static int ceilMod(long x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java,"public static long ceilMod(long x, long y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ref/Reference.java,boolean refersToImpl(T obj);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ref/PhantomReference.java,boolean refersToImpl(T obj);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/CallSite.java,public abstract class CallSite {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,static Object classData(Class<?> c);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,"ClassDefiner makeHiddenClassDefiner(String name, byte[] bytes, Set<ClassOption> options);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/AbstractConstantGroup.java,abstract static class WithCache extends AbstractConstantGroup {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java,static MethodHandle reflectiveInvoker(Class<?> caller);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java,private static final class InjectedInvokerHolder {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/reflect/Method.java,"public Object invoke(Object obj, Object... args) throws IllegalAccessException, InvocationTargetException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/nio/charset/Charset.java,"public static Charset forName(String charsetName, Charset fallback);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/javax/security/auth/Subject.java,public static Subject current();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/javax/security/auth/Subject.java,"public static <T> T callAs(final Subject subject, final Callable<T> action) throws CompletionException;",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.httpserver/share/classes/com/sun/net/httpserver/Headers.java,"public Headers(Map<String, List<String>> headers) {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.httpserver/share/classes/com/sun/net/httpserver/Headers.java,"public void replaceAll(BiFunction<? super String, ? super List<String>, ? extends List<String>> function);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.httpserver/share/classes/com/sun/net/httpserver/Headers.java,public String toString();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.httpserver/share/classes/com/sun/net/httpserver/Headers.java,public static Headers of(String... headers);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.httpserver/share/classes/com/sun/net/httpserver/Headers.java,"public static Headers of(Map<String, List<String>> headers);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java,public static final int TRUE_COLORS;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java,public enum ForceMode {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java,"None, Force256Colors, ForceTrueColors",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java,"public String toAnsi(int colors, ForceMode force);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java,"public String toAnsi(int colors, ForceMode force, ColorPalette palette);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java,"public String toAnsi(int colors, ForceMode force, ColorPalette palette, String altIn, String altOut);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java,long styleCodeAt(int index);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RemoteObject.java,protected transient RemoteRef ref;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RMISocketFactory.java,public static synchronized void setSocketFactory(RMISocketFactory fac) throws IOException;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RMISocketFactory.java,public static synchronized RMISocketFactory getSocketFactory();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RMISocketFactory.java,public static synchronized RMISocketFactory getDefaultSocketFactory();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RMISocketFactory.java,public static synchronized void setFailureHandler(RMIFailureHandler fh);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RMISocketFactory.java,public static synchronized RMIFailureHandler getFailureHandler();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/ReferenceTypeImpl.java,public abstract List<Method> allMethods();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/VirtualMachineImpl.java,private static class SoftObjectReference extends SoftReference<ObjectReferenceImpl> {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Content linkToContent(Element referrer, Element target, String targetSignature, String text);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"protected Content invalidTagOutput(String summary, Optional<Content> detail);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,public List<DocPath> getAdditionalScripts();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,"public static HtmlTree INPUT(String type, HtmlId id);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java,public boolean isMandated(AnnotationMirror aDesc);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,public TypeElement getReferencedClass(Element e);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,public String getReferencedModuleName(String signature);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,public Element getReferencedMember(Element e);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,public String getReferencedMemberName(String signature);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,public PackageElement getReferencedPackage(Element e);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,public ModuleElement getReferencedModule(Element e);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,"ANNOTATION_TYPE_MEMBER,",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,"ANNOTATION_TYPE_MEMBER_REQUIRED,",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,public List<Element> getAllVisibleMembers(Kind kind);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,"public List<Element> getVisibleMembers(Kind kind, Predicate<Element> p);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,public List<Element> getVisibleMembers(Kind kind);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,public List<Element> getMembers(Kind kind);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,public VariableElement getPropertyField(ExecutableElement ee);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,public ExecutableElement getPropertyGetter(ExecutableElement ee);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,public ExecutableElement getPropertySetter(ExecutableElement ee);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,public ExecutableElement getPropertyMethod(ExecutableElement ee);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,"<T extends Element> List<T> getMembers(String key, Kind kind, Class<T> clazz);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,"List<ExecutableElement> getPropertyMethods(String methodName, int argcount);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,"record PropertyMembers(ExecutableElement propertyMethod, VariableElement field, ExecutableElement getter, ExecutableElement setter) {",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public TypeMirror getThrowableType();,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public boolean isThrowable(TypeElement te);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ResourcePoolManager.java,static class ResourcePoolModuleImpl implements ResourcePoolModule {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ImagePluginStack.java,private static final class CheckOrderResourcePoolManager extends ResourcePoolManager {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ImagePluginStack.java,private static class LastPoolManager extends ResourcePoolManager {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,public final class AccessBridge {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,private static abstract class AccessibilityGraphicsEnvironment extends GraphicsEnvironment {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,"public static GraphicsConfiguration getGraphicsConfigurationAtPoint(double x, double y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,"public static GraphicsConfiguration getGraphicsConfigurationAtPoint(GraphicsConfiguration current, double x, double y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,"public static GraphicsConfiguration getGraphicsConfigurationAtDevicePoint(double x, double y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,"public static GraphicsConfiguration getGraphicsConfigurationAtDevicePoint(GraphicsConfiguration current, double x, double y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,"public static Point toUserSpace(int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,"public static Point toUserSpace(GraphicsConfiguration gc, int x, int y);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,public static Rectangle toDeviceSpaceAbs(Rectangle rect);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,"public static Rectangle toDeviceSpaceAbs(GraphicsConfiguration gc, int x, int y, int w, int h);",False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jshell/share/classes/jdk/jshell/MemoryFileManager.java,abstract static class MemoryJavaFileObject extends SimpleJavaFileObject {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/unix/classes/sun/print/IPPPrintService.java,private static class ExtFinishing extends Finishings {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/Polygon.java,static class PolygonPathIterator implements PathIterator {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/CardLayout.java,static class Card implements Serializable {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/Component.java,private static class ProxyCapabilities extends ExtendedBufferCapabilities {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/Toolkit.java,private static class SelectiveAWTEventListener implements AWTEventListener {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/print/Book.java,private static class BookPage {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/JComponent.java,static final class ActionStandin implements Action {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/JComponent.java,private static class ReadObjectCallback implements ObjectInputValidation {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/plaf/nimbus/NimbusStyle.java,private static final class RuntimeState implements Cloneable {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/text/StyleContext.java,static class KeyEnumeration implements Enumeration<Object> {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/text/StyleContext.java,static class KeyBuilder {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/text/JTextComponent.java,private static class DoSetCaretPosition implements Runnable {,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.management.agent/share/classes/sun/management/jdp/JdpJmxPacket.java,public static final String UUID_KEY;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.management.agent/share/classes/sun/management/jdp/JdpJmxPacket.java,public static final String MAIN_CLASS_KEY;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.management.agent/share/classes/sun/management/jdp/JdpJmxPacket.java,public static final String JMX_SERVICE_URL_KEY;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.management.agent/share/classes/sun/management/jdp/JdpJmxPacket.java,public static final String INSTANCE_NAME_KEY;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.management.agent/share/classes/sun/management/jdp/JdpJmxPacket.java,public static final String PROCESS_ID_KEY;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.management.agent/share/classes/sun/management/jdp/JdpJmxPacket.java,public static final String RMI_HOSTNAME_KEY;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.management.agent/share/classes/sun/management/jdp/JdpJmxPacket.java,public static final String BROADCAST_INTERVAL_KEY;,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotObjectConstantImpl.java,public JavaConstant readFieldValue(HotSpotResolvedJavaField field);,False

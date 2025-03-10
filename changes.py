@@ -40,7 +40,7 @@ def extract_new_lines(old_lines, new_lines):
     added = []
 
     for line in diff:
-        # Lines starting with '+ ' are additions
+        # lines starting with '+ ' are a new addition to the version
         if line.startswith('+ '):
             content = line[2:].strip()
             if valid_method(content):
@@ -56,7 +56,6 @@ def compare_version_pair(old_version_dir, new_version_dir):
     new_files = list_java_files(new_version_dir)
     file_diff = {}
 
-    # Extract version details
 
     for rel_path in new_files: 
         branch = os.path.basename(new_version_dir)
@@ -78,14 +77,11 @@ def compare_version_pair(old_version_dir, new_version_dir):
 
     return file_diff
 
-# ---------------------------
-# Main processing starts here
-# ---------------------------
+#processing begins
 
 versions = ['master', 'jdk-18', 'jdk-19', 'jdk-20', 'jdk-21', 'jdk-22', 'jdk-23', 'jdk-24']
 
-# Base path where these version folders reside.
-base_path = './results/'  # <-- Change this to your actual path
+base_path = './results/'
 
 results = {}
 
@@ -93,7 +89,6 @@ for i in range(1, len(versions)):
     old_version = versions[i - 1]
     new_version = versions[i]
     version_pair_key = new_version
-    print(f"Comparing {version_pair_key}...")
     
     old_dir = os.path.join(base_path, old_version)
     new_dir = os.path.join(base_path, new_version)
@@ -104,5 +99,3 @@ for i in range(1, len(versions)):
 output_json = 'new_methods_diff.json'
 with open(output_json, 'w', encoding='utf-8') as out_f:
     json.dump(results, out_f, indent=2)
-
-print(f"Diff results saved to {output_json}")

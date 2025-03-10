@@ -1,0 +1,409 @@
+version,file_url,method,checked
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.security.jgss/share/classes/javax/security/auth/kerberos/KerberosPrincipal.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public static final Type STACK_TRACE;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.compiler/share/classes/javax/lang/model/util/Elements.java,default TypeElement getEnumConstantBody(VariableElement enumConstant);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.compiler/share/classes/javax/lang/model/element/RecordComponentElement.java,TypeMirror asType();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.xml/share/classes/javax/xml/catalog/CatalogImpl.java,public final NotFoundAction getResolve();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public static boolean hasAnyConstructorCall(JCMethodDecl tree);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,"public static boolean hasConstructorCall(JCMethodDecl tree, Name target);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public static JCMethodInvocation findConstructorCall(JCMethodDecl md);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,private static class ConstructorCallFinder extends TreeScanner {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,List<JCMethodInvocation> find(JCMethodDecl meth);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public void visitApply(JCMethodInvocation invoke);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public void visitClassDef(JCClassDecl tree);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public void visitLambda(JCLambda tree);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,"public static void mapSuperCalls(JCBlock block, Function<? super JCExpressionStatement, ? extends JCStatement> mapper);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,private static class SuperCallTranslator extends TreeTranslator {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public void visitExec(JCExpressionStatement stat);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public void visitClassDef(JCClassDecl tree);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public void visitLambda(JCLambda tree);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,public boolean isImplicit();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,public Type implicitReceiverType();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,class DisjointChecker {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"Symbol access(Env<AttrContext> env, DiagnosticPosition pos, Symbol location, Symbol sym);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class RefBeforeCtorCalledError extends StaticError {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"JCDiagnostic getDiagnostic(JCDiagnostic.DiagnosticType dkind, DiagnosticPosition pos, Symbol location, Type site, Name name, List<Type> argtypes, List<Type> typeargtypes);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,public DSAParams getParams();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,public ECParameterSpec getParams();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/unix/classes/sun/nio/fs/UnixPath.java,"public UnixPath resolve(Path first, Path... more);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/util/calendar/CalendarDate.java,public sealed abstract class CalendarDate implements Cloneable permits BaseCalendar.Date {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java,final class ImmutableGregorianDate extends BaseCalendar.Date {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/tools/keytool/Main.java,private static class ExitException extends RuntimeException {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/tools/keytool/Main.java,public ExitException(int errorCode) {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/tools/keytool/Main.java,"public int run(String[] args, PrintStream out) throws Exception;",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/tools/keytool/Main.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/util/DerInputStream.java,public Date getTime() throws IOException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/util/DerValue.java,public Date getTime() throws IOException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/x509/GeneralName.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/x509/KeyIdentifier.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/x509/EDIPartyName.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/x509/PolicyInformation.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/x509/CertificatePolicyId.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/x509/GeneralSubtree.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/pkcs10/PKCS10.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/security/pkcs/EncryptedPrivateKeyInfo.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,"private sealed abstract static class Unmapper implements Runnable, UnmapperProxy {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,private static final class DefaultUnmapper extends Unmapper {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,private static final class SyncUnmapper extends Unmapper {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/net/Inet4Address.java,public static Inet4Address ofLiteral(String ipv4AddressLiteral);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/net/Inet4Address.java,"static Inet4Address parseAddressString(String addressLiteral, boolean throwIAE);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/net/ProxySelector.java,public List<Proxy> select(URI uri);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/net/Inet6Address.java,public static InetAddress ofLiteral(String ipv6AddressLiteral);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/net/Inet6Address.java,"static InetAddress parseAddressString(String addressLiteral, boolean removeSqBrackets) throws UnknownHostException;",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/net/InetAddress.java,public static InetAddress ofLiteral(String ipAddressLiteral);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/DualPivotQuicksort.java,private static interface SortOperation<A> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/DualPivotQuicksort.java,"void sort(A a, int low, int high);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/DualPivotQuicksort.java,interface PartitionOperation<A> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/DualPivotQuicksort.java,"int[] partition(A a, int low, int high, int pivotIndex1, int pivotIndex2);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/AbstractMap.java,final class KeyIterator implements Iterator<K> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/AbstractMap.java,public boolean hasNext();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/AbstractMap.java,public void remove();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/AbstractMap.java,public K next();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/AbstractMap.java,final class ValueIterator implements Iterator<V> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/AbstractMap.java,public boolean hasNext();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/AbstractMap.java,public void remove();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/AbstractMap.java,public V next();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/stream/Stream.java,"default <R> Stream<R> gather(Gatherer<? super T, ?, R> gatherer);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/zip/ZipFile.java,static boolean getDisableZip64ExtraFieldValidation();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,static long slotOffset(int index);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final void updateBase(int v);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final void updateTop(int v);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final void forgetSource();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final void updateArray(ForkJoinTask<?>[] a);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final void unlockPhase();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final boolean tryLockPhase();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final void push(ForkJoinTask<?> task, ForkJoinPool pool, boolean internal);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final boolean tryUnpush(ForkJoinTask<?> task, boolean internal);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final void topLevelExec(ForkJoinTask<?> task, WorkQueue src, int srcId);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final void tryRemoveAndExec(ForkJoinTask<?> task, boolean internal);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final int helpComplete(ForkJoinTask<?> task, boolean internal, int limit);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,static boolean poolIsStopping(ForkJoinPool p);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final void signalWork(ForkJoinTask<?>[] a, int k);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final int helpJoin(ForkJoinTask<?> task, WorkQueue w, boolean internal);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final int helpComplete(ForkJoinTask<?> task, WorkQueue w, boolean internal);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final WorkQueue externalSubmissionQueue();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,static WorkQueue externalQueue(ForkJoinPool p);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,public <T> List<Future<T>> invokeAllUninterruptibly(Collection<? extends Callable<T>> tasks);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,public <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> tasks) throws InterruptedException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final long beginCompensatedBlock();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final int trySetCancelled();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final boolean trySetThrown(Throwable ex);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,void onAuxExceptionSet(Throwable ex);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final void trySetException(Throwable ex);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final void doExec();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final int setForkJoinTaskStatusMarkerBit();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final int getForkJoinTaskStatusMarkerBit();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public ForkJoinTask() {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final void quietlyJoinPoolInvokeAllTask(long deadline) throws InterruptedException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public static ForkJoinTask<?> adapt(Runnable runnable);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,"public static <T> ForkJoinTask<T> adapt(Runnable runnable, T result);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public static <T> ForkJoinTask<T> adapt(Callable<? extends T> callable);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public static <T> ForkJoinTask<T> adaptInterruptible(Callable<? extends T> callable);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,"public static <T> ForkJoinTask<T> adaptInterruptible(Runnable runnable, T result);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public static ForkJoinTask<?> adaptInterruptible(Runnable runnable);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,static final class AdaptedCallable<T> extends ForkJoinTask<T> implements RunnableFuture<T> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final T getRawResult();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final void setRawResult(T v);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final boolean exec();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final void run();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public String toString();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,static abstract class InterruptibleTask<T> extends ForkJoinTask<T> implements RunnableFuture<T> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,abstract T compute() throws Exception;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final boolean exec();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public boolean cancel(boolean mayInterruptIfRunning);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final void run();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,Object adaptee();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public String toString();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,static final class AdaptedInterruptibleCallable<T> extends InterruptibleTask<T> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final T getRawResult();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final void setRawResult(T v);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final T compute() throws Exception;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final Object adaptee();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,static final class AdaptedInterruptibleRunnable<T> extends InterruptibleTask<T> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final T getRawResult();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final void setRawResult(T v);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final T compute();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final Object adaptee();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,static final class RunnableExecuteAction extends InterruptibleTask<Void> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final Void compute();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final Object adaptee();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,void onAuxExceptionSet(Throwable ex);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,static final class InvokeAnyRoot<T> extends InterruptibleTask<T> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,"final void tryComplete(InvokeAnyTask<T> f, T v, Throwable ex, boolean completed);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final T compute();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final T getRawResult();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final void setRawResult(T v);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,"final T invokeAny(Collection<? extends Callable<T>> tasks, ForkJoinPool pool, boolean timed, long nanos) throws InterruptedException, ExecutionException, TimeoutException;",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,static final class InvokeAnyTask<T> extends InterruptibleTask<Void> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final Void compute() throws Exception;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final void onRootCompletion();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final Void getRawResult();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,public final void setRawResult(Void v);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,final Object adaptee();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,static final class DualNode implements ForkJoinPool.ManagedBlocker {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final Object cmpExItem(Object cmp, Object val);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final DualNode cmpExNext(DualNode cmp, DualNode val);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,final boolean matched();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,final void selfLinkItem();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final Object await(Object e, long ns, Object blocker, boolean spin);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final DualNode cmpExTail(DualNode cmp, DualNode val);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final DualNode cmpExHead(DualNode cmp, DualNode val);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,final boolean sweepNow();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final Object xfer(Object e, long ns);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final boolean tryCasSuccessor(DualNode pred, DualNode c, DualNode p);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final DualNode skipDeadNodes(DualNode pred, DualNode c, DualNode p, DualNode q);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"final boolean tryMatchData(DualNode p, Object x);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,final DualNode firstDataNode();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,final int countOfMode(boolean data);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java,"void forEachFrom(Consumer<? super E> action, DualNode p);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/SynchronousQueue.java,static final class Transferer<E> extends LinkedTransferQueue<E> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/util/concurrent/SynchronousQueue.java,"final Object xferLifo(Object e, long ns);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/security/interfaces/ECPrivateKey.java,default ECParameterSpec getParams();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/io/FileDescriptor.java,public void sync() throws SyncFailedException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/io/RandomAccessFile.java,"public RandomAccessFile(String pathname, String mode) throws FileNotFoundException {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/io/Console.java,public boolean isTerminal();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Integer.java,private static final class IntegerCache {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,protected final int mode;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,protected abstract int batchSize(int lastBatchSize);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,"static class StackFrameTraverser<T> extends AbstractStackWalker<T, StackFrame> implements Spliterator<StackFrame> {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,protected int batchSize(int lastBatchSize);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,static class StackFrameBuffer<T extends ClassFrameInfo> extends FrameBuffer<T> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,T[] frames();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,T[] allocateArray(int size);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,"T[] fill(T[] array, int startIndex, int size);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,void resize(int size);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,T nextStackFrame();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,final Class<?> at(int index);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,static class ClassFrameBuffer extends StackFrameBuffer<ClassFrameInfo> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,ClassFrameInfo[] allocateArray(int size);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,"ClassFrameInfo[] fill(ClassFrameInfo[] array, int startIndex, int size);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,"static final class CallerClassFinder extends AbstractStackWalker<Integer, ClassFrameInfo> {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,protected int batchSize(int lastBatchSize);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,abstract void resize(int size);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,final int currentBatchSize();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,final int numFrames();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,final boolean isFull();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackStreamFactory.java,"final void setBatch(int depth, int startIndex, int numFrames);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Byte.java,private static final class ByteCache {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Short.java,private static final class ShortCache {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Long.java,private static final class LongCache {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Class.java,public static Class<?> forPrimitiveName(String primitiveName);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Class.java,"Method findMethod(boolean publicOnly, String name, Class<?>... parameterTypes);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/String.java,boolean bytesCompatible(Charset charset);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/String.java,"void copyToSegmentRaw(MemorySegment segment, long offset);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Character.java,public static final UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Character.java,private static final class CharacterCache {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackWalker.java,"RETAIN_CLASS_REFERENCE, DROP_METHOD_INFO, SHOW_REFLECT_FRAMES, SHOW_HIDDEN_FRAMES",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/StackWalker.java,"static StackWalker newInstance(Set<Option> options, ContinuationScope contScope);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/Thread.java,"final void runWith(Object bindings, Runnable op);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,"MethodHandle serializableConstructor(Class<?> decl, Constructor<?> c) throws IllegalAccessException;",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/lang/reflect/ReflectAccess.java,public Class<?>[] getExecutableSharedExceptionTypes(Executable ex);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/nio/file/Path.java,"default Path resolve(Path first, Path... more);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/java/nio/file/Path.java,"default Path resolve(String first, String... more);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/javax/security/cert/Certificate.java,public boolean equals(@Nullable Object obj);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.base/share/classes/com/sun/crypto/provider/PBEKey.java,public boolean isDestroyed();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,"void returnToPool(HttpConnection conn, Deadline now, long keepAlive);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,long purgeExpiredConnectionsAndReturnNextDeadline(Deadline now);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,Optional<Deadline> nextExpiryDeadline();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,"void add(HttpConnection conn, Deadline now, long keepAlive);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,List<HttpConnection> purgeUntil(Deadline now);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.naming/share/classes/com/sun/jndi/ldap/pool/ConnectionDesc.java,boolean release();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.naming/share/classes/com/sun/jndi/ldap/pool/ConnectionDesc.java,PooledConnection tryUse();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.naming/share/classes/com/sun/jndi/ldap/pool/ConnectionDesc.java,boolean expire(long threshold);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,package jdk.javadoc.internal.doclets.formats.html;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,public class ClassWriter extends SubWriterHolderWriter {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected final TypeElement typeElement;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected final ClassTree classTree;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected final PropertyUtils.PropertyHelper pHelper;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,"public ClassWriter(HtmlConfiguration configuration, TypeElement typeElement, ClassTree classTree) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,public PropertyUtils.PropertyHelper getPropertyHelper();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,public void buildPage() throws DocletException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildClassDoc() throws DocletException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildClassTree(Content classContent);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildClassInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildParamInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildSuperInterfacesInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildImplementedInterfacesInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildSubClassInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildSubInterfacesInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildInterfaceUsageInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildFunctionalInterfaceInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildDeprecationInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildNestedClassInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildClassSignature(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildClassDescription(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildClassTagInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildMemberSummary(Content classContent);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void buildMemberDetails(Content classContent);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected Content getHeader(String header);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected Content getClassContentHeader();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,"protected Navigation getNavBar(PageMode pageMode, Element element);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addFooter();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void printDocument(Content content) throws DocFileIOException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected Content getClassInfo(Content classInfo);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,public TypeElement getCurrentPageElement();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addClassSignature(Content classInfo);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addClassDescription(Content classInfo);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addClassTagInfo(Content classInfo);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addClassTree(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addParamInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addSubClassInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addSubInterfacesInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addInterfaceUsageInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addImplementedInterfacesInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addSuperInterfacesInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addNestedClassInfo(final Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addFunctionalInterfaceInfo(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected void addClassDeprecationInfo(Content classInfo);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,public TypeElement getTypeElement();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,protected Content getMemberDetails(Content content);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,public boolean isIndexable();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public abstract class HtmlDocletWriter {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public final Messages messages;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public final Links links;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public final Map<String, Integer> indexAnchorTable;",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"protected HtmlDocletWriter(HtmlConfiguration configuration, DocPath path, boolean generating) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public abstract void buildPage() throws DocletException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,protected final void writeGenerating();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public TagletWriter getTagletWriterInstance(TagletWriter.Context context);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public boolean isIndexable();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,protected Content getHeader(Navigation.PageMode pageMode);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"protected Content getHeader(Navigation.PageMode pageMode, Element element);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public TypeElement getCurrentPageElement();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Content commentTagsToContent(Element element, List<? extends DocTree> trees, TagletWriter.Context context);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Content invalidTagOutput(String summary, Optional<Content> detail);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public void addRestrictedSummary(Element forWhat, Content target);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public void addRestrictedInfo(ExecutableElement forWhat, Content target);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,package jdk.javadoc.internal.doclets.formats.html;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public class ModuleWriter extends HtmlDocletWriter {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected ModuleElement mdle;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,static class PackageEntry {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,"public ModuleWriter(HtmlConfiguration configuration, ModuleElement mdle) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public void buildPage() throws DocletException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void buildModuleDoc() throws DocletException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void buildContent();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void buildSummary(Content target);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void buildModulesSummary(Content summariesList);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void buildPackagesSummary(Content summariesList);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void buildServicesSummary(Content summariesList);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void buildModuleDescription(Content moduleContent);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected Content getModuleHeader(String heading);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,"protected Navigation getNavBar(PageMode pageMode, Element element);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected Content getContentHeader();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected Content getSummariesList();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected Content getSummary(Content source);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public void computeModulesData();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public boolean shouldDocument(Element element);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public boolean display(Set<? extends Element> section);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,"public boolean display(Map<? extends Element, ?> section);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,"public void addSummaryHeader(Content startMarker, Content heading, Content target);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void addModulesSummary(Content summariesList);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void addPackagesSummary(Content summariesList);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public void addPackageSummary(HtmlTree li);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,"public void addIndirectPackages(Table<?> table, Map<ModuleElement, SortedSet<PackageElement>> ip);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void addServicesSummary(Content summariesList);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public void addUsesList(Table<?> table);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public void addProvidesList(Table<?> table);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public void addDeprecationInfo(Content div);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void addModuleDescription(Content moduleContent);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void addModuleSignature(Content moduleContent);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void addModuleContent(Content source);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void addModuleFooter();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,protected void printDocument(Content content) throws DocFileIOException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,"public void addPackageDeprecationInfo(Content li, PackageElement pkg);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,public boolean isIndexable();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/TreeWriter.java,"public TreeWriter(HtmlConfiguration configuration, ClassTree classTree) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/TreeWriter.java,public void buildPage() throws DocFileIOException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,package jdk.javadoc.internal.doclets.formats.html;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,public abstract class Content {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,public String toString();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,public Content add(Content content);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,public Content add(CharSequence stringContent);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,"public <T> Content addAll(Collection<T> items, Function<T, Content> mapper);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,"public abstract boolean write(Writer writer, String newline, boolean atNewline) throws IOException;",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,public abstract boolean isEmpty();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,public boolean isDiscardable();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,public int charCount();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,public HtmlIndexBuilder indexBuilder;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,protected RestrictedAPIListBuilder restrictedAPIListBuilder;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,public final Messages messages;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,public TagletManager tagletManager;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,"RESTRICTED,",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,public Set<PackageElement> getContainingPackagesSeen();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,package jdk.javadoc.internal.doclets.formats.html.taglets;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,public class BaseTaglet implements Taglet {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,protected final HtmlConfiguration config;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,protected final Messages messages;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,protected final Resources resources;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,protected final Utils utils;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,protected final DocTree.Kind tagKind;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,protected final String name;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,protected TagletWriter tagletWriter;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,"public BaseTaglet(HtmlConfiguration config, DocTree.Kind tagKind, boolean inline, Set<Location> sites) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,"protected BaseTaglet(HtmlConfiguration config, String name, boolean inline, Set<Location> sites) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,public Set<Location> getAllowedLocations();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,public final boolean isInlineTag();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,public String getName();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,public DocTree.Kind getTagKind();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,"public Content getInlineTagOutput(Element element, DocTree tag, TagletWriter tagletWriter);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/BaseTaglet.java,"public Content getAllBlockTagOutput(Element holder, TagletWriter tagletWriter);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/UserTaglet.java,package jdk.javadoc.internal.doclets.formats.html.taglets;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/UserTaglet.java,public final class UserTaglet implements Taglet {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/UserTaglet.java,public Set<jdk.javadoc.doclet.Taglet.Location> getAllowedLocations();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/UserTaglet.java,public boolean isInlineTag();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/UserTaglet.java,public boolean isBlockTag();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/UserTaglet.java,public String getName();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/UserTaglet.java,"public Content getInlineTagOutput(Element element, DocTree tag, TagletWriter tagletWriter);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/UserTaglet.java,"public Content getAllBlockTagOutput(Element holder, TagletWriter tagletWriter);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,package jdk.javadoc.internal.doclets.formats.html.taglets;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public class TagletManager {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public TagletManager(HtmlConfiguration config) {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public Set<String> getAllTagletNames();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public void initTagletPath(JavaFileManager fileManager) throws IOException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,"public void addCustomTag(String classname, JavaFileManager fileManager);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public void loadTaglets(JavaFileManager fileManager) throws IOException;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,"public void addNewSimpleCustomTag(String tagName, String header, String locations);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,void seenTag(String name);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,"public void checkTags(Element element, Iterable<? extends DocTree> trees);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,"Map<String, Taglet> getInlineTaglets();",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public List<Taglet> getSerializedFormTaglets();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public List<Taglet> getBlockTaglets(Element e);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public boolean isKnownCustomTag(String tagName);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public void printReport();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,Taglet getTaglet(String name);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/TagletManager.java,public Taglet getTaglet(DocTree.Kind kind);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,package jdk.javadoc.internal.doclets.formats.html.taglets;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,public class SimpleTaglet extends BaseTaglet implements InheritableTaglet {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,"protected SimpleTaglet(HtmlConfiguration config, DocTree.Kind tagKind, String header, Set<Taglet.Location> locations, boolean enabled) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,"public Output inherit(Element dst, Element src, DocTree tag, boolean isFirstSentence);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,boolean isEnabled();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,"record Documentation(DocTree tag, List<? extends DocTree> description, ExecutableElement method) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,"public Content getAllBlockTagOutput(Element holder, TagletWriter tagletWriter);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java,public boolean isRestrictedAPI(Element el);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java,public static boolean isImplicitlyDeclaredClass(Element e);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/PropertyUtils.java,public static class PropertyHelper {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/PropertyUtils.java,"public PropertyHelper(BaseConfiguration configuration, TypeElement typeElement) {",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/PropertyUtils.java,public Element getPropertyElement(Element element);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,"public R visitInheritDoc(InheritDocTree node, Void p);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public boolean isFunctionalInterface(TypeElement typeElement);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,"public List<? extends BlockTagTree> getBlockTags(Element element, Predicate<? super BlockTagTree> filter);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,"public <T extends BlockTagTree> List<T> getBlockTags(Element element, Predicate<? super BlockTagTree> filter, Class<T> tClass);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,"public List<? extends BlockTagTree> getBlockTags(Element element, DocTree.Kind kind);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,"public <T extends BlockTagTree> List<? extends T> getBlockTags(Element element, DocTree.Kind kind, Class<T> tClass);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,"public List<? extends BlockTagTree> getBlockTags(Element element, String tagName);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public boolean isRestrictedAPI(Element el);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,"DEPRECATED, PREVIEW, RESTRICTED",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,private class Overrides implements Iterator<ExecutableElement> {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public Overrides(ExecutableElement method) {,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public boolean hasNext();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public ExecutableElement next();,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,public static String diagnosticDescriptionOf(Element e);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ElementsTable.java,public AccessLevel getAccessValue(ElementKind kind);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.desktop/share/classes/javax/swing/UIDefaults.java,"String composeKey(String key, int reduce, String suffix);",False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.desktop/share/classes/javax/swing/JFileChooser.java,public void setEnabled(boolean enabled);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/java.xml.crypto/share/classes/com/sun/org/apache/xml/internal/security/utils/DigesterOutputStream.java,public synchronized void write(int arg0);,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/VMIntrinsicMethod.java,public final boolean isAvailable;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/VMIntrinsicMethod.java,public final boolean c1Supported;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/VMIntrinsicMethod.java,public final boolean c2Supported;,False
+jdk-22,https://github.com/eisop/jdk/tree/jdk-22/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotResolvedJavaMethodImpl.java,public BitSet getOopMapAt(int bci);,False

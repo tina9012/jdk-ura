@@ -1,0 +1,153 @@
+version,file_url,method,checked
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public void setFields(List<ValueDescriptor> fields);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,"public <T> T getAnnotationValue(Class<? extends java.lang.annotation.Annotation> clazz, T defaultValue);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public boolean hasAnnotation(Class<? extends java.lang.annotation.Annotation> clazz);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Elements.java,default DocCommentKind getDocCommentKind(Element e);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Elements.java,enum DocCommentKind {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Elements.java,"END_OF_LINE, TRADITIONAL",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.compiler/share/classes/javax/lang/model/util/Types.java,default <T extends TypeMirror> T stripAnnotations(T t);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,"public static boolean isExplicitThisReference(Types types, Type.ClassType currentClass, JCTree tree);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,public static boolean isConstructorCall(JCMethodInvocation invoke);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,"private record PermittedClassWithPos(Symbol permittedClass, int pos) {",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,"public void addPermittedSubclass(ClassSymbol csym, int pos);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,public boolean isPermittedSubclass(Symbol csym);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,public void clearPermittedSubclasses();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,public void setPermittedSubclasses(List<Symbol> permittedSubs);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,"public boolean isUnconditionallyExact(Type source, Type target);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,"public boolean isUnconditionallyExactPrimitives(Type selectorType, Type targetType);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"Symbol findVar(DiagnosticPosition pos, Env<AttrContext> env, Name name);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"Symbol findIdentInternal(DiagnosticPosition pos, Env<AttrContext> env, Name name, KindSelector kind);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,"public boolean isEarlyReference(Env<AttrContext> env, JCTree base, VarSymbol v);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.compiler/share/classes/com/sun/tools/javac/model/JavacTypes.java,public <T extends TypeMirror> T stripAnnotations(T t);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private abstract static class P11PrivateKey extends P11Key implements PrivateKey {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java,private abstract static class P11PublicKey extends P11Key implements PublicKey {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/net/www/MessageHeader.java,public final class MessageHeader {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/calendar/CalendarDate.java,public abstract sealed class CalendarDate implements Cloneable permits BaseCalendar.Date {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/locale/BaseLocale.java,"public static final byte ROOT, ENGLISH, US, FRENCH, GERMAN, ITALIAN, JAPANESE, KOREAN, CHINESE, SIMPLIFIED_CHINESE, TRADITIONAL_CHINESE, FRANCE, GERMANY, ITALY, JAPAN, KOREA, UK, CANADA, CANADA_FRENCH, NUM_CONSTANTS;",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/util/locale/BaseLocale.java,public static final UnaryOperator<BaseLocale> INTERNER;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java,"public Iterator<Service> getServices(String type, String algorithm);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java,public Iterator<Service> getServices(List<ServiceId> ids);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java,private final class ServiceIterator implements Iterator<Service> {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java,public boolean hasNext();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java,public Service next();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java,public void remove();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/security/jca/ProviderList.java,ArrayList<PreferredEntry> getAll(ServiceIterator s);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,"public static FileChannel open(FileDescriptor fd, String path, boolean readable, boolean writable, boolean sync, boolean direct, Closeable parent);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,"private abstract static sealed class Unmapper implements Runnable, UnmapperProxy {",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/net/Inet4Address.java,public static Inet4Address ofPosixLiteral(String posixIPAddressLiteral);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/ImmutableCollections.java,public E removeFirst();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/ImmutableCollections.java,public E removeLast();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Formatter.java,static final class FormatSpecifierParser {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Formatter.java,"void reset(char first, int start);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Formatter.java,int parse();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/Formatter.java,static boolean isConversion(char c);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/zip/ZipFile.java,public String toString();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final ForkJoinTask<?> poll();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,"final void topLevelExec(ForkJoinTask<?> task, int cfg);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,final void signalWork();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,abstract static class InterruptibleTask<T> extends ForkJoinTask<T> implements RunnableFuture<T> {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,public Console println(Object obj);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,public Console print(Object obj);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,public String readln(String prompt);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,"public Console format(String format, @Nullable Object... args);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,"public Console format(Locale locale, String format, @Nullable Object... args);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,"public Console printf(Locale locale, String format, Object... args);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,"public String readLine(String format, @Nullable Object... args);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,"public String readLine(Locale locale, String format, @Nullable Object... args);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,"public char @Nullable [] readPassword(String format, @Nullable Object... args);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/Console.java,"public char @Nullable [] readPassword(Locale locale, String format, @Nullable Object... args);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/io/ByteArrayOutputStream.java,public void writeTo(OutputStream out) throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/time/Instant.java,public Duration until(Instant endExclusive);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java,private static class In extends FileInputStream {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java,public int read() throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java,public int read(byte[] b) throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java,"public int read(byte[] b, int off, int len) throws IOException;",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java,private static class Out extends FileOutputStream {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java,public void write(int b) throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java,public void write(byte[] b) throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/System.java,"public void write(byte[] b, int off, int len) throws IOException;",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java,public int read() throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java,public int read(byte[] b) throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java,"public int read(byte[] b, int off, int len) throws IOException;",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java,static class PipeOutputStream extends FileOutputStream {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java,public void write(int b) throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java,public void write(byte[] b) throws IOException;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Process.java,"public void write(byte[] b, int off, int len) throws IOException;",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Thread.java,Interruptible nioBlocker();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/Thread.java,void blockedOn(Interruptible b);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/lang/invoke/MemberName.java,void ensureTypeVisible(Class<?> refc);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DecimalFormat.java,public boolean isStrict();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DecimalFormat.java,public void setStrict(boolean strict);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/DecimalFormat.java,public String toString();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/MessageFormat.java,public String toString();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/SimpleDateFormat.java,public String toString();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/ChoiceFormat.java,public boolean isStrict();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/ChoiceFormat.java,public void setStrict(boolean strict);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/ChoiceFormat.java,"public static double nextDouble(double d, boolean positive);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/ChoiceFormat.java,public String toString();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/NumberFormat.java,public boolean isStrict();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/NumberFormat.java,public void setStrict(boolean strict);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.base/share/classes/java/text/NumberFormat.java,"static String matchToStyle(NumberFormat fmt, Locale locale);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.httpserver/share/classes/sun/net/httpserver/UnmodifiableHeaders.java,public String toString();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/CodeBlob.java,public int getContentOffset();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/CodeBlob.java,public int getCodeOffset();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java,public class ContiguousSpace extends VMObject implements LiveRegionsProvider {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java,public Address bottom();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java,public Address end();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java,public OopHandle bottomAsOopHandle();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java,"public OopHandle nextOopHandle(OopHandle handle, long size);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/ContiguousSpace.java,public void print();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,protected final TableOfContents tableOfContents;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public String getFileTitle(DocFileElement element);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"boolean ignoreNonInlineTag(DocTree dtree, List<Name> openTags);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,private class MarkdownHandler {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"boolean handle(DocTree tree, InlineVisitor visitor);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,void addContent(Content result);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,private class HeadingNodeRenderer extends AbstractVisitor implements NodeRenderer {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public Set<Class<? extends Node>> getNodeTypes();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public void render(Node node);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,public void visit(Heading heading);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,protected void visitChildren(Node parent);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"private class InlineVisitor extends SimpleDocTreeVisitor<Boolean, Content> {",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitAttribute(AttributeTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitComment(CommentTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitDocRoot(DocRootTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitEndElement(EndElementTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitEntity(EntityTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitErroneous(ErroneousTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitEscape(EscapeTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitInheritDoc(InheritDocTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitStartElement(StartElementTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"public Boolean visitText(TextTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,"protected Boolean defaultAction(DocTree node, Content content);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Content.java,public boolean isPhrasingContent();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,"public record JavaScriptFile(DocPath path, boolean isModule) {",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,public List<JavaScriptFile> getAdditionalScripts();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,"static SimpleTaglet createWithDefaultForNested(HtmlConfiguration config, DocTree.Kind tagKind, String header, Set<Taglet.Location> locations, boolean enabled);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/taglets/SimpleTaglet.java,"protected List<? extends BlockTagTree> getDefaultBlockTags(Element e, Predicate<? super BlockTagTree> accepts);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/TextBuilder.java,public boolean isPhrasingContent();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/Text.java,public boolean isPhrasingContent();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,"public Map<HtmlAttr, String> getAttrs();",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,public List<Content> getContents();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,"public static HtmlTree INPUT(HtmlAttr.InputType type, HtmlId id);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,"public static HtmlTree INPUT(HtmlAttr.InputType type, HtmlStyle style);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,public static HtmlTree OL(HtmlStyle style);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,public boolean isPhrasingContent();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/RawHtml.java,public static RawHtml markdown(CharSequence markdownOutput);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/RawHtml.java,public boolean isPhrasingContent();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/ContentBuilder.java,public List<Content> getContents();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/ContentBuilder.java,public boolean isPhrasingContent();,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java,"public Map<String, Object> getJepInfo(String feature);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/BaseConfiguration.java,protected DocLint doclint;,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ElementsTable.java,ElementsTable compilationUnits(com.sun.tools.javac.util.List<JCCompilationUnit> compilationUnits);,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ResourcePoolManager.java,"public static CompressedModuleData newCompressedResource(ResourcePoolEntry original, ByteBuffer compressed, String plugin, StringTable strings, ByteOrder order);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java,private abstract static class AccessibilityGraphicsEnvironment extends GraphicsEnvironment {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jshell/share/classes/jdk/internal/jshell/tool/Startup.java,"static Startup unpack(String storedForm, boolean preview, MessageHandler mh);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/jdk.jshell/share/classes/jdk/internal/jshell/tool/Startup.java,"static Startup defaultStartup(boolean preview, MessageHandler mh);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/StyleContext.java,static final class KeyEnumeration implements Enumeration<Object> {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/StyleContext.java,static final class FontKey {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java,"void convertAttributes(HTML.Tag t, MutableAttributeSet attr);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java,final class ConvertSpanAction extends CharacterAction {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java,"void convertAttributes(HTML.Tag t, MutableAttributeSet attr);",False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java,final class ConvertAction extends CharacterAction {,False
+jdk-23,https://github.com/eisop/jdk/tree/jdk-23/src/java.desktop/share/classes/javax/swing/text/html/HTMLDocument.java,"void convertAttributes(HTML.Tag t, MutableAttributeSet attr);",False
