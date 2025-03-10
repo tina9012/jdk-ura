@@ -3,8 +3,8 @@ import json
 import difflib
 import re
 
-#matches for empty lines, "import", @ (annotations), any comment "/*", and closing braces (})
-pattern = re.compile(r'^(?:\s*$|import\b|@|.*\/\*.*|\s*\*|\s*\})')
+#matches for empty lines, "import", any comment "/*", and closing braces (})
+pattern = re.compile(r'^(?:\s*$|import\b|.*\/\*.*|\s*\*|\s*\})')
 
 #https://stackoverflow.com/questions/8625991/use-python-os-walk-to-identify-a-list-of-files
 #uses os.walk to get all java files in every subdirectory of results (after minimization is performed)

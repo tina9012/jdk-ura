@@ -1,6 +1,6 @@
 version,file_url,method,checked
 jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java,"public final synchronized void getProps(int number, MessageProp prop);",True
-jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public void setVisible(boolean visible);,False
+jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public void setVisible(boolean visible);,True
 jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public boolean isVisible();,False
 jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public void setInternal(boolean internal);,False
 jdk-18,https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java,public boolean isInternal();,False
