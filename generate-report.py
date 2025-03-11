@@ -16,7 +16,7 @@ for version in data:
         with open(csv_file, "r", encoding="utf-8") as f_csv:
             reader = csv.DictReader(f_csv)
             for row in reader:
-                key = (row["version"], row["file_url"], row["method"].strip())
+                key = (row["version"], row["file_url"], int(row["id"]), row["method"])
                 checked_methods[key] = (row["checked"].strip().lower() == "true")
 
 
@@ -110,10 +110,10 @@ for version in data:
         # New Classes Section: each new class is shown in its own sub container.
         if new_classes:
             for cls in new_classes:
-                declaration = cls.get("declaration", "")
+                declaration = cls.get("declaration").get("content")
                 methods = cls.get("methods", [])
                 version_content += f'<div class="card mb-3 new-class-card">'
-                class_key = (version, file_url, cls.get("declaration", []))
+                class_key = (version, file_url, cls.get("declaration").get("id"), cls.get("declaration").get("content"))
                 if checked_methods.get(class_key, False):
                     indicator = '<span class="badge bg-success">Checked</span>'
                 else:
@@ -123,12 +123,12 @@ for version in data:
                 if methods:
                     version_content += '<ul class="list-group list-group-flush">'
                     for method in methods:
-                      key = (version, file_url, method.strip())
+                      key = (version, file_url, method.get("id"), method.get("content"))
                       if checked_methods.get(key, False):
                           indicator = '<span class="badge bg-success">Checked</span>'
                       else:
                           indicator = '<span class="badge bg-warning text-dark">Not Checked</span>'
-                      version_content += f'<li class="list-group-item">{escape(method)} {indicator}</li>'
+                      version_content += f'<li class="list-group-item">{escape(method.get("content"))} {indicator}</li>'
 
 
                     version_content += '</ul>'
@@ -137,12 +137,12 @@ for version in data:
         if new_methods:
             version_content += '<ul class="list-group list-group-flush">'
             for method in new_methods:
-              key = (version, file_url, method.strip())
+              key = (version, file_url, method.get("id"), method.get("content"))
               if checked_methods.get(key, False):
                   indicator = '<span class="badge bg-success">Checked</span>'
               else:
                   indicator = '<span class="badge bg-warning text-dark">Not Checked</span>'
-              version_content += f'<li class="list-group-item">{escape(method)} {indicator}</li>'
+              version_content += f'<li class="list-group-item">{escape(method.get("content"))} {indicator}</li>'
 
             version_content += '</ul>'
 

@@ -6,35 +6,46 @@ import re
 #matches for empty lines, "import", any comment "/*", and closing braces (})
 pattern = re.compile(r'^(?:\s*$|import\b|.*\/\*.*|\s*\*|\s*\})')
 
-
+#introducing ID to distinguish between methods that are the exact same, and have the exact same file and parent class names
 def extract_new_changes(old_lines, new_lines):
+
+    id = 0
+
+    #get list of differences
     diff = list(difflib.ndiff(old_lines, new_lines))
-    new_changes = []  # list of tuples (new_line_index, content)
-    new_index = 0  # position in new_lines
+    new_changes = []  #list of tuples (new_line_index, content)
+    new_index = 0  #get index to check whether method belongs to a new class
+
     for line in diff:
+        #indicates a new line
         if line.startswith('+ '):
             content = line[2:].strip()
             if not pattern.match(content):
                 new_changes.append((new_index, content))
-        new_index += 1
 
-    class_positions = []  # list of tuples (line_number, content)
+        #increase line counter
+        if line.startswith('  ') or line.startswith('+ '):
+            new_index += 1
+
+    #creates a list to get the position of every class
+    class_positions = []
     for i, line in enumerate(new_lines):
-        # A simple check: does the line contain the word 'class'?
+
         if re.search(r'\bclass\b', line):
             class_positions.append((i, line.strip()))
 
-    new_classes = {}  # keyed by line number of the class declaration
-    new_methods = []  # new lines that are not under a new class
+    new_classes = {}
+    #for new methods that have been added to an existing class
+    new_methods = []
 
     for idx, content in new_changes:
         if re.search(r'\bclass\b', content):
-            # Record this new class by its diff line index.
-            new_classes[idx] = {"declaration": content, "methods": []}
+            new_classes[idx] = {"declaration": {"id": id, "content": content}, "methods": []}
+            id += 1
 
     for idx, content in new_changes:
         if re.search(r'\bclass\b', content):
-            continue  # already handled above
+            continue  #already handled
 
         parent_class_idx = None
         for pos, decl in class_positions:
@@ -44,9 +55,11 @@ def extract_new_changes(old_lines, new_lines):
                 break
 
         if parent_class_idx is not None and parent_class_idx in new_classes:
-            new_classes[parent_class_idx]["methods"].append(content)
+            new_classes[parent_class_idx]["methods"].append({"id": id, "content": content})
+            id += 1
         else:
-            new_methods.append(content)
+            new_methods.append({"id": id, "content": content})
+            id += 1
 
     return {
         "new_classes": list(new_classes.values()),
@@ -87,40 +100,6 @@ def extract_new_lines(old_lines, new_lines):
             if not pattern.match(content):
                 newly_added.append(content)
     return newly_added
-
-"""def compare_version_pair(old_version_dir, new_version_dir):
-
-    new_files = list_java_files(new_version_dir)
-    file_diff = {}
-
-
-    for rel_path in new_files: 
-        #create github URL
-        branch = os.path.basename(new_version_dir)
-        url = f"https://github.com/eisop/jdk/tree/{branch}"
-        parts = rel_path.split(os.path.sep)
-        url = url + '/' + '/'.join(parts[1:])
-
-        #get the full file paths for the versions being compared
-        new_file_path = os.path.join(new_version_dir, rel_path)
-        old_file_path = os.path.join(old_version_dir, rel_path)
-        
-        if os.path.exists(old_file_path):
-            old_lines = read_file_lines(old_file_path)
-            is_new = False
-        else:
-            old_lines = []
-            is_new = True
-        new_lines = read_file_lines(new_file_path)
-        
-        #uses difflib to find the differences
-        new_methods = extract_new_lines(old_lines, new_lines)
-        if new_methods:
-            file_diff[url] = {
-                new_methods
-            }
-
-    return file_diff"""
 
 def compare_version_pair(old_version_dir, new_version_dir):
     new_files = list_java_files(new_version_dir)

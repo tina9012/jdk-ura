@@ -13,7 +13,7 @@ for version in data:
     current_csv = os.path.join(csv_folder, f"{version}_methods.csv")
     with open(current_csv, "w", newline='', encoding="utf-8") as csvfile:
 
-        fieldnames = ["version", "file_url", "method", "checked"]
+        fieldnames = ["version", "file_url", "method", "id", "checked"]
 
         #https://docs.python.org/3/library/csv.html
         #creates a new writer object 
@@ -28,12 +28,20 @@ for version in data:
 
             # Write new class methods
             for cls in new_classes:
-                declaration = cls.get("declaration", "").strip()
-                for method in cls.get("methods", []):
+                declaration = cls.get("declaration").get("content")
+                writer.writerow({
+                    "version": version, 
+                    "file_url": file_url,
+                    "id": cls.get("declaration").get("id"),
+                    "method": cls.get("declaration").get("content"),
+                    "checked": "False"
+                })
+                for method in cls.get("methods"):
                     writer.writerow({
                         "version": version,
                         "file_url": file_url,
-                        "method": method.strip(),
+                        "id": method.get("id"),
+                        "method": method.get("content"),
                         "checked": "False"
                     })
 
@@ -42,7 +50,8 @@ for version in data:
                 writer.writerow({
                     "version": version,
                     "file_url": file_url,
-                    "method": method.strip(),
+                    "id": method.get("id"),
+                    "method": method.get("content"),
                     "checked": "False"
                 })
 
