@@ -4,13 +4,13 @@ import csv
 import webbrowser
 from html import escape
 
-
 data = {}
 json_folder = "json_files"
 
+#loads data from all present json files
 for filename in os.listdir(json_folder):
     if filename.endswith(".json"):
-        version = os.path.splitext(filename)[0]  # e.g., "jdk-18"
+        version = os.path.splitext(filename)[0]
         file_path = os.path.join(json_folder, filename)
         with open(file_path, "r", encoding="utf-8") as f:
             file_data = json.load(f)
@@ -19,6 +19,7 @@ for filename in os.listdir(json_folder):
 checked_methods = {}
 csv_folder = "csv_reports"
 
+#loads the review status from the csv files
 for version in data:
     csv_file = os.path.join(csv_folder, f"{version}_methods.csv")
     if os.path.exists(csv_file):
@@ -86,20 +87,20 @@ for version in data:
     index_content += f'    <li><a href="{version_file}">JDK {version} API Changes</a></li>\n'
 
     version_content = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JDK {version} Changes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  {custom_css}
-</head>
-<body>
-<div class="container">
-  <h1>JDK {version} Changes</h1>
-  <a href="../report-styling.html" class="back-link">← Back to all versions</a>
-  <hr>
-"""
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>JDK {version} Changes</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      {custom_css}
+    </head>
+    <body>
+    <div class="container">
+      <h1>JDK {version} Changes</h1>
+      <a href="../report-styling.html" class="back-link">← Back to all versions</a>
+      <hr>
+    """
 
     for file_url in data[version]:
         file_data = data[version][file_url]
@@ -158,11 +159,11 @@ for version in data:
         f_out.write(version_content)
 
 index_content += """  </ul>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-"""
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+  """
 with open("report-styling.html", "w", encoding="utf-8") as f_index:
     f_index.write(index_content)
 

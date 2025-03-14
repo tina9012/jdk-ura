@@ -5,8 +5,24 @@ import csv
 csv_folder = "csv_reports"
 os.makedirs(csv_folder, exist_ok=True)
 
-with open("new_methods_diff.json", "r", encoding="utf-8") as f:
-    data = json.load(f)
+data = {}
+json_folder = "json_files"
+
+json_files = [f for f in os.listdir(json_folder) if f.endswith(".json")]
+
+#this list must be modified for newly added jdk versions, so that past versions are not overwitten with every method review status set to False
+versions = ['jdk-18', 'jdk-19', 'jdk-20', 'jdk-21', 'jdk-22', 'jdk-23', 'jdk-24']
+
+for filename in os.listdir(json_folder):
+    if filename.endswith(".json"):
+        version = os.path.splitext(filename)[0]
+        #processes only the versions in the versions_to_process list
+        if version not in versions_to_process:
+            continue
+        file_path = os.path.join(json_folder, filename)
+        with open(file_path, "r", encoding="utf-8") as f:
+            file_data = json.load(f)
+            data[version] = file_data[version]
 
 for version in data:
     #gets current csv path 
@@ -15,8 +31,6 @@ for version in data:
 
         fieldnames = ["version", "file_url", "method", "checked"]
 
-        #https://docs.python.org/3/library/csv.html
-        #creates a new writer object 
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
 
@@ -44,4 +58,4 @@ for version in data:
                     "checked": "False"
                 })
 
-    print(f"Creates csv for {version}")
+    print(f"Created csv for {version}")

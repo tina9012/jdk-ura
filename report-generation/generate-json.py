@@ -6,7 +6,6 @@ import re
 #matches for empty lines, "import", any comment "/*", and closing braces (})
 pattern = re.compile(r'^(?:\s*$|import\b|.*\/\*.*|\s*\*|\s*\})')
 
-#introducing ID to distinguish between methods that are the exact same, and have the exact same file and parent class names
 def extract_new_changes(old_lines, new_lines):
 
     #get list of differences
@@ -15,7 +14,6 @@ def extract_new_changes(old_lines, new_lines):
     new_index = 0  #get index to check whether method belongs to a new class
 
     for line in diff:
-        #indicates a new line
         if line.startswith('+ '):
             content = line[2:].strip()
             if not pattern.match(content):
@@ -95,11 +93,13 @@ def extract_new_lines(old_lines, new_lines):
                 newly_added.append(content)
     return newly_added
 
+#returns a dictionary of new changes between subsequent JDK versions
 def compare_version_pair(old_version_dir, new_version_dir):
     new_files = list_java_files(new_version_dir)
     file_diff = {}
 
     for rel_path in new_files:
+        #generates github URL 
         branch = os.path.basename(new_version_dir)
         url = f"https://github.com/eisop/jdk/tree/{branch}"
         parts = rel_path.split(os.path.sep)
@@ -127,10 +127,13 @@ versions = ['master', 'jdk-18', 'jdk-19', 'jdk-20', 'jdk-21', 'jdk-22', 'jdk-23'
 
 base_path = './results/'
 
-results = {}
+json_folder = "json_files"
+os.makedirs(json_folder, exist_ok=True)
 
-#starts by comparing jdk-18 to master
+#compares all subsequent versions, creates a seperate json file for each version pair
 for i in range(1, len(versions)):
+
+    results = {}
     
     old_version = versions[i - 1]
     new_version = versions[i]
@@ -143,8 +146,9 @@ for i in range(1, len(versions)):
     current_diff = compare_version_pair(old_dir, new_dir)
     results[version_pair_key] = current_diff
 
-    output_json = f'./json_files/{versions[i]}.json'
-    with open(output_json, 'w', encoding='utf-8') as out_f:
+    current_json = os.path.join(json_folder, f"{versions[i]}.json")
+
+    with open(current_json, 'w', encoding='utf-8') as out_f:
         json.dump(results, out_f, indent=2)
 
     print(f"Created json for {old_version} -> {new_version}")
