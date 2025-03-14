@@ -1,0 +1,1363 @@
+{
+  "jdk-18": {
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public final synchronized void getProps(int number, MessageProp prop);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.security.jgss/share/classes/sun/security/jgss/wrapper/GSSNameElement.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jfr/share/classes/jdk/jfr/internal/Type.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public void setVisible(boolean visible);",
+          "public boolean isVisible();",
+          "public void setInternal(boolean internal);",
+          "public boolean isInternal();"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/JavaFileManager.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "default JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;",
+          "default FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;",
+          "private static FileObject siblingFrom(FileObject[] originatingFiles);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/tools/ForwardingJavaFileManager.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;",
+          "@Override",
+          "@Override",
+          "public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.compiler/share/classes/javax/lang/model/util/Elements.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "default TypeElement getOutermostTypeElement(Element e);",
+          "default javax.tools.JavaFileObject getFileObjectOf(Element e);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.xml/share/classes/javax/xml/stream/XMLStreamException.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"serial\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/sjavac/pubapi/PubVar.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"serial\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/sjavac/pubapi/PubMethod.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"serial\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/sjavac/pubapi/PubApi.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"serial\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/sjavac/pubapi/PubType.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"serial\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/sjavac/pubapi/PubApiTypeParam.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"serial\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/file/Locations.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "protected abstract static class LocationHandler {",
+            "methods": []
+          },
+          {
+            "declaration": "private abstract static class BasicLocationHandler extends LocationHandler {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Type.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "public abstract static class StructuralTypeMapping<S> extends Types.TypeMapping<S> {",
+            "methods": []
+          },
+          {
+            "declaration": "public abstract static class DelegatedType extends Type {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "public abstract static class TypeSymbol extends Symbol {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "public abstract static class DefaultTypeVisitor<R, S> implements Type.Visitor<R, S> {",
+            "methods": []
+          },
+          {
+            "declaration": "public abstract static class DefaultSymbolVisitor<R, S> implements Symbol.Visitor<R, S> {",
+            "methods": []
+          },
+          {
+            "declaration": "public abstract static class SimpleVisitor<R, S> extends DefaultTypeVisitor<R, S> {",
+            "methods": []
+          },
+          {
+            "declaration": "public abstract static class TypeRelation extends SimpleVisitor<Boolean, Type> {",
+            "methods": []
+          },
+          {
+            "declaration": "public abstract static class UnaryVisitor<R> extends SimpleVisitor<R, Void> {",
+            "methods": []
+          },
+          {
+            "declaration": "public abstract static class SignatureGenerator {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "boolean isSerializable(Type t);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/api/ClientCodeWrapper.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;",
+          "@Override",
+          "@DefinedBy(Api.COMPILER)",
+          "@Override",
+          "@DefinedBy(Api.COMPILER)",
+          "@Pure",
+          "public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.compiler/share/classes/com/sun/tools/javac/main/DelegatingJavaFileManager.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public JavaFileObject getJavaFileForOutputForOriginatingFiles(Location location, String className, Kind kind, FileObject... originatingFiles) throws IOException;",
+          "@Override",
+          "@Override",
+          "public FileObject getFileForOutputForOriginatingFiles(Location location, String packageName, String relativeName, FileObject... originatingFiles) throws IOException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.prefs/share/classes/java/util/prefs/AbstractPreferences.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static class NodeAddedEvent extends NodeChangeEvent {",
+            "methods": []
+          },
+          {
+            "declaration": "private static class NodeRemovedEvent extends NodeChangeEvent {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.crypto.cryptoki/share/classes/sun/security/pkcs11/P11Key.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static abstract class P11PrivateKey extends P11Key implements PrivateKey {",
+            "methods": [
+              "protected byte[] encoded;"
+            ]
+          },
+          {
+            "declaration": "private static abstract class P11PublicKey extends P11Key implements PublicKey {",
+            "methods": [
+              "protected byte[] encoded;"
+            ]
+          },
+          {
+            "declaration": "static class P11RSAPrivateKeyInternal extends P11PrivateKey {",
+            "methods": [
+              "static P11RSAPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);",
+              "protected transient BigInteger n;"
+            ]
+          },
+          {
+            "declaration": "private static final class P11RSAPrivateKey extends P11RSAPrivateKeyInternal implements RSAPrivateCrtKey {",
+            "methods": [
+              "public String getFormat();",
+              "synchronized byte[] getEncodedInternal();",
+              "@Override",
+              "public BigInteger getModulus();"
+            ]
+          },
+          {
+            "declaration": "private static final class P11RSAPrivateNonCRTKey extends P11RSAPrivateKeyInternal implements RSAPrivateKey {",
+            "methods": [
+              "@Override"
+            ]
+          },
+          {
+            "declaration": "private static final class P11RSAPublicKey extends P11PublicKey implements RSAPublicKey {",
+            "methods": []
+          },
+          {
+            "declaration": "private static final class P11DSAPublicKey extends P11PublicKey implements DSAPublicKey {",
+            "methods": []
+          },
+          {
+            "declaration": "static class P11DSAPrivateKeyInternal extends P11PrivateKey {",
+            "methods": [
+              "protected transient DSAParams params;",
+              "static P11DSAPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);",
+              "protected DSAParams getParams();"
+            ]
+          },
+          {
+            "declaration": "private static final class P11DSAPrivateKey extends P11DSAPrivateKeyInternal implements DSAPrivateKey {",
+            "methods": [
+              "@Override"
+            ]
+          },
+          {
+            "declaration": "static class P11DHPrivateKeyInternal extends P11PrivateKey {",
+            "methods": [
+              "protected transient DHParameterSpec params;",
+              "static P11DHPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);",
+              "public DHParameterSpec getParams();"
+            ]
+          },
+          {
+            "declaration": "private static final class P11DHPrivateKey extends P11DHPrivateKeyInternal implements DHPrivateKey {",
+            "methods": []
+          },
+          {
+            "declaration": "private static final class P11DHPublicKey extends P11PublicKey implements DHPublicKey {",
+            "methods": []
+          },
+          {
+            "declaration": "static class P11ECPrivateKeyInternal extends P11PrivateKey {",
+            "methods": [
+              "protected transient ECParameterSpec params;",
+              "static P11ECPrivateKeyInternal of(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, boolean keySensitive);",
+              "protected ECParameterSpec getParams();"
+            ]
+          },
+          {
+            "declaration": "private static final class P11ECPrivateKey extends P11ECPrivateKeyInternal implements ECPrivateKey {",
+            "methods": []
+          },
+          {
+            "declaration": "private static final class P11ECPublicKey extends P11PublicKey implements ECPublicKey {",
+            "methods": []
+          }
+        ],
+        "new_methods": [
+          "CK_ATTRIBUTE[] fetchAttributes(CK_ATTRIBUTE[] attrs);",
+          "BigInteger[] fetchAttributesAsInts(CK_ATTRIBUTE[] attrs);",
+          "static SecretKey secretKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);",
+          "static SecretKey masterSecretKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs, int major, int minor);",
+          "static PublicKey publicKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);",
+          "static PrivateKey privateKey(Session session, long keyID, String algorithm, int keyLength, CK_ATTRIBUTE[] attrs);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/windows/classes/sun/nio/fs/WindowsPath.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "String getPathWithPrefixForWin32Calls() throws WindowsException;",
+          "static String addPrefix(String path);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/util/resources/LocaleData.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private abstract static class LocaleDataResourceBundleProvider implements ResourceBundleProvider {",
+            "methods": []
+          },
+          {
+            "declaration": "public abstract static class CommonResourceBundleProvider extends LocaleDataResourceBundleProvider {",
+            "methods": []
+          },
+          {
+            "declaration": "public abstract static class SupplementaryResourceBundleProvider extends LocaleDataResourceBundleProvider {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerInputStream.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public void atEnd() throws IOException;",
+          "public Optional<DerValue> getOptional(byte tag) throws IOException;",
+          "public boolean seeOptionalContextSpecific(int n) throws IOException;",
+          "public Optional<DerValue> getOptionalExplicitContextSpecific(int n) throws IOException;",
+          "public Optional<DerValue> getOptionalImplicitContextSpecific(int n, byte tag) throws IOException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/util/DerValue.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static DerValue wrap(byte[] buf) throws IOException;",
+          "public static DerValue wrap(byte[] buf, int offset, int len) throws IOException;",
+          "public DerValue[] subs(byte expectedTag, int startLen) throws IOException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/security/x509/AlgorithmId.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public byte[] getEncodedParams();"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private abstract static class Unmapper implements Runnable, UnmapperProxy {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "abstract boolean canTransferToFromOverlappedMap();"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet6AddressImpl.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "final class Inet6AddressImpl implements InetAddressImpl {",
+            "methods": [
+              "public InetAddress[] lookupAllHostAddr(String hostname, LookupPolicy lookupPolicy) throws UnknownHostException;"
+            ]
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/Inet4AddressImpl.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "final class Inet4AddressImpl implements InetAddressImpl {",
+            "methods": [
+              "public InetAddress[] lookupAllHostAddr(String hostname, LookupPolicy lookupPolicy) throws UnknownHostException;"
+            ]
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/ServerSocket.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public void setSoTimeout(int timeout) throws SocketException;",
+          "public int getSoTimeout() throws IOException;",
+          "public void setReceiveBufferSize(int size) throws SocketException;",
+          "public int getReceiveBufferSize() throws SocketException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/net/InetAddress.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static final class PlatformResolver implements InetAddressResolver {",
+            "methods": [
+              "public Stream<InetAddress> lookupByName(String host, LookupPolicy policy) throws UnknownHostException;",
+              "public String lookupByAddress(byte[] addr) throws UnknownHostException;"
+            ]
+          },
+          {
+            "declaration": "private static final class HostsFileResolver implements InetAddressResolver {",
+            "methods": [
+              "public HostsFileResolver(String hostsFileName) {",
+              "public String lookupByAddress(byte[] addr) throws UnknownHostException;",
+              "public Stream<InetAddress> lookupByName(String host, LookupPolicy lookupPolicy) throws UnknownHostException;",
+              "static InetAddress[] getAddressesFromNameService(String host) throws UnknownHostException;"
+            ]
+          }
+        ],
+        "new_methods": [
+          "static boolean systemAddressesOrder(int lookupCharacteristics);",
+          "static boolean ipv4AddressesFirst(int lookupCharacteristics);",
+          "static boolean ipv6AddressesFirst(int lookupCharacteristics);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/HashMap.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static final class UnsafeHolder {",
+            "methods": [
+              "static void putLoadFactor(HashMap<?, ?> map, float lf);"
+            ]
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/ImmutableCollections.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "abstract static class AbstractImmutableCollection<E> extends AbstractCollection<E> {",
+            "methods": []
+          },
+          {
+            "declaration": "abstract static class AbstractImmutableList<E> extends AbstractImmutableCollection<E> implements List<E>, RandomAccess {",
+            "methods": []
+          },
+          {
+            "declaration": "abstract static class AbstractImmutableSet<E> extends AbstractImmutableCollection<E> implements Set<E> {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Hashtable.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static final class UnsafeHolder {",
+            "methods": [
+              "static void putLoadFactor(Hashtable<?, ?> table, float lf);"
+            ]
+          }
+        ],
+        "new_methods": [
+          "void readHashtable(ObjectInputStream s) throws IOException, ClassNotFoundException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/Collections.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override",
+          "public void forEach(Consumer<? super E> action);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/regex/Pattern.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "default CharPredicate union(CharPredicate p1, CharPredicate p2);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/util/concurrent/Executors.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/Provider.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public String toString();",
+          "public Set<Service> getServices();",
+          "Service getDefaultSecureRandomService();",
+          "void removeAttribute(String type, String value);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/KeyStoreSpi.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public Set<Entry.Attribute> engineGetAttributes(String alias);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/security/KeyStore.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public final Set<Entry.Attribute> getAttributes(String alias) throws KeyStoreException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/PrintStream.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public Charset charset();"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectInputStream.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public abstract Object get(String name, @Nullable Object val) throws IOException, ClassNotFoundException;",
+          "public Object get(String name, Object val) throws ClassNotFoundException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/FileInputStream.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public long transferTo(OutputStream out) throws IOException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/ObjectStreamClass.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "abstract static class Key {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/io/FilterInputStream.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/time/Duration.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public boolean isPositive();"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/System.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "public abstract static class LoggerFinder {",
+            "methods": [
+              "@Deprecated()",
+              "@SuppressWarnings(\"removal\")"
+            ]
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StackStreamFactory.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "abstract static class AbstractStackWalker<R, T> {",
+            "methods": []
+          },
+          {
+            "declaration": "abstract static class FrameBuffer<F> {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StringBuffer.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "public final class StringBuffer extends AbstractStringBuilder implements Serializable, Comparable<StringBuffer>, CharSequence {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Byte.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Short.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Character.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Enum.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Deprecated()",
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ThreadGroup.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StringCoding.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@IntrinsicCandidate",
+          "public static int implEncodeAsciiArray(char[] sa, int sp, byte[] da, int dp, int len);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Math.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static int divideExact(int x, int y);",
+          "public static long divideExact(long x, long y);",
+          "public static int floorDivExact(int x, int y);",
+          "public static long floorDivExact(long x, long y);",
+          "public static int ceilDivExact(int x, int y);",
+          "public static long ceilDivExact(long x, long y);",
+          "@IntrinsicCandidate",
+          "public static long unsignedMultiplyHigh(long x, long y);",
+          "public static int ceilDiv(int x, int y);",
+          "public static long ceilDiv(long x, int y);",
+          "public static long ceilDiv(long x, long y);",
+          "public static int ceilMod(int x, int y);",
+          "public static int ceilMod(long x, int y);",
+          "public static long ceilMod(long x, long y);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Boolean.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/Runtime.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Deprecated()",
+          "@Deprecated()",
+          "@Deprecated()",
+          "@Deprecated()"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/WeakPairMap.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private abstract static class WeakRefPeer<K> extends WeakReference<K> {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/StrictMath.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static int divideExact(int x, int y);",
+          "public static long divideExact(long x, long y);",
+          "public static int floorDivExact(int x, int y);",
+          "public static long floorDivExact(long x, long y);",
+          "public static int ceilDivExact(int x, int y);",
+          "public static long ceilDivExact(long x, long y);",
+          "public static long unsignedMultiplyHigh(long x, long y);",
+          "public static int ceilDiv(int x, int y);",
+          "public static long ceilDiv(long x, int y);",
+          "public static long ceilDiv(long x, long y);",
+          "public static int ceilMod(int x, int y);",
+          "public static int ceilMod(long x, int y);",
+          "public static long ceilMod(long x, long y);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ref/Reference.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "boolean refersToImpl(T obj);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/ref/PhantomReference.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "boolean refersToImpl(T obj);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/CallSite.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "public abstract class CallSite {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandles.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "static Object classData(Class<?> c);",
+          "ClassDefiner makeHiddenClassDefiner(String name, byte[] bytes, Set<ClassOption> options);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/AbstractConstantGroup.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "abstract static class WithCache extends AbstractConstantGroup {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static final class InjectedInvokerHolder {",
+            "methods": []
+          }
+        ],
+        "new_methods": [
+          "static MethodHandle reflectiveInvoker(Class<?> caller);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/lang/reflect/Method.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public Object invoke(Object obj, Object... args) throws IllegalAccessException, InvocationTargetException;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/java/nio/charset/Charset.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static Charset forName(String charsetName, Charset fallback);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.base/share/classes/javax/security/auth/Subject.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static Subject current();",
+          "public static <T> T callAs(final Subject subject, final Callable<T> action) throws CompletionException;",
+          "@SuppressWarnings(\"removal\")",
+          "@Deprecated()",
+          "@Deprecated()"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.httpserver/share/classes/com/sun/net/httpserver/Headers.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public Headers(Map<String, List<String>> headers) {",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "@Override",
+          "public void replaceAll(BiFunction<? super String, ? super List<String>, ? extends List<String>> function);",
+          "@Override",
+          "@Override",
+          "@Override",
+          "public String toString();",
+          "public static Headers of(String... headers);",
+          "public static Headers of(Map<String, List<String>> headers);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.le/share/classes/jdk/internal/org/jline/utils/AttributedCharSequence.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static final int TRUE_COLORS;",
+          "public enum ForceMode {",
+          "None, Force256Colors, ForceTrueColors",
+          "@Deprecated",
+          "@Deprecated",
+          "public String toAnsi(int colors, ForceMode force);",
+          "public String toAnsi(int colors, ForceMode force, ColorPalette palette);",
+          "public String toAnsi(int colors, ForceMode force, ColorPalette palette, String altIn, String altOut);",
+          "long styleCodeAt(int index);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.security.auth/share/classes/com/sun/security/auth/NTNumericCredential.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RemoteObject.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "protected transient RemoteRef ref;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/RMISocketFactory.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static synchronized void setSocketFactory(RMISocketFactory fac) throws IOException;",
+          "public static synchronized RMISocketFactory getSocketFactory();",
+          "public static synchronized RMISocketFactory getDefaultSocketFactory();",
+          "public static synchronized void setFailureHandler(RMIFailureHandler fh);",
+          "public static synchronized RMIFailureHandler getFailureHandler();"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.rmi/share/classes/java/rmi/server/ObjID.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/ReferenceTypeImpl.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override",
+          "public abstract List<Method> allMethods();"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/VirtualMachineImpl.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static class SoftObjectReference extends SoftReference<ObjectReferenceImpl> {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/FieldImpl.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/ObjectReferenceImpl.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jdi/share/classes/com/sun/tools/jdi/MethodImpl.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@Override"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public Content linkToContent(Element referrer, Element target, String targetSignature, String text);",
+          "protected Content invalidTagOutput(String summary, Optional<Content> detail);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public List<DocPath> getAdditionalScripts();"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static HtmlTree INPUT(String type, HtmlId id);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public boolean isMandated(AnnotationMirror aDesc);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public TypeElement getReferencedClass(Element e);",
+          "public String getReferencedModuleName(String signature);",
+          "public Element getReferencedMember(Element e);",
+          "public String getReferencedMemberName(String signature);",
+          "public PackageElement getReferencedPackage(Element e);",
+          "public ModuleElement getReferencedModule(Element e);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "ANNOTATION_TYPE_MEMBER,",
+          "ANNOTATION_TYPE_MEMBER_REQUIRED,",
+          "public List<Element> getAllVisibleMembers(Kind kind);",
+          "public List<Element> getVisibleMembers(Kind kind, Predicate<Element> p);",
+          "public List<Element> getVisibleMembers(Kind kind);",
+          "public List<Element> getMembers(Kind kind);",
+          "public VariableElement getPropertyField(ExecutableElement ee);",
+          "public ExecutableElement getPropertyGetter(ExecutableElement ee);",
+          "public ExecutableElement getPropertySetter(ExecutableElement ee);",
+          "public ExecutableElement getPropertyMethod(ExecutableElement ee);",
+          "<T extends Element> List<T> getMembers(String key, Kind kind, Class<T> clazz);",
+          "List<ExecutableElement> getPropertyMethods(String methodName, int argcount);",
+          "record PropertyMembers(ExecutableElement propertyMethod, VariableElement field, ExecutableElement getter, ExecutableElement setter) {"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public TypeMirror getThrowableType();",
+          "public boolean isThrowable(TypeElement te);"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ResourcePoolManager.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "static class ResourcePoolModuleImpl implements ResourcePoolModule {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/ImagePluginStack.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static final class CheckOrderResourcePoolManager extends ResourcePoolManager {",
+            "methods": []
+          },
+          {
+            "declaration": "private static class LastPoolManager extends ResourcePoolManager {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.accessibility/windows/classes/com/sun/java/accessibility/internal/AccessBridge.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "public final class AccessBridge {",
+            "methods": []
+          },
+          {
+            "declaration": "private static abstract class AccessibilityGraphicsEnvironment extends GraphicsEnvironment {",
+            "methods": [
+              "public static GraphicsConfiguration getGraphicsConfigurationAtPoint(double x, double y);",
+              "public static GraphicsConfiguration getGraphicsConfigurationAtPoint(GraphicsConfiguration current, double x, double y);",
+              "public static GraphicsConfiguration getGraphicsConfigurationAtDevicePoint(double x, double y);",
+              "public static GraphicsConfiguration getGraphicsConfigurationAtDevicePoint(GraphicsConfiguration current, double x, double y);",
+              "public static Point toUserSpace(int x, int y);",
+              "public static Point toUserSpace(GraphicsConfiguration gc, int x, int y);",
+              "public static Rectangle toDeviceSpaceAbs(Rectangle rect);",
+              "public static Rectangle toDeviceSpaceAbs(GraphicsConfiguration gc, int x, int y, int w, int h);"
+            ]
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.jshell/share/classes/jdk/jshell/MemoryFileManager.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "abstract static class MemoryJavaFileObject extends SimpleJavaFileObject {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/unix/classes/sun/print/IPPPrintService.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static class ExtFinishing extends Finishings {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/macosx/classes/sun/font/CFont.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/Polygon.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "static class PolygonPathIterator implements PathIterator {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/BufferCapabilities.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"doclint:missing\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/CardLayout.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "static class Card implements Serializable {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/PrintJob.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/Component.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static class ProxyCapabilities extends ExtendedBufferCapabilities {",
+            "methods": []
+          }
+        ],
+        "new_methods": [
+          "@SuppressWarnings(\"doclint:missing\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/Graphics.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/Toolkit.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static class SelectiveAWTEventListener implements AWTEventListener {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/java/awt/print/Book.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static class BookPage {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/JRootPane.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"serial\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/JComponent.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "static final class ActionStandin implements Action {",
+            "methods": []
+          },
+          {
+            "declaration": "private static class ReadObjectCallback implements ObjectInputValidation {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/JDialog.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings({ \"serial\", \"doclint:missing\" })"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/plaf/nimbus/NimbusStyle.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static final class RuntimeState implements Cloneable {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/text/StyleContext.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "static class KeyEnumeration implements Enumeration<Object> {",
+            "methods": []
+          },
+          {
+            "declaration": "static class KeyBuilder {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/text/JTextComponent.java": {
+      "new_changes": {
+        "new_classes": [
+          {
+            "declaration": "private static class DoSetCaretPosition implements Runnable {",
+            "methods": []
+          }
+        ],
+        "new_methods": []
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/text/html/HTML.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"doclint:missing\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/swing/text/html/HTMLEditorKit.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings({ \"serial\", \"doclint:missing\" })"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/javax/print/DocFlavor.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/java.desktop/share/classes/com/sun/imageio/plugins/png/PNGImageWriter.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "@SuppressWarnings(\"removal\")",
+          "@SuppressWarnings(\"removal\")"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.management.agent/share/classes/sun/management/jdp/JdpJmxPacket.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public static final String UUID_KEY;",
+          "public static final String MAIN_CLASS_KEY;",
+          "public static final String JMX_SERVICE_URL_KEY;",
+          "public static final String INSTANCE_NAME_KEY;",
+          "public static final String PROCESS_ID_KEY;",
+          "public static final String RMI_HOSTNAME_KEY;",
+          "public static final String BROADCAST_INTERVAL_KEY;"
+        ]
+      }
+    },
+    "https://github.com/eisop/jdk/tree/jdk-18/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotObjectConstantImpl.java": {
+      "new_changes": {
+        "new_classes": [],
+        "new_methods": [
+          "public JavaConstant readFieldValue(HotSpotResolvedJavaField field);"
+        ]
+      }
+    }
+  }
+}

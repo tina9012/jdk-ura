@@ -1,0 +1,209 @@
+version,file_url,method,checked
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/GSSNameImpl.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/GSSNameImpl.java,public final class GSSNameImpl implements GSSName {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java,static class Entry {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/spi/GSSNameSpi.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/org/ietf/jgss/GSSCredential.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/org/ietf/jgss/GSSName.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jfr/share/classes/jdk/jfr/internal/consumer/RecordingInput.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.management/share/classes/java/lang/management/ManagementFactory.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.management/share/classes/javax/management/remote/JMXServerErrorException.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/PropertyManager.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/util/ErrorMsg.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/source/tree/Tree.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/source/tree/Tree.java,"CONSTANT_CASE_LABEL(ConstantCaseLabelTree.class),",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/source/tree/Tree.java,"PATTERN_CASE_LABEL(PatternCaseLabelTree.class),",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/source/tree/Tree.java,"DECONSTRUCTION_PATTERN(DeconstructionPatternTree.class),",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.logging/share/classes/java/util/logging/LogManager.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.logging/share/classes/java/util/logging/LoggingMXBean.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/unix/classes/sun/nio/fs/UnixDirectoryStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/net/www/http/KeepAliveCache.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/ssl/Utilities.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/tools/keytool/Main.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/tools/keytool/Main.java,private static class SecretKeyConstraintsParameters implements ConstraintsParameters {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/util/BitArray.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/x509/AlgorithmId.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/jdk/internal/org/objectweb/asm/commons/AdviceAdapter.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/URL.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/URL.java,private static class ThreadTrackHolder {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/SocketException.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/package-info.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/InetAddress.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/InetAddress.java,"public sealed class InetAddress implements Serializable permits Inet4Address, Inet6Address {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/RegularEnumSet.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/RegularEnumSet.java,final class RegularEnumSet<E extends Enum<E>> extends EnumSet<E> {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Objects.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/LinkedHashMap.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/HashMap.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Observable.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/WeakHashMap.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Random.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Random.java,private static final class RandomWrapper extends Random implements RandomGenerator {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Locale.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/JumboEnumSet.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/JumboEnumSet.java,final class JumboEnumSet<E extends Enum<E>> extends EnumSet<E> {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Formatter.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Formatter.java,private static class FixedString implements FormatString {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Formatter.java,private static class FormatSpecifier implements FormatString {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/HashSet.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/LinkedHashSet.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/EnumSet.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/EnumSet.java,"public abstract sealed class EnumSet<E extends Enum<E>> extends AbstractSet<E> implements Cloneable, java.io.Serializable permits JumboEnumSet, RegularEnumSet {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Date.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/ServiceLoader.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/jar/JarFile.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/jar/JarFile.java,private static class ThreadTrackHolder {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/zip/InflaterInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/zip/Deflater.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/Future.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ExecutorService.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java,"abstract static sealed class CollectionView<K, V, E> implements Collection<E>, java.io.Serializable permits EntrySetView, KeySetView, ValuesView {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java,"public static final class KeySetView<K, V> extends CollectionView<K, V, K> implements Set<K>, java.io.Serializable {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/Executors.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/FutureTask.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/security/spec/PSSParameterSpec.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileSystem.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectOutputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileOutputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectStreamException.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/StringBufferInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/SequenceInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PushbackInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FilenameFilter.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectStreamClass.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectStreamClass.java,public final class ObjectStreamClass implements Serializable {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectStreamClass.java,private static class FieldReflectorKey {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/InputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/BufferedInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/RandomAccessFile.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/BufferedOutputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/InvalidObjectException.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PipedInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FilterInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ByteArrayInputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ByteArrayOutputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PipedOutputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigInteger.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigInteger.java,private abstract static sealed class RecursiveOp extends RecursiveTask<BigInteger> {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigInteger.java,private static final class RecursiveMultiply extends RecursiveOp {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigInteger.java,private static final class RecursiveSquare extends RecursiveOp {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigDecimal.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/time/ZoneId.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/time/ZoneId.java,"public abstract sealed class ZoneId implements Serializable permits ZoneOffset, ZoneRegion {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/System.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Integer.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackStreamFactory.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/InheritableThreadLocal.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackTraceElement.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Float.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Long.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Object.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Throwable.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Character.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ThreadLocal.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackWalker.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Double.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/AbstractStringBuilder.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/AbstractStringBuilder.java,"abstract sealed class AbstractStringBuilder implements Appendable, CharSequence permits StringBuilder, StringBuffer {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Runnable.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StringCoding.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Math.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Thread.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Thread.java,private static class FieldHolder {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Thread.java,private static class ThreadIdentifiers {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Thread.java,private static class ThreadNumbering {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Thread.java,private static class Constants {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StrictMath.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/SoftReference.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/SoftReference.java,public non-sealed class SoftReference<T> extends Reference<T> {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/ReferenceQueue.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/ReferenceQueue.java,private static class Null extends ReferenceQueue<Object> {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/Reference.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/Reference.java,"public abstract sealed class Reference<T> permits PhantomReference, SoftReference, WeakReference, FinalReference {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/Finalizer.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/PhantomReference.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/PhantomReference.java,public non-sealed class PhantomReference<T> extends Reference<T> {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/WeakReference.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/WeakReference.java,public non-sealed class WeakReference<T> extends Reference<T> {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/FinalReference.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/FinalReference.java,sealed class FinalReference<T> extends Reference<T> permits Finalizer {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/CallSite.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/CallSite.java,"public abstract sealed class CallSite permits ConstantCallSite, MutableCallSite, VolatileCallSite {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodType.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java,static final class AsVarargsCollector extends DelegatingMethodHandle {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java,static final class CountingWrapper extends DelegatingMethodHandle {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java,static final class WrappedMember extends DelegatingMethodHandle {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/reflect/Proxy.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/reflect/ReflectAccess.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/StringCharBuffer.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/StringCharBuffer.java,final class StringCharBuffer extends CharBuffer {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/Buffer.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/Buffer.java,"public abstract sealed class Buffer permits ByteBuffer, CharBuffer, DoubleBuffer, FloatBuffer, IntBuffer, LongBuffer, ShortBuffer {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/charset/Charset.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/charset/Charset.java,private static class ThreadTrackHolder {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/channels/FileChannel.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/text/DecimalFormatSymbols.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/text/Bidi.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/javax/net/ssl/X509KeyManager.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/javax/net/ssl/TrustManagerFactory.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/EventRequestManagerImpl.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/EventRequestManagerImpl.java,abstract class ThreadLifecycleEventRequestImpl extends ThreadVisibleEventRequestImpl {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/EventRequestManagerImpl.java,class ThreadDeathRequestImpl extends ThreadLifecycleEventRequestImpl implements ThreadDeathRequest {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/EventRequestManagerImpl.java,class ThreadStartRequestImpl extends ThreadLifecycleEventRequestImpl implements ThreadStartRequest {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/VirtualMachineImpl.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriterImpl.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/SerializedFormWriterImpl.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/TreeWriter.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriterImpl.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/BaseConfiguration.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/Content.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/UncheckedDocletException.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/TagletManager.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/Main.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ToolEnvironment.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jlink/share/classes/jdk/tools/jmod/JmodOutputStream.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.datatransfer/share/classes/java/awt/datatransfer/Clipboard.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/ScrollPaneAdjustable.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/ScrollPaneAdjustable.java,"public final class ScrollPaneAdjustable implements Adjustable, Serializable {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/MultipleGradientPaint.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/MultipleGradientPaint.java,"public abstract sealed class MultipleGradientPaint implements Paint permits LinearGradientPaint, RadialGradientPaint {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/PointerInfo.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/PointerInfo.java,public final class PointerInfo {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/dnd/DropTargetContext.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/dnd/DropTargetContext.java,public final class DropTargetContext implements Serializable {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/color/ICC_Profile.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/color/ICC_Profile.java,"public sealed class ICC_Profile implements Serializable permits ICC_ProfileGray, ICC_ProfileRGB {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/Path2D.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/Path2D.java,"public abstract sealed class Path2D implements Shape, Cloneable permits Path2D.Double, Path2D.Float {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/Path2D.java,public static non-sealed class Float extends Path2D implements Serializable {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/Path2D.java,public static non-sealed class Double extends Path2D implements Serializable {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/CubicCurve2D.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/QuadCurve2D.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/JDialog.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/StyleConstants.java,,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/StyleConstants.java,"public sealed class StyleConstants permits StyleConstants.CharacterConstants, StyleConstants.ColorConstants, StyleConstants.FontConstants, StyleConstants.ParagraphConstants {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/StyleConstants.java,public static final class ParagraphConstants extends StyleConstants implements AttributeSet.ParagraphAttribute {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/StyleConstants.java,public static final class CharacterConstants extends StyleConstants implements AttributeSet.CharacterAttribute {,False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/StyleConstants.java,"public static final class ColorConstants extends StyleConstants implements AttributeSet.ColorAttribute, AttributeSet.CharacterAttribute {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/StyleConstants.java,"public static final class FontConstants extends StyleConstants implements AttributeSet.FontAttribute, AttributeSet.CharacterAttribute {",False
+jdk-19,https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/html/HTMLEditorKit.java,,False

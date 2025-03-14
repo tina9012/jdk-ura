@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JDK jdk-19 Changes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+<style>
+  body {
+    background-color: #f8f9fa;
+    padding: 2rem;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+    border: none;
+  }
+  .card-header {
+    background-color: #3230a1;
+    color: white;
+    font-weight: bold;
+  }
+  .card-header a {
+    color: white;
+  }
+  .badge {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+  /* Styles for new classes */
+  .new-class-card {
+    border: 1px solid #FF5733;
+  }
+  .new-class-header {
+    background-color: #FF5733;
+    color: white;
+    font-weight: bold;
+  }
+</style>
+
+</head>
+<body>
+<div class="container">
+  <h1>JDK jdk-19 Changes</h1>
+  <a href="../report-styling.html" class="back-link">← Back to all versions</a>
+  <hr>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/GSSNameImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/GSSNameImpl.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public final class GSSNameImpl implements GSSName { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/TokenTracker.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">static class Entry { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/spi/GSSNameSpi.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/sun/security/jgss/spi/GSSNameSpi.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">Provider getProvider();</li><li class="list-group-item">boolean equals(GSSNameSpi name) throws GSSException;</li><li class="list-group-item">boolean equals(@Nullable Object another);</li><li class="list-group-item">int hashCode();</li><li class="list-group-item">byte[] export() throws GSSException;</li><li class="list-group-item">Oid getMechanism();</li><li class="list-group-item">String toString();</li><li class="list-group-item">Oid getStringNameType();</li><li class="list-group-item">boolean isAnonymousName();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/org/ietf/jgss/GSSCredential.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/org/ietf/jgss/GSSCredential.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">int INITIATE_AND_ACCEPT;</li><li class="list-group-item">int INITIATE_ONLY;</li><li class="list-group-item">int ACCEPT_ONLY;</li><li class="list-group-item">int DEFAULT_LIFETIME;</li><li class="list-group-item">int INDEFINITE_LIFETIME;</li><li class="list-group-item">void dispose() throws GSSException;</li><li class="list-group-item">GSSName getName() throws GSSException;</li><li class="list-group-item">GSSName getName(Oid mech) throws GSSException;</li><li class="list-group-item">int getRemainingLifetime() throws GSSException;</li><li class="list-group-item">int getRemainingInitLifetime(Oid mech) throws GSSException;</li><li class="list-group-item">int getRemainingAcceptLifetime(Oid mech) throws GSSException;</li><li class="list-group-item">int getUsage() throws GSSException;</li><li class="list-group-item">int getUsage(Oid mech) throws GSSException;</li><li class="list-group-item">Oid[] getMechs() throws GSSException;</li><li class="list-group-item">void add(GSSName name, int initLifetime, int acceptLifetime, Oid mech, int usage) throws GSSException;</li><li class="list-group-item">boolean equals(@Nullable Object another);</li><li class="list-group-item">int hashCode();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/org/ietf/jgss/GSSName.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.security.jgss/share/classes/org/ietf/jgss/GSSName.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">Oid NT_HOSTBASED_SERVICE;</li><li class="list-group-item">Oid NT_USER_NAME;</li><li class="list-group-item">Oid NT_MACHINE_UID_NAME;</li><li class="list-group-item">Oid NT_STRING_UID_NAME;</li><li class="list-group-item">Oid NT_ANONYMOUS;</li><li class="list-group-item">Oid NT_EXPORT_NAME;</li><li class="list-group-item">boolean equals(GSSName another) throws GSSException;</li><li class="list-group-item">boolean equals(@Nullable Object another);</li><li class="list-group-item">int hashCode();</li><li class="list-group-item">GSSName canonicalize(Oid mech) throws GSSException;</li><li class="list-group-item">byte[] export() throws GSSException;</li><li class="list-group-item">String toString();</li><li class="list-group-item">Oid getStringNameType() throws GSSException;</li><li class="list-group-item">boolean isAnonymous();</li><li class="list-group-item">boolean isMN();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jfr/share/classes/jdk/jfr/internal/consumer/RecordingInput.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jfr/share/classes/jdk/jfr/internal/consumer/RecordingInput.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void require(int minimumBytes, String errorMessage) throws IOException;</li><li class="list-group-item">public void setStreamed();</li><li class="list-group-item">public void pollWait() throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.management/share/classes/java/lang/management/ManagementFactory.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.management/share/classes/java/lang/management/ManagementFactory.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings({ &quot;removal&quot;, &quot;doclint:reference&quot; })</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.management/share/classes/javax/management/remote/JMXServerErrorException.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.management/share/classes/javax/management/remote/JMXServerErrorException.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/PropertyManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/PropertyManager.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/util/ErrorMsg.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/util/ErrorMsg.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static final String XPATH_LIMIT;</li><li class="list-group-item">public static final String XPATH_GROUP_LIMIT;</li><li class="list-group-item">public static final String XPATH_OPERATOR_LIMIT;</li><li class="list-group-item">public static final String XPATH_TOTAL_OPERATOR_LIMIT;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static Type primaryPatternType(JCTree pat);</li><li class="list-group-item">public static JCTree primaryPatternTypeTree(JCTree pat);</li><li class="list-group-item">public static boolean expectedExhaustive(JCSwitch tree);</li><li class="list-group-item">public static boolean unguardedCaseLabel(JCCaseLabel cse);</li><li class="list-group-item">public static boolean isBooleanWithValue(JCExpression guard, int value);</li><li class="list-group-item">public static boolean isNullCaseLabel(JCCaseLabel label);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public Name name();</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">public Name name();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">public Throwable fillInStackTrace();</li><li class="list-group-item">@Override</li><li class="list-group-item">public Throwable fillInStackTrace();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">public Throwable fillInStackTrace();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/source/tree/Tree.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.compiler/share/classes/com/sun/source/tree/Tree.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">CONSTANT_CASE_LABEL(ConstantCaseLabelTree.class), <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.SWITCH_PATTERN_MATCHING, reflective = true)</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">PATTERN_CASE_LABEL(PatternCaseLabelTree.class), <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.RECORD_PATTERNS, reflective = true)</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">DECONSTRUCTION_PATTERN(DeconstructionPatternTree.class), <span class="badge bg-warning text-dark">Not Checked</span></div></div><ul class="list-group list-group-flush"><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.SWITCH_PATTERN_MATCHING, reflective = true)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.logging/share/classes/java/util/logging/LogManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.logging/share/classes/java/util/logging/LogManager.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.logging/share/classes/java/util/logging/LoggingMXBean.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.logging/share/classes/java/util/logging/LoggingMXBean.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/unix/classes/sun/nio/fs/UnixDirectoryStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/unix/classes/sun/nio/fs/UnixDirectoryStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">final UnixPath directory();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/net/www/http/KeepAliveCache.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/net/www/http/KeepAliveCache.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;removal&quot;)</li><li class="list-group-item">static int getUserKeepAliveSeconds(String type);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/ssl/Utilities.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/ssl/Utilities.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">static &lt;T&gt; boolean contains(T[] array, T item);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/tools/keytool/Main.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/tools/keytool/Main.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class SecretKeyConstraintsParameters implements ConstraintsParameters { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">public boolean anchorIsJdkCA();</li><li class="list-group-item">@Override</li><li class="list-group-item">public Set&lt;Key&gt; getKeys();</li><li class="list-group-item">@Override</li><li class="list-group-item">public Date getDate();</li><li class="list-group-item">@Override</li><li class="list-group-item">public String getVariant();</li><li class="list-group-item">@Override</li><li class="list-group-item">public String extendedExceptionMsg();</li></ul></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/util/BitArray.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/util/BitArray.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public BitArray(int length, byte[] a, int ofs) throws IllegalArgumentException {</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/x509/AlgorithmId.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/security/x509/AlgorithmId.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static final ObjectIdentifier SHA1withECDSA_oid;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public long capacity();</li><li class="list-group-item">@Override</li><li class="list-group-item">public MemorySegment map(MapMode mode, long offset, long size, MemorySession session) throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/jdk/internal/org/objectweb/asm/commons/AdviceAdapter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/jdk/internal/org/objectweb/asm/commons/AdviceAdapter.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void visitVarInsn(final int opcode, final int varIndex);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/URL.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/URL.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class ThreadTrackHolder { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/SocketException.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/SocketException.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public SocketException(String msg, Throwable cause) {</li><li class="list-group-item">public SocketException(Throwable cause) {</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/package-info.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/package-info.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/InetAddress.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/net/InetAddress.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public sealed class InetAddress implements Serializable permits Inet4Address, Inet6Address { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/RegularEnumSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/RegularEnumSet.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">final class RegularEnumSet&lt;E extends Enum&lt;E&gt;&gt; extends EnumSet&lt;E&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Objects.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Objects.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static String toIdentityString(Object o);</li><li class="list-group-item">@ForceInline</li><li class="list-group-item">@ForceInline</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/LinkedHashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/LinkedHashMap.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static &lt;K, V&gt; LinkedHashMap&lt;K, V&gt; newLinkedHashMap(int numMappings);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/HashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/HashMap.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">static int calculateHashMapCapacity(int numMappings);</li><li class="list-group-item">public static &lt;K, V&gt; HashMap&lt;K, V&gt; newHashMap(int numMappings);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Observable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Observable.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/WeakHashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/WeakHashMap.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static &lt;K, V&gt; WeakHashMap&lt;K, V&gt; newWeakHashMap(int numMappings);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Random.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Random.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static final class RandomWrapper extends Random implements RandomGenerator { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">public void setSeed(long seed);</li><li class="list-group-item">@Override</li><li class="list-group-item">public boolean isDeprecated();</li><li class="list-group-item">@Override</li><li class="list-group-item">public void nextBytes(byte[] bytes);</li><li class="list-group-item">@Override</li><li class="list-group-item">public int nextInt();</li><li class="list-group-item">@Override</li><li class="list-group-item">public int nextInt(int bound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public int nextInt(int origin, int bound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public long nextLong();</li><li class="list-group-item">@Override</li><li class="list-group-item">public long nextLong(long bound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public long nextLong(long origin, long bound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public boolean nextBoolean();</li><li class="list-group-item">@Override</li><li class="list-group-item">public float nextFloat();</li><li class="list-group-item">@Override</li><li class="list-group-item">public float nextFloat(float bound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public float nextFloat(float origin, float bound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public double nextDouble();</li><li class="list-group-item">@Override</li><li class="list-group-item">public double nextDouble(double bound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public double nextDouble(double origin, double bound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public double nextExponential();</li><li class="list-group-item">@Override</li><li class="list-group-item">public double nextGaussian();</li><li class="list-group-item">@Override</li><li class="list-group-item">public double nextGaussian(double mean, double stddev);</li><li class="list-group-item">@Override</li><li class="list-group-item">public IntStream ints(long streamSize);</li><li class="list-group-item">@Override</li><li class="list-group-item">public IntStream ints();</li><li class="list-group-item">@Override</li><li class="list-group-item">public IntStream ints(long streamSize, int randomNumberOrigin, int randomNumberBound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public IntStream ints(int randomNumberOrigin, int randomNumberBound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public LongStream longs(long streamSize);</li><li class="list-group-item">@Override</li><li class="list-group-item">public LongStream longs();</li><li class="list-group-item">@Override</li><li class="list-group-item">public LongStream longs(long streamSize, long randomNumberOrigin, long randomNumberBound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public LongStream longs(long randomNumberOrigin, long randomNumberBound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public DoubleStream doubles(long streamSize);</li><li class="list-group-item">@Override</li><li class="list-group-item">public DoubleStream doubles();</li><li class="list-group-item">@Override</li><li class="list-group-item">public DoubleStream doubles(long streamSize, double randomNumberOrigin, double randomNumberBound);</li><li class="list-group-item">@Override</li><li class="list-group-item">public DoubleStream doubles(double randomNumberOrigin, double randomNumberBound);</li><li class="list-group-item">@Override</li><li class="list-group-item">protected int next(int bits);</li><li class="list-group-item">@Override</li><li class="list-group-item">public String toString();</li><li class="list-group-item">public static Random from(RandomGenerator generator);</li></ul></div><ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;serial&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Locale.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Locale.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Deprecated()</li><li class="list-group-item">@Deprecated()</li><li class="list-group-item">@Deprecated()</li><li class="list-group-item">public static Locale of(String language, String country, String variant);</li><li class="list-group-item">public static Locale of(String language, String country);</li><li class="list-group-item">public static Locale of(String language);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/JumboEnumSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/JumboEnumSet.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">final class JumboEnumSet&lt;E extends Enum&lt;E&gt;&gt; extends EnumSet&lt;E&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Formatter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Formatter.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class FixedString implements FormatString { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">public void print(Formatter fmt, Object arg, Locale l) throws IOException;</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class FormatSpecifier implements FormatString { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">public void print(Formatter fmt, Object arg, Locale l) throws IOException;</li></ul></div><ul class="list-group list-group-flush"><li class="list-group-item">void print(Formatter fmt, Object arg, Locale l) throws IOException;</li><li class="list-group-item">public static boolean contains(int flags, int f);</li><li class="list-group-item">@Pure</li><li class="list-group-item">@EnsuresNonEmptyIf(result = true, expression = &quot;this&quot;)</li><li class="list-group-item">public static boolean containsAny(int flags, int f);</li><li class="list-group-item">public static int remove(int flags, int f);</li><li class="list-group-item">public static int parse(String s, int start, int end);</li><li class="list-group-item">public static String toString(int f);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/HashSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/HashSet.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static &lt;T&gt; HashSet&lt;T&gt; newHashSet(int numElements);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/LinkedHashSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/LinkedHashSet.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static &lt;T&gt; LinkedHashSet&lt;T&gt; newLinkedHashSet(int numElements);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/EnumSet.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/EnumSet.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public abstract sealed class EnumSet&lt;E extends Enum&lt;E&gt;&gt; extends AbstractSet&lt;E&gt; implements Cloneable, java.io.Serializable permits JumboEnumSet, RegularEnumSet { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Date.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/Date.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/ServiceLoader.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/ServiceLoader.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/jar/JarFile.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/jar/JarFile.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class ThreadTrackHolder { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/zip/InflaterInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/zip/InflaterInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">public void mark(int readlimit);</li><li class="list-group-item">@Override</li><li class="list-group-item">public void reset() throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/zip/Deflater.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/zip/Deflater.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">boolean shouldFinish();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/Future.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/Future.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">default V resultNow();</li><li class="list-group-item">default Throwable exceptionNow();</li><li class="list-group-item">enum State {</li><li class="list-group-item">RUNNING, SUCCESS, FAILED, CANCELLED</li><li class="list-group-item">default State state();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public final ForkJoinWorkerThread newThread(ForkJoinPool pool);</li><li class="list-group-item">static ForkJoinWorkerThread newRegularWithACC(ForkJoinPool pool);</li><li class="list-group-item">static ForkJoinWorkerThread newCommonWithACC(ForkJoinPool pool);</li><li class="list-group-item">static ForkJoinTask&lt;?&gt; getAndClearSlot(ForkJoinTask&lt;?&gt;[] a, int i);</li><li class="list-group-item">static boolean casSlotToNull(ForkJoinTask&lt;?&gt;[] a, int i, ForkJoinTask&lt;?&gt; c);</li><li class="list-group-item">final void forcePhaseActive();</li><li class="list-group-item">final int getAndSetAccess(int v);</li><li class="list-group-item">final void releaseAccess();</li><li class="list-group-item">final void push(ForkJoinTask&lt;?&gt; task, ForkJoinPool pool, boolean signalIfEmpty);</li><li class="list-group-item">final ForkJoinTask&lt;?&gt; nextLocalTask(int fifo);</li><li class="list-group-item">final boolean tryUnpush(ForkJoinTask&lt;?&gt; task, boolean owned);</li><li class="list-group-item">final ForkJoinTask&lt;?&gt; poll(ForkJoinPool pool);</li><li class="list-group-item">final ForkJoinTask&lt;?&gt; tryPoll();</li><li class="list-group-item">final void topLevelExec(ForkJoinTask&lt;?&gt; task, WorkQueue src);</li><li class="list-group-item">final int tryRemoveAndExec(ForkJoinTask&lt;?&gt; task, boolean owned);</li><li class="list-group-item">final void setClearThreadLocals();</li><li class="list-group-item">final int helpJoin(ForkJoinTask&lt;?&gt; task, WorkQueue w, boolean timed);</li><li class="list-group-item">final int helpComplete(ForkJoinTask&lt;?&gt; task, WorkQueue w, boolean owned, boolean timed);</li><li class="list-group-item">static final int helpQuiescePool(ForkJoinPool pool, long nanos, boolean interruptible);</li><li class="list-group-item">final WorkQueue submissionQueue(boolean isSubmit);</li><li class="list-group-item">public &lt;T&gt; ForkJoinTask&lt;T&gt; lazySubmit(ForkJoinTask&lt;T&gt; task);</li><li class="list-group-item">public int setParallelism(int size);</li><li class="list-group-item">@Override</li><li class="list-group-item">public void close();</li><li class="list-group-item">void endCompensatedBlock(long post);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ExecutorService.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ExecutorService.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public interface ExecutorService extends Executor, AutoCloseable {</li><li class="list-group-item">@Override</li><li class="list-group-item">default void close();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">abstract static sealed class CollectionView&lt;K, V, E&gt; implements Collection&lt;E&gt;, java.io.Serializable permits EntrySetView, KeySetView, ValuesView { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">public static final class KeySetView&lt;K, V&gt; extends CollectionView&lt;K, V, K&gt; implements Set&lt;K&gt;, java.io.Serializable { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/ForkJoinTask.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">final void markPoolSubmission();</li><li class="list-group-item">@Override</li><li class="list-group-item">public State state();</li><li class="list-group-item">@Override</li><li class="list-group-item">public V resultNow();</li><li class="list-group-item">@Override</li><li class="list-group-item">public Throwable exceptionNow();</li><li class="list-group-item">public final boolean quietlyJoin(long timeout, TimeUnit unit) throws InterruptedException;</li><li class="list-group-item">public final boolean quietlyJoinUninterruptibly(long timeout, TimeUnit unit);</li><li class="list-group-item">public static &lt;T&gt; ForkJoinTask&lt;T&gt; adaptInterruptible(Callable&lt;? extends T&gt; callable);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/Executors.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/Executors.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">public static ExecutorService newThreadPerTaskExecutor(ThreadFactory threadFactory);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">public static ExecutorService newVirtualThreadPerTaskExecutor();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/FutureTask.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/util/concurrent/FutureTask.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">public V resultNow();</li><li class="list-group-item">@Override</li><li class="list-group-item">public Throwable exceptionNow();</li><li class="list-group-item">@Override</li><li class="list-group-item">public State state();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/security/spec/PSSParameterSpec.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/security/spec/PSSParameterSpec.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Deprecated()</li><li class="list-group-item">@Deprecated()</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileSystem.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileSystem.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public abstract boolean isInvalid(File f);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectOutputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileOutputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectStreamException.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectStreamException.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">protected ObjectStreamException(String message, Throwable cause) {</li><li class="list-group-item">protected ObjectStreamException(Throwable cause) {</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FileInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/StringBufferInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/StringBufferInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/SequenceInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/SequenceInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PushbackInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PushbackInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void mark(@NonNegative int readlimit);</li><li class="list-group-item">public void reset() throws IOException;</li><li class="list-group-item">public void close() throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FilenameFilter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FilenameFilter.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectStreamClass.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ObjectStreamClass.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public final class ObjectStreamClass implements Serializable { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class FieldReflectorKey { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/InputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/InputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void mark(@NonNegative int readlimit);</li><li class="list-group-item">public void reset() throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/BufferedInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/BufferedInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public int read() throws IOException;</li><li class="list-group-item">public int read(byte[] b, @IndexOrHigh({ &quot;#1&quot; }) int off, @LTLengthOf(value = { &quot;#1&quot; }, offset = { &quot;#2 - 1&quot; }) @NonNegative int len) throws IOException;</li><li class="list-group-item">public long skip(long n) throws IOException;</li><li class="list-group-item">public int available() throws IOException;</li><li class="list-group-item">public void mark(int readlimit);</li><li class="list-group-item">public void reset() throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/RandomAccessFile.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/RandomAccessFile.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public long length() throws IOException;</li><li class="list-group-item">public void setLength(@NonNegative long newLength) throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/BufferedOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/BufferedOutputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void write(@PolySigned int b) throws IOException;</li><li class="list-group-item">public void flush() throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/InvalidObjectException.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/InvalidObjectException.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public InvalidObjectException(String reason, Throwable cause) {</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PipedInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PipedInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FilterInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/FilterInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void mark(@NonNegative int readlimit);</li><li class="list-group-item">public void reset() throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ByteArrayInputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ByteArrayInputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ByteArrayOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/ByteArrayOutputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PipedOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/io/PipedOutputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigInteger.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigInteger.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private abstract static sealed class RecursiveOp extends RecursiveTask&lt;BigInteger&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">protected RecursiveTask&lt;BigInteger&gt; forkOrInvoke();</li><li class="list-group-item">@SuppressWarnings(&quot;serial&quot;)</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static final class RecursiveMultiply extends RecursiveOp { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">public RecursiveMultiply(BigInteger a, BigInteger b, boolean parallel, int depth) {</li><li class="list-group-item">@Override</li><li class="list-group-item">public BigInteger compute();</li><li class="list-group-item">@SuppressWarnings(&quot;serial&quot;)</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static final class RecursiveSquare extends RecursiveOp { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">public RecursiveSquare(BigInteger a, boolean parallel, int depth) {</li><li class="list-group-item">@Override</li><li class="list-group-item">public BigInteger compute();</li></ul></div><ul class="list-group list-group-flush"><li class="list-group-item">public BigInteger parallelMultiply(BigInteger val);</li><li class="list-group-item">@SuppressWarnings(&quot;serial&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigDecimal.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/math/BigDecimal.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static final BigDecimal TWO;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/time/ZoneId.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/time/ZoneId.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public abstract sealed class ZoneId implements Serializable permits ZoneOffset, ZoneRegion { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">abstract ZoneOffset getOffset(long epochSecond);</li></ul></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/System.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/System.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Integer.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Integer.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">public static int compress(int i, int mask);</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">public static int expand(int i, int mask);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackStreamFactory.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackStreamFactory.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">protected final ContinuationScope contScope;</li><li class="list-group-item">protected Continuation continuation;</li><li class="list-group-item">@Override</li><li class="list-group-item">final boolean filter(int index);</li><li class="list-group-item">final boolean filter(int index);</li><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li><li class="list-group-item">final boolean filter(int index);</li><li class="list-group-item">abstract boolean filter(int index);</li><li class="list-group-item">final boolean isAtBottom();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/InheritableThreadLocal.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/InheritableThreadLocal.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@Override</li><li class="list-group-item">@Override</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackTraceElement.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackTraceElement.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">static StackTraceElement[] of(Object x, int depth);</li><li class="list-group-item">static StackTraceElement[] of(StackTraceElement[] stackTrace);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Float.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Float.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@IntVal(32)</li><li class="list-group-item">public static final int SIZE;</li><li class="list-group-item">@IntVal(24)</li><li class="list-group-item">public static final int PRECISION;</li><li class="list-group-item">@IntrinsicCandidate</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Long.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Long.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">public static long compress(long i, long mask);</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">public static long expand(long i, long mask);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Object.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Object.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public final void wait(@UnknownInitialization Object this, @NonNegative long timeoutMillis) throws InterruptedException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Throwable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Throwable.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">boolean isLockedByCurrentThread();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Character.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Character.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static final UnicodeBlock ARABIC_EXTENDED_B;</li><li class="list-group-item">public static final UnicodeBlock VITHKUQI;</li><li class="list-group-item">public static final UnicodeBlock LATIN_EXTENDED_F;</li><li class="list-group-item">public static final UnicodeBlock OLD_UYGHUR;</li><li class="list-group-item">public static final UnicodeBlock UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED_A;</li><li class="list-group-item">public static final UnicodeBlock CYPRO_MINOAN;</li><li class="list-group-item">public static final UnicodeBlock TANGSA;</li><li class="list-group-item">public static final UnicodeBlock KANA_EXTENDED_B;</li><li class="list-group-item">public static final UnicodeBlock ZNAMENNY_MUSICAL_NOTATION;</li><li class="list-group-item">public static final UnicodeBlock LATIN_EXTENDED_G;</li><li class="list-group-item">public static final UnicodeBlock TOTO;</li><li class="list-group-item">public static final UnicodeBlock ETHIOPIC_EXTENDED_B;</li><li class="list-group-item">VITHKUQI,</li><li class="list-group-item">OLD_UYGHUR,</li><li class="list-group-item">CYPRO_MINOAN,</li><li class="list-group-item">TANGSA,</li><li class="list-group-item">TOTO,</li><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ThreadLocal.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ThreadLocal.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">T getCarrierThreadLocal();</li><li class="list-group-item">void setCarrierThreadLocal(T value);</li><li class="list-group-item">int size();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackWalker.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StackWalker.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">static StackWalker getInstance(ContinuationScope contScope);</li><li class="list-group-item">static StackWalker getInstance(Option option, ContinuationScope contScope);</li><li class="list-group-item">static StackWalker getInstance(Set&lt;Option&gt; options, ContinuationScope contScope);</li><li class="list-group-item">static StackWalker newInstance(Set&lt;Option&gt; options, ExtendedOption extendedOption, ContinuationScope contScope);</li><li class="list-group-item">static StackWalker newInstance(Set&lt;Option&gt; options, ExtendedOption extendedOption, ContinuationScope contScope, Continuation continuation);</li><li class="list-group-item">ContinuationScope getContScope();</li><li class="list-group-item">Continuation getContinuation();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Double.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Double.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@IntVal(64)</li><li class="list-group-item">public static final int SIZE;</li><li class="list-group-item">@IntVal(53)</li><li class="list-group-item">public static final int PRECISION;</li><li class="list-group-item">@IntrinsicCandidate</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/AbstractStringBuilder.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/AbstractStringBuilder.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">abstract sealed class AbstractStringBuilder implements Appendable, CharSequence permits StringBuilder, StringBuffer { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Runnable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Runnable.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">void run(@PolyUI Runnable this);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StringCoding.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StringCoding.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static boolean hasNegatives(byte[] ba, int off, int len);</li><li class="list-group-item">public static int countPositives(byte[] ba, int off, int len);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Math.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Math.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static final double TAU;</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">@IntrinsicCandidate</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Thread.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/Thread.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class FieldHolder { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">static Object extentLocalBindings();</li><li class="list-group-item">static void setExtentLocalBindings(Object bindings);</li><li class="list-group-item">void inheritExtentLocalBindings(ThreadContainer container);</li><li class="list-group-item">Continuation getContinuation();</li><li class="list-group-item">void setContinuation(Continuation cont);</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">static native Thread currentCarrierThread();</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">native void setCurrentThread(Thread thread);</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">static native Object[] extentLocalCache();</li><li class="list-group-item">@IntrinsicCandidate</li><li class="list-group-item">static native void setExtentLocalCache(Object[] cache);</li><li class="list-group-item">public static void yield();</li><li class="list-group-item">public static void sleep(long millis) throws InterruptedException;</li><li class="list-group-item">public static void sleep(Duration duration) throws InterruptedException;</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class ThreadIdentifiers { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">static long next();</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">public static Builder.OfPlatform ofPlatform();</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">public static Builder.OfVirtual ofVirtual();</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">public sealed interface Builder permits Builder.OfPlatform, Builder.OfVirtual, ThreadBuilders.BaseThreadBuilder {</li><li class="list-group-item">Builder name(String name);</li><li class="list-group-item">Builder name(String prefix, long start);</li><li class="list-group-item">Builder allowSetThreadLocals(boolean allow);</li><li class="list-group-item">Builder inheritInheritableThreadLocals(boolean inherit);</li><li class="list-group-item">Builder uncaughtExceptionHandler(UncaughtExceptionHandler ueh);</li><li class="list-group-item">Thread unstarted(Runnable task);</li><li class="list-group-item">Thread start(Runnable task);</li><li class="list-group-item">ThreadFactory factory();</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">sealed interface OfPlatform extends Builder permits ThreadBuilders.PlatformThreadBuilder {</li><li class="list-group-item">@Override</li><li class="list-group-item">OfPlatform name(String name);</li><li class="list-group-item">@Override</li><li class="list-group-item">OfPlatform name(String prefix, long start);</li><li class="list-group-item">@Override</li><li class="list-group-item">OfPlatform allowSetThreadLocals(boolean allow);</li><li class="list-group-item">@Override</li><li class="list-group-item">OfPlatform inheritInheritableThreadLocals(boolean inherit);</li><li class="list-group-item">@Override</li><li class="list-group-item">OfPlatform uncaughtExceptionHandler(UncaughtExceptionHandler ueh);</li><li class="list-group-item">OfPlatform group(ThreadGroup group);</li><li class="list-group-item">OfPlatform daemon(boolean on);</li><li class="list-group-item">default OfPlatform daemon();</li><li class="list-group-item">OfPlatform priority(int priority);</li><li class="list-group-item">OfPlatform stackSize(long stackSize);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">sealed interface OfVirtual extends Builder permits ThreadBuilders.VirtualThreadBuilder {</li><li class="list-group-item">@Override</li><li class="list-group-item">OfVirtual name(String name);</li><li class="list-group-item">@Override</li><li class="list-group-item">OfVirtual name(String prefix, long start);</li><li class="list-group-item">@Override</li><li class="list-group-item">OfVirtual allowSetThreadLocals(boolean allow);</li><li class="list-group-item">@Override</li><li class="list-group-item">OfVirtual inheritInheritableThreadLocals(boolean inherit);</li><li class="list-group-item">@Override</li><li class="list-group-item">OfVirtual uncaughtExceptionHandler(UncaughtExceptionHandler ueh);</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class ThreadNumbering { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">static int next();</li><li class="list-group-item">static String genThreadName();</li><li class="list-group-item">public Thread(@Nullable Runnable task) {</li><li class="list-group-item">public Thread(@Nullable ThreadGroup group, @Nullable Runnable task) {</li><li class="list-group-item">public Thread(@Nullable Runnable task, String name) {</li><li class="list-group-item">public Thread(@Nullable ThreadGroup group, @Nullable Runnable task, String name) {</li><li class="list-group-item">public Thread(@Nullable ThreadGroup group, @Nullable Runnable task, String name, long stackSize) {</li><li class="list-group-item">public Thread(ThreadGroup group, Runnable task, String name, long stackSize, boolean inheritInheritableThreadLocals) {</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">public static Thread startVirtualThread(Runnable task);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.VIRTUAL_THREADS)</li><li class="list-group-item">public final boolean isVirtual();</li><li class="list-group-item">public void start();</li><li class="list-group-item">void start(ThreadContainer container);</li><li class="list-group-item">void clearReferences();</li><li class="list-group-item">final void setInterrupt();</li><li class="list-group-item">final void clearInterrupt();</li><li class="list-group-item">boolean getAndClearInterrupt();</li><li class="list-group-item">public final boolean isAlive(@GuardSatisfied Thread this);</li><li class="list-group-item">@Pure</li><li class="list-group-item">boolean alive();</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class Constants { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">static ThreadGroup virtualThreadGroup();</li><li class="list-group-item">ThreadContainer threadContainer();</li><li class="list-group-item">void setThreadContainer(ThreadContainer container);</li><li class="list-group-item">StackableScope headStackableScopes();</li><li class="list-group-item">static void setHeadStackableScope(StackableScope scope);</li></ul></div><ul class="list-group list-group-flush"><li class="list-group-item">void priority(int newPriority);</li><li class="list-group-item">public final void join(long millis) throws InterruptedException;</li><li class="list-group-item">public final void join(long millis, int nanos) throws InterruptedException;</li><li class="list-group-item">public final boolean join(Duration duration) throws InterruptedException;</li><li class="list-group-item">void daemon(boolean on);</li><li class="list-group-item">StackTraceElement[] asyncGetStackTrace();</li><li class="list-group-item">static Thread[] getAllThreads();</li><li class="list-group-item">@Deprecated()</li><li class="list-group-item">public final long threadId();</li><li class="list-group-item">State threadState();</li><li class="list-group-item">boolean isTerminated();</li><li class="list-group-item">public static void setDefaultUncaughtExceptionHandler(@Nullable UncaughtExceptionHandler ueh);</li><li class="list-group-item">public void setUncaughtExceptionHandler(@Nullable UncaughtExceptionHandler ueh);</li><li class="list-group-item">void uncaughtExceptionHandler(UncaughtExceptionHandler ueh);</li><li class="list-group-item">void dispatchUncaughtException(Throwable e);</li><li class="list-group-item">@SuppressWarnings(&quot;removal&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StrictMath.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/StrictMath.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static final double TAU;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/SoftReference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/SoftReference.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public non-sealed class SoftReference&lt;T&gt; extends Reference&lt;T&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/ReferenceQueue.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/ReferenceQueue.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class Null extends ReferenceQueue&lt;Object&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">public Null() {</li><li class="list-group-item">@Override</li><li class="list-group-item">boolean enqueue(Reference&lt;?&gt; r);</li><li class="list-group-item">void signal();</li><li class="list-group-item">void await() throws InterruptedException;</li><li class="list-group-item">void await(long timeoutMillis) throws InterruptedException;</li><li class="list-group-item">final boolean enqueue0(Reference&lt;? extends T&gt; r);</li><li class="list-group-item">final boolean headIsNull();</li><li class="list-group-item">final Reference&lt;? extends T&gt; poll0();</li><li class="list-group-item">final Reference&lt;? extends T&gt; remove0(long timeout) throws IllegalArgumentException, InterruptedException;</li><li class="list-group-item">final Reference&lt;? extends T&gt; remove0() throws InterruptedException;</li><li class="list-group-item">public Reference&lt;? extends T&gt; remove(long timeout) throws InterruptedException;</li></ul></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/Reference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/Reference.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public abstract sealed class Reference&lt;T&gt; permits PhantomReference, SoftReference, WeakReference, FinalReference { <span class="badge bg-warning text-dark">Not Checked</span></div></div><ul class="list-group list-group-flush"><li class="list-group-item">static void startReferenceHandlerThread(ThreadGroup tg);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/Finalizer.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/Finalizer.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">static void startFinalizerThread(ThreadGroup tg);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/PhantomReference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/PhantomReference.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public non-sealed class PhantomReference&lt;T&gt; extends Reference&lt;T&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/WeakReference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/WeakReference.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public non-sealed class WeakReference&lt;T&gt; extends Reference&lt;T&gt; { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/FinalReference.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/ref/FinalReference.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">sealed class FinalReference&lt;T&gt; extends Reference&lt;T&gt; permits Finalizer { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/CallSite.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/CallSite.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public abstract sealed class CallSite permits ConstantCallSite, MutableCallSite, VolatileCallSite { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodType.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodType.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">static MethodType methodType(Class&lt;?&gt; rtype, Class&lt;?&gt;[] ptypes, boolean trusted);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandles.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandles.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li><li class="list-group-item">static MethodHandle dropArgumentsTrusted(MethodHandle target, int pos, Class&lt;?&gt;[] valueTypes);</li><li class="list-group-item">static MethodHandle dropArguments(MethodHandle target, int pos, Class&lt;?&gt; valueType1);</li><li class="list-group-item">static MethodHandle dropArguments(MethodHandle target, int pos, Class&lt;?&gt; valueType1, Class&lt;?&gt; valueType2);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.FOREIGN)</li><li class="list-group-item">public static VarHandle memorySegmentViewVarHandle(ValueLayout layout);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.FOREIGN)</li><li class="list-group-item">public static VarHandle filterValue(VarHandle target, MethodHandle filterToTarget, MethodHandle filterFromTarget);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.FOREIGN)</li><li class="list-group-item">public static VarHandle filterCoordinates(VarHandle target, int pos, MethodHandle... filters);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.FOREIGN)</li><li class="list-group-item">public static VarHandle insertCoordinates(VarHandle target, int pos, Object... values);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.FOREIGN)</li><li class="list-group-item">public static VarHandle permuteCoordinates(VarHandle target, List&lt;Class&lt;?&gt;&gt; newCoordinates, int... reorder);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.FOREIGN)</li><li class="list-group-item">public static VarHandle collectCoordinates(VarHandle target, int pos, MethodHandle filter);</li><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.FOREIGN)</li><li class="list-group-item">public static VarHandle dropCoordinates(VarHandle target, int pos, Class&lt;?&gt;... valueTypes);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/invoke/MethodHandleImpl.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">static final class AsVarargsCollector extends DelegatingMethodHandle { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">static final class CountingWrapper extends DelegatingMethodHandle { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">static final class WrappedMember extends DelegatingMethodHandle { <span class="badge bg-warning text-dark">Not Checked</span></div></div><ul class="list-group list-group-flush"><li class="list-group-item">static MethodHandle makeTryFinally(MethodHandle target, MethodHandle cleanup, Class&lt;?&gt; rtype, Class&lt;?&gt;[] argTypes);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/reflect/Proxy.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/reflect/Proxy.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">static Object invokeDefault(Object proxy, Method method, Object[] args, Class&lt;?&gt; caller) throws Throwable;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/reflect/ReflectAccess.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/lang/reflect/ReflectAccess.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public Object invokeDefault(Object proxy, Method method, Object[] args, Class&lt;?&gt; caller) throws Throwable;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/StringCharBuffer.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/StringCharBuffer.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">final class StringCharBuffer extends CharBuffer { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/Buffer.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/Buffer.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public abstract sealed class Buffer permits ByteBuffer, CharBuffer, DoubleBuffer, FloatBuffer, IntBuffer, LongBuffer, ShortBuffer { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">final MemorySessionImpl session();</li><li class="list-group-item">final void checkSession();</li></ul></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/charset/Charset.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/charset/Charset.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">private static class ThreadTrackHolder { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/channels/FileChannel.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/nio/channels/FileChannel.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@PreviewFeature(feature = PreviewFeature.Feature.FOREIGN)</li><li class="list-group-item">public MemorySegment map(MapMode mode, long offset, long size, MemorySession session) throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/text/DecimalFormatSymbols.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/text/DecimalFormatSymbols.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public Locale getLocale();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/text/Bidi.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/java/text/Bidi.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/javax/net/ssl/X509KeyManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/javax/net/ssl/X509KeyManager.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">String @Nullable [] getClientAliases(String keyType, Principal @Nullable [] issuers);</li><li class="list-group-item">String chooseClientAlias(String[] keyType, Principal @Nullable [] issuers, @Nullable Socket socket);</li><li class="list-group-item">String @Nullable [] getServerAliases(String keyType, Principal @Nullable [] issuers);</li><li class="list-group-item">String chooseServerAlias(String keyType, Principal @Nullable [] issuers, @Nullable Socket socket);</li><li class="list-group-item">X509Certificate @Nullable [] getCertificateChain(String alias);</li><li class="list-group-item">PrivateKey getPrivateKey(String alias);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/javax/net/ssl/TrustManagerFactory.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.base/share/classes/javax/net/ssl/TrustManagerFactory.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public static String getDefaultAlgorithm();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/EventRequestManagerImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/EventRequestManagerImpl.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">abstract class ThreadLifecycleEventRequestImpl extends ThreadVisibleEventRequestImpl { <span class="badge bg-warning text-dark">Not Checked</span></div><ul class="list-group list-group-flush"><li class="list-group-item">public synchronized void addPlatformThreadsOnlyFilter();</li></ul></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">class ThreadDeathRequestImpl extends ThreadLifecycleEventRequestImpl implements ThreadDeathRequest { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">class ThreadStartRequestImpl extends ThreadLifecycleEventRequestImpl implements ThreadStartRequest { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/VirtualMachineImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jdi/share/classes/com/sun/tools/jdi/VirtualMachineImpl.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">boolean mayCreateVirtualThreads();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriterImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriterImpl.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">protected final ClassTree classTree;</li><li class="list-group-item">public void printDocument(Content content) throws DocFileIOException;</li><li class="list-group-item">public Content getClassInfo(Content classInfo);</li><li class="list-group-item">public void addClassSignature(Content classInfo);</li><li class="list-group-item">public void addClassDescription(Content classInfo);</li><li class="list-group-item">public void addClassTagInfo(Content classInfo);</li><li class="list-group-item">public void addClassTree(Content target);</li><li class="list-group-item">public void addParamInfo(Content target);</li><li class="list-group-item">public void addSubClassInfo(Content target);</li><li class="list-group-item">public void addSubInterfacesInfo(Content target);</li><li class="list-group-item">public void addInterfaceUsageInfo(Content target);</li><li class="list-group-item">public void addImplementedInterfacesInfo(Content target);</li><li class="list-group-item">public void addSuperInterfacesInfo(Content target);</li><li class="list-group-item">public void addNestedClassInfo(final Content target);</li><li class="list-group-item">public void addFunctionalInterfaceInfo(Content target);</li><li class="list-group-item">public void addClassDeprecationInfo(Content classInfo);</li><li class="list-group-item">@Override</li><li class="list-group-item">public Content getMemberDetails(Content content);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/SerializedFormWriterImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/SerializedFormWriterImpl.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void addSerialUIDInfo(String header, String serialUID, Content target);</li><li class="list-group-item">public void addSerializedContent(Content source);</li><li class="list-group-item">public void addPackageSerialized(Content serializedSummaries, Content packageSerialized);</li><li class="list-group-item">public void printDocument(Content source) throws DocFileIOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">protected void addTagsInfo(Element e, Content content);</li><li class="list-group-item">protected Content getNavLinkToOverviewTree(String label);</li><li class="list-group-item">public void addSrcLink(Element element, Content label, Content target);</li><li class="list-group-item">public void addPreQualifiedClassLink(HtmlLinkInfo.Kind context, TypeElement typeElement, Content target);</li><li class="list-group-item">public void addPreQualifiedClassLink(HtmlLinkInfo.Kind context, TypeElement typeElement, HtmlStyle style, Content target);</li><li class="list-group-item">public void addPreQualifiedStrongClassLink(HtmlLinkInfo.Kind context, TypeElement typeElement, Content content);</li><li class="list-group-item">public void addInlineComment(Element element, DocTree tag, Content target);</li><li class="list-group-item">public void addInlineDeprecatedComment(Element e, DeprecatedTree tag, Content target);</li><li class="list-group-item">public void addSummaryComment(Element element, Content target);</li><li class="list-group-item">public void addPreviewComment(Element element, List&lt;? extends DocTree&gt; firstSentenceTags, Content target);</li><li class="list-group-item">public void addSummaryComment(Element element, List&lt;? extends DocTree&gt; firstSentenceTags, Content target);</li><li class="list-group-item">public void addSummaryDeprecatedComment(Element element, DeprecatedTree tag, Content target);</li><li class="list-group-item">public void addInlineComment(Element element, Content target);</li><li class="list-group-item">public Content commentTagsToContent(Element element, List&lt;? extends DocTree&gt; tags, boolean isFirstSentence);</li><li class="list-group-item">public Content commentTagsToContent(Element element, List&lt;? extends DocTree&gt; trees, boolean isFirstSentence, boolean inSummary);</li><li class="list-group-item">public Content commentTagsToContent(Element element, List&lt;? extends DocTree&gt; trees, TagletWriterImpl.Context context);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/TreeWriter.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/TreeWriter.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public TreeWriter(HtmlConfiguration configuration, DocPath filename, ClassTree classTree) {</li><li class="list-group-item">public static void generate(HtmlConfiguration configuration, ClassTree classTree) throws DocFileIOException;</li><li class="list-group-item">protected void addPackageTreeLinks(Content content);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriterImpl.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriterImpl.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public Content getSummary(Content source);</li><li class="list-group-item">public void addSummaryHeader(Content startMarker, Content heading, Content target);</li><li class="list-group-item">public void addModuleDescription(Content moduleContent);</li><li class="list-group-item">public void addModuleSignature(Content moduleContent);</li><li class="list-group-item">public void addModuleContent(Content source);</li><li class="list-group-item">public void printDocument(Content content) throws DocFileIOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public ZonedDateTime getBuildDate();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public HtmlTree addUnchecked(Content content);</li><li class="list-group-item">public &lt;T&gt; HtmlTree addAll(Collection&lt;T&gt; items, Function&lt;T, Content&gt; mapper);</li><li class="list-group-item">@Override</li><li class="list-group-item">public static HtmlTree A(URI ref, Content body);</li><li class="list-group-item">public static HtmlTree DETAILS(HtmlStyle style);</li><li class="list-group-item">public static HtmlTree PRE(Content body);</li><li class="list-group-item">public static HtmlTree SPAN(HtmlStyle styleClass);</li><li class="list-group-item">public static HtmlTree SUMMARY(Content body);</li><li class="list-group-item">public static HtmlTree UL(HtmlStyle style);</li><li class="list-group-item">public static &lt;T&gt; HtmlTree UL(HtmlStyle style, Collection&lt;T&gt; items, Function&lt;T, Content&gt; mapper);</li><li class="list-group-item">@Pure</li><li class="list-group-item">@Pure</li><li class="list-group-item">@Pure</li><li class="list-group-item">public boolean isDiscardable();</li><li class="list-group-item">@Pure</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public DeclaredType overriddenType(ExecutableElement method);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/BaseConfiguration.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/BaseConfiguration.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public VisibleMemberTable getVisibleMemberTable(TypeElement te);</li><li class="list-group-item">public boolean isDocLintReferenceGroupEnabled();</li><li class="list-group-item">public boolean isDocLintSyntaxGroupEnabled();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/Content.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/Content.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public &lt;T&gt; Content addAll(Collection&lt;T&gt; items, Function&lt;T, Content&gt; mapper);</li><li class="list-group-item">public boolean isDiscardable();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public String getParameterName(ParamTree p);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public boolean isNotSimpleOverride(ExecutableElement e);</li><li class="list-group-item">Collection&lt;ExecutableElement&gt; getImplementedMethods();</li><li class="list-group-item">private record OverriddenMethodInfo(ExecutableElement overriddenMethod, boolean simpleOverride) {</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public boolean isAnnotationInterface(Element e);</li><li class="list-group-item">public boolean isInterface(Element e);</li><li class="list-group-item">@Pure</li><li class="list-group-item">public boolean isPlainInterface(Element e);</li><li class="list-group-item">@Pure</li><li class="list-group-item">@Pure</li><li class="list-group-item">@Pure</li><li class="list-group-item">@Pure</li><li class="list-group-item">public boolean isNonThrowableClass(TypeElement te);</li><li class="list-group-item">@Pure</li><li class="list-group-item">public DeclaredType overriddenType(ExecutableElement method);</li><li class="list-group-item">public &lt;T extends DocTree&gt; List&lt;T&gt; getBlockTags(Element element, Predicate&lt;DocTree&gt; filter, Class&lt;T&gt; tClass);</li><li class="list-group-item">public List&lt;ThrowsTree&gt; getThrowsTrees(Element element);</li><li class="list-group-item">public List&lt;ParamTree&gt; getTypeParamTrees(Element element);</li><li class="list-group-item">public List&lt;ParamTree&gt; getParamTrees(Element element);</li><li class="list-group-item">public CommentHelper get(Element key);</li><li class="list-group-item">public PreviewFlagProvider setPreviewFlagProvider(PreviewFlagProvider provider);</li><li class="list-group-item">public interface PreviewFlagProvider {</li><li class="list-group-item">boolean isPreview(Element el);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/UncheckedDocletException.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/UncheckedDocletException.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public Throwable initCause(Throwable cause);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/TagletManager.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/TagletManager.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void checkTags(Element element, Iterable&lt;? extends DocTree&gt; trees);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/Main.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/Main.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public Main() {</li><li class="list-group-item">public Main setStreams(PrintWriter outWriter, PrintWriter errWriter);</li><li class="list-group-item">public Main setFileManager(StandardJavaFileManager fileManager);</li><li class="list-group-item">public Result run(String... args);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ToolEnvironment.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.javadoc/share/classes/jdk/javadoc/internal/tool/ToolEnvironment.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public void printInfo(String key, Object... args);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jlink/share/classes/jdk/tools/jmod/JmodOutputStream.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/jdk.jlink/share/classes/jdk/tools/jmod/JmodOutputStream.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">static JmodOutputStream newOutputStream(Path file, LocalDateTime date) throws IOException;</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.datatransfer/share/classes/java/awt/datatransfer/Clipboard.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.datatransfer/share/classes/java/awt/datatransfer/Clipboard.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings(&quot;doclint:reference&quot;)</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/ScrollPaneAdjustable.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/ScrollPaneAdjustable.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public final class ScrollPaneAdjustable implements Adjustable, Serializable { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/MultipleGradientPaint.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/MultipleGradientPaint.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public abstract sealed class MultipleGradientPaint implements Paint permits LinearGradientPaint, RadialGradientPaint { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/PointerInfo.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/PointerInfo.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public final class PointerInfo { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/dnd/DropTargetContext.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/dnd/DropTargetContext.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public final class DropTargetContext implements Serializable { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/color/ICC_Profile.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/color/ICC_Profile.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public sealed class ICC_Profile implements Serializable permits ICC_ProfileGray, ICC_ProfileRGB { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/Path2D.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/Path2D.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public abstract sealed class Path2D implements Shape, Cloneable permits Path2D.Double, Path2D.Float { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">public static non-sealed class Float extends Path2D implements Serializable { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">public static non-sealed class Double extends Path2D implements Serializable { <span class="badge bg-warning text-dark">Not Checked</span></div></div><ul class="list-group list-group-flush"><li class="list-group-item">static Rectangle2D getBounds2D(final PathIterator pi);</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/CubicCurve2D.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/CubicCurve2D.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public Rectangle2D getBounds2D();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/QuadCurve2D.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/java/awt/geom/QuadCurve2D.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">public Rectangle2D getBounds2D();</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/JDialog.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/JDialog.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings({ &quot;serial&quot; })</li></ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/StyleConstants.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/StyleConstants.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <div class="card mb-3 new-class-card"><div class="card-header new-class-header">public sealed class StyleConstants permits StyleConstants.CharacterConstants, StyleConstants.ColorConstants, StyleConstants.FontConstants, StyleConstants.ParagraphConstants { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">public static final class ParagraphConstants extends StyleConstants implements AttributeSet.ParagraphAttribute { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">public static final class CharacterConstants extends StyleConstants implements AttributeSet.CharacterAttribute { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">public static final class ColorConstants extends StyleConstants implements AttributeSet.ColorAttribute, AttributeSet.CharacterAttribute { <span class="badge bg-warning text-dark">Not Checked</span></div></div><div class="card mb-3 new-class-card"><div class="card-header new-class-header">public static final class FontConstants extends StyleConstants implements AttributeSet.FontAttribute, AttributeSet.CharacterAttribute { <span class="badge bg-warning text-dark">Not Checked</span></div></div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header">
+            <a href="https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/html/HTMLEditorKit.java" target="_blank">https://github.com/eisop/jdk/tree/jdk-19/src/java.desktop/share/classes/javax/swing/text/html/HTMLEditorKit.java</a> <span class="badge bg-warning text-dark">Not Checked</span>
+          </div>
+          <div class="card-body">
+        <ul class="list-group list-group-flush"><li class="list-group-item">@SuppressWarnings({ &quot;serial&quot; })</li></ul>
+          </div>
+        </div>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

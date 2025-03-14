@@ -1,0 +1,138 @@
+version,file_url,method,checked
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.zipfs/share/classes/jdk/nio/zipfs/ZipPath.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.compiler/share/classes/javax/lang/model/util/Elements.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Type.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/unix/classes/sun/nio/fs/UnixFileSystem.java,protected static class Flags {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/net/www/HeaderParser.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/net/www/protocol/https/HttpsClient.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/net/www/http/KeepAliveCache.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/util/ObjectIdentifier.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/util/DerValue.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/util/SignatureFileVerifier.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/provider/certpath/ResponderId.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X500Name.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtrees.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtrees.java,"public class GeneralSubtrees implements Cloneable, DerEncoder {",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CRLExtensions.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/Extension.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/Extension.java,"public class Extension implements java.security.cert.Extension, DerEncoder {",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralNames.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/URIName.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DNSName.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509Key.java,"public class X509Key implements PublicKey, DerEncoder {",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralName.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralName.java,public class GeneralName implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/X509CertInfo.java,public class X509CertInfo {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/IPAddressName.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/OIDName.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AVA.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/KeyIdentifier.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/EDIPartyName.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/PolicyInformation.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/PolicyInformation.java,public class PolicyInformation implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/OtherName.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/RDN.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificatePolicyId.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificatePolicyId.java,public class CertificatePolicyId implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPointName.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPointName.java,public class DistributionPointName implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/CertificateExtensions.java,public class CertificateExtensions implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/RFC822Name.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPoint.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/DistributionPoint.java,public class DistributionPoint implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtree.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/GeneralSubtree.java,public class GeneralSubtree implements DerEncoder {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AccessDescription.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/x509/AlgorithmId.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/pkcs10/PKCS10.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/pkcs10/PKCS10Attributes.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/security/pkcs/EncryptedPrivateKeyInfo.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/jdk/internal/module/ModuleReferenceImpl.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/net/URL.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/IdentityHashMap.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/stream/Collectors.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/jar/JarVerifier.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Matcher.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/Pattern.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/regex/MatchResult.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/Inflater.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/zip/ZipInputStream.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/KeyRep.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/UnresolvedPermission.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/Security.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/Security.java,private static class Criteria {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/Principal.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/SecureClassLoader.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/Key.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/KeyStore.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/cert/CertStore.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/security/interfaces/ECPrivateKey.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/SequenceInputStream.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/PushbackInputStream.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/BufferedInputStream.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/Console.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/io/Console.java,public class Console implements Flushable {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/math/BigInteger.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/math/BigDecimal.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Integer.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/StackTraceElement.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Float.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Long.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Class.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/String.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Character.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/ThreadLocal.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Double.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/Thread.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/invoke/LambdaForm.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/module/ModuleDescriptor.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Parameter.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Executable.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"if (!module.isOpen(packageName, Proxy.class.getModule())) {",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Proxy.java,"throw new InternalError(packageName + "" not open to "" + Proxy.class.getModule());",False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/lang/reflect/Field.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/nio/file/spi/FileSystemProvider.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/nio/channels/FileChannel.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/text/RBCollationTables.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.base/share/classes/java/text/PatternEntry.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.sql.rowset/share/classes/javax/sql/rowset/serial/SerialDatalink.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.naming/share/classes/javax/naming/spi/NamingManager.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlDocletWriter.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriterImpl.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/TextBuilder.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/Text.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/Comment.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/HtmlTree.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/RawHtml.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/ContentBuilder.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/markup/Script.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/WorkArounds.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/Content.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/CommentHelper.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/Utils.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/SimpleTaglet.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.jlink/share/classes/jdk/tools/jmod/JmodOutputStream.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/sun/font/AttributeValues.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/AbstractButton.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,static class EndLineDownAction extends TextAction {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/java.desktop/share/classes/javax/swing/text/DefaultEditorKit.java,static class BeginLineUpAction extends TextAction {,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotResolvedJavaFieldImpl.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.hotspot/src/jdk/vm/ci/hotspot/HotSpotResolvedJavaMethodImpl.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.meta/src/jdk/vm/ci/meta/PrimitiveConstant.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.meta/src/jdk/vm/ci/meta/Assumptions.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.code/src/jdk/vm/ci/code/RegisterSaveLayout.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.code/src/jdk/vm/ci/code/BytecodeFrame.java,,False
+jdk-20,https://github.com/eisop/jdk/tree/jdk-20/src/jdk.internal.vm.ci/share/classes/jdk.vm.ci.code/src/jdk/vm/ci/code/StackLockValue.java,,False

@@ -1,0 +1,80 @@
+/*
+ * Copyright (c) 1997, 2022, Oracle and/or its affiliates. All rights reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * This code is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License version 2 only, as
+ * published by the Free Software Foundation.  Oracle designates this
+ * particular file as subject to the "Classpath" exception as provided
+ * by Oracle in the LICENSE file that accompanied this code.
+ *
+ * This code is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * version 2 for more details (a copy is included in the LICENSE file that
+ * accompanied this code).
+ *
+ * You should have received a copy of the GNU General Public License version
+ * 2 along with this work; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
+ * or visit www.oracle.com if you need additional information or have any
+ * questions.
+ */
+package java.lang.ref;
+
+import org.checkerframework.checker.interning.qual.UsesObjectEquals;
+import org.checkerframework.checker.nullness.qual.Nullable;
+import org.checkerframework.framework.qual.AnnotatedFor;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.function.Consumer;
+import jdk.internal.misc.VM;
+
+@AnnotatedFor({ "interning", "nullness" })
+@SuppressWarnings({ "rawtypes" })
+@UsesObjectEquals
+public class ReferenceQueue<T> {
+
+    private static class Null extends ReferenceQueue<Object> {
+
+        public Null() {
+        }
+
+        @Override
+        boolean enqueue(Reference<?> r);
+    }
+
+    void signal();
+
+    void await() throws InterruptedException;
+
+    void await(long timeoutMillis) throws InterruptedException;
+
+    public ReferenceQueue() {
+    }
+
+    final boolean enqueue0(Reference<? extends T> r);
+
+    final boolean headIsNull();
+
+    final Reference<? extends T> poll0();
+
+    final Reference<? extends T> remove0(long timeout) throws IllegalArgumentException, InterruptedException;
+
+    final Reference<? extends T> remove0() throws InterruptedException;
+
+    boolean enqueue(Reference<? extends T> r);
+
+    @Nullable
+    public Reference<? extends T> poll();
+
+    @Nullable
+    public Reference<? extends T> remove(long timeout) throws InterruptedException;
+
+    public Reference<? extends T> remove() throws InterruptedException;
+
+    void forEach(Consumer<? super Reference<? extends T>> action);
+}

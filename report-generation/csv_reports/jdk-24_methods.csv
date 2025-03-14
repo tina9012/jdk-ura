@@ -1,0 +1,138 @@
+version,file_url,method,checked
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.management/share/classes/java/lang/management/ManagementFactory.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.management/share/classes/javax/management/openmbean/OpenMBeanAttributeInfoSupport.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xpath/regex/RegularExpression.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/util/ErrorMsg.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/file/JavacFileManager.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Type.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Symbol.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,public static class FunctionDescriptorLookupError extends CompilerInternalException {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,public abstract class SignatureGenerator {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/code/Types.java,public class InvalidSignatureException extends CompilerInternalException {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,public static class InapplicableMethodException extends CompilerInternalException {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,abstract class ReferenceLookupHelper extends LookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class MethodReferenceLookupHelper extends ReferenceLookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class UnboundMethodReferenceLookupHelper extends MethodReferenceLookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class ArrayConstructorReferenceLookupHelper extends ReferenceLookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class ConstructorReferenceLookupHelper extends ReferenceLookupHelper {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/Resolve.java,class BadLocalClassCreation extends StaticError {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.compiler/share/classes/com/sun/tools/javac/api/JavacScope.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Handler.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/Logger.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/LogManager.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.logging/share/classes/java/util/logging/LogManager.java,private static final class LoggingProviderAccess implements LoggingProviderImpl.LogManagerAccess {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/net/www/MessageHeader.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/security/ssl/SSLSessionImpl.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/nio/ch/FileChannelImpl.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/sun/nio/ch/FileDispatcher.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/net/URLClassLoader.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/net/NetworkInterface.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/net/InetAddress.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/ArrayList.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/Locale.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/Locale.java,"private static final class LocaleCache implements Function<Object, Locale> {",False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/Formatter.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipEntry.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipFile.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipCoder.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/zip/ZipUtils.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/concurrent/Exchanger.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/concurrent/Exchanger.java,static final class Slot {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/concurrent/ForkJoinPool.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/concurrent/atomic/AtomicReferenceArray.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/util/concurrent/atomic/AtomicReference.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Security.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Security.java,private static final class SecPropLoader {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/security/Policy.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ObjectInputStream.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ObjectOutputStream.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/DataOutputStream.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/PushbackInputStream.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedWriter.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedInputStream.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/Reader.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/BufferedOutputStream.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/Console.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/io/ByteArrayOutputStream.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/math/BigInteger.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/math/MutableBigInteger.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/time/LocalDateTime.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/time/LocalTime.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/time/LocalDate.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/System.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Process.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Float.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Class.java,private static class Holder {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Character.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ClassLoader.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Double.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/StringCoding.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Math.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/Runtime.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/SecurityManager.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/SecurityManager.java,private static class StackWalkerHolder {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ref/ReferenceQueue.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ref/ReferenceQueue.java,private static class Lock {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ref/Reference.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/ref/PhantomReference.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodType.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/MethodHandles.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/invoke/LambdaForm.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/reflect/Constructor.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/reflect/ReflectAccess.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/lang/reflect/ReflectAccess.java,final class ReflectAccess implements JavaLangReflectAccess {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/nio/Buffer.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DecimalFormat.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/MessageFormat.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/SimpleDateFormat.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/ChoiceFormat.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/CharacterIteratorFieldDelegate.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/DateFormat.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/NumberFormat.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/java/text/FieldPosition.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/com/sun/crypto/provider/DHPrivateKey.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/com/sun/crypto/provider/DHPrivateKey.java,private static class DHComponents {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/com/sun/crypto/provider/DHPublicKey.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.base/share/classes/com/sun/crypto/provider/DHPublicKey.java,private static class DHComponents {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.net.http/share/classes/jdk/internal/net/http/ConnectionPool.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.rmi/share/classes/java/rmi/server/RMIClassLoader.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/CodeBlob.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ClassWriter.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/ModuleWriter.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/HtmlConfiguration.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/TextBuilder.java,public class TextBuilder extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Text.java,public class Text extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Comment.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Comment.java,public class Comment extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/HtmlTree.java,public class HtmlTree extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/RawHtml.java,public class RawHtml extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/ContentBuilder.java,public class ContentBuilder extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,public class Script {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Script.java,private static class ScriptContent extends Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.javadoc/share/classes/jdk/javadoc/internal/html/Content.java,public abstract class Content {,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/sun/awt/NativeLibLoader.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/beans/Beans.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/beans/EventHandler.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/Window.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/KeyboardFocusManager.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/EventQueue.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/Toolkit.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/SplashScreen.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/image/ColorModel.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/java/awt/font/TextLine.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/javax/swing/UIManager.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/java.desktop/share/classes/javax/swing/JComponent.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotObjectConstantImpl.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotCompressedNullConstant.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotResolvedJavaMethodImpl.java,,False
+jdk-24,https://github.com/eisop/jdk/tree/jdk-24/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/hotspot/HotSpotMetaspaceConstantImpl.java,,False
