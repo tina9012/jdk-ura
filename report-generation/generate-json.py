@@ -122,12 +122,12 @@ def compare_version_pair(old_version_dir, new_version_dir):
             }
     return file_diff
 
-#modify this list for any future processing
+#this list must be modified for newly added jdk versions
 versions = ['master', 'jdk-18', 'jdk-19', 'jdk-20', 'jdk-21', 'jdk-22', 'jdk-23', 'jdk-24']
 
 base_path = './results/'
 
-json_folder = "json_files"
+json_folder = "../report-files/json_files"
 os.makedirs(json_folder, exist_ok=True)
 
 #compares all subsequent versions, creates a seperate json file for each version pair

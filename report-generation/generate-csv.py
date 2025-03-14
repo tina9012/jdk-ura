@@ -2,16 +2,17 @@ import json
 import os
 import csv
 
-csv_folder = "csv_reports"
+csv_folder = "../report-files/csv_reports"
 os.makedirs(csv_folder, exist_ok=True)
 
 data = {}
-json_folder = "json_files"
+json_folder = "../report-files/json_files"
+os.makedirs(csv_folder, exist_ok=True)
 
 json_files = [f for f in os.listdir(json_folder) if f.endswith(".json")]
 
 #this list must be modified for newly added jdk versions, so that past versions are not overwitten with every method review status set to False
-versions = ['jdk-18', 'jdk-19', 'jdk-20', 'jdk-21', 'jdk-22', 'jdk-23', 'jdk-24']
+versions_to_process = ['jdk-18', 'jdk-19', 'jdk-20', 'jdk-21', 'jdk-22', 'jdk-23', 'jdk-24']
 
 for filename in os.listdir(json_folder):
     if filename.endswith(".json"):

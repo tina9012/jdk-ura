@@ -25,7 +25,7 @@ RESULTS_BASE_DIR: path to the "results" sub-directory you just created
 GENERATE DIFF JSONS 
 4. run JSON generation script: 
 - python3 generate-json.py 
-- This will compare and store differences between files in a sub-directory called json_files 
+- This will compare and store differences between files in a sub-directory called json_files in a directory called "report-files"
 - This script can be modified to only generate JSON's for a defined sub-set of minimized files by altering the versions array in the processing portion
 
 GENERATE CSVs
@@ -36,7 +36,7 @@ GENERATE CSVs
 
 GENERATE HTML Report
 6. run HTML report generation script: 
-Finally, run the HTML report generator to create a browsable report using Bootstrap styling. This report aggregates the information from the CSV and JSON diff data and automatically opens in your default browser.
+Finally, run the HTML report generator to create a browsable report using Bootstrap styling. This report generates an index and a seperate html page for each jdk version, and opens the report in your browser.
 
 - python3 generate-report.py
 - this creates and opens a report in your browser, loading in information from the CSVs and JSONs generated in the previous step 
